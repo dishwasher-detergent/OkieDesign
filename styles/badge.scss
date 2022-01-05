@@ -1,0 +1,62 @@
+.badge {
+    @apply 
+    flex
+    flex-row 
+    gap-1 
+    items-center 
+    justify-center 
+    py-0.5 
+    px-2 
+    rounded-full 
+    bg-gray-100 
+    text-slate-600 
+    text-sm 
+    whitespace-nowrap;
+    
+    svg {
+        @apply 
+        h-4 
+        w-4;
+    }
+    
+    &.small {
+        @apply text-xs;
+        
+        svg {
+            @apply 
+            h-3 
+            w-3/4;
+        }
+    }
+    
+    &.large {
+        @apply text-base;
+        
+        svg {
+            @apply h-5 w-5;
+        }
+    }
+
+    &.extra_large {
+        @apply text-2xl;
+        svg {
+            @apply h-6 w-6;
+        }
+    }
+
+    &.success {
+        @apply bg-green-100 text-green-600;
+    }
+    
+    &.info {
+        @apply bg-blue-100 text-blue-600;
+    }
+
+    &.emergency {
+        @apply bg-red-100 text-red-600;
+    }
+
+    &.warning {
+        @apply bg-amber-100 text-amber-600;
+    }
+}

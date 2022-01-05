@@ -1,0 +1,153 @@
+.button {
+    @apply
+    inline-flex
+    items-center
+    justify-center
+    gap-2
+    h-9
+    px-4
+    text-base
+    text-center
+    rounded-md
+    bg-blue-600
+    text-white
+    font-semibold
+    truncate
+
+    ease-in
+    duration-100
+
+    hover:bg-blue-500
+    hover:ring-2
+    hover:ring-blue-200
+    active:ring-4
+    active:ring-blue-200;
+        
+    svg {
+        @apply h-5;
+    }
+    &.secondary {            
+        @apply bg-slate-600 hover:bg-slate-500;
+    }
+    &.success {
+        @apply bg-green-500 hover:bg-green-400;
+    }
+    &.warning {
+        @apply bg-red-500 hover:bg-red-400;
+    }
+    &.emergency {
+        @apply bg-amber-500 hover:bg-amber-400;
+    }
+    &.info {
+        @apply bg-blue-500 hover:bg-blue-400;
+    }
+    &.no_background {
+        @apply text-slate-900 bg-transparent hover:bg-slate-100;
+    }
+    &.full {
+        @apply w-full;
+    }
+    &.left {
+        @apply justify-start;
+    }
+    &.right {
+        @apply justify-end;
+    }
+    &.round {
+        @apply rounded-full;
+    }
+    &.small {
+        @apply text-sm h-7;
+    }
+    &.large {
+        @apply text-lg h-11;
+    }
+    &.icon {
+        @apply w-9 p-1.5;
+        svg {
+            @apply w-full h-full;
+        }
+        &.small {
+            @apply w-7 p-1;
+        }
+        &.large {
+            @apply w-11 p-2;
+        }
+    }
+    &.outline {
+        @apply outline-none bg-transparent border border-blue-600 text-blue-600 hover:bg-blue-50;
+    }
+    &:disabled {
+        @apply cursor-not-allowed bg-slate-200 text-slate-700 hover:bg-slate-200;
+        &.no_background {
+            @apply text-gray-700 bg-transparent;
+        }
+    }
+}
+
+// Button group
+
+.button_group {
+    @apply flex flex-nowrap flex-row p-1;
+
+    &.full {
+        @apply w-full;
+        &.grow {
+            >* {
+                @apply flex-1;
+            }
+        }
+    }
+
+    &.pill {
+        @apply gap-2;
+        
+        >*{
+            @apply rounded-md;
+        }
+    }
+    
+    &.vertical {
+        @apply flex-col w-32 h-auto rounded-none;
+        &.full {
+            @apply w-full;
+            >* {
+                @apply flex-none;
+            }
+        }
+        button, a {
+            @apply w-full;
+            &:not(:first-child) {
+                @apply m-0 mt-0.5;
+            }
+            &:first-child {
+                @apply rounded-t-md rounded-b-none;
+            }
+            &:last-child {
+                @apply rounded-b-md rounded-t-none;
+            }
+            &.icon {
+                @apply w-full h-10;
+            }
+            &.small {
+                @apply w-24;
+            }
+            &.large {
+                @apply w-40;
+            }
+        }
+    }
+    button, a {
+        @apply rounded-none;
+        
+        &:not(:first-child) {
+            @apply m-0 ml-0.5;
+        }
+        &:first-child {
+            @apply rounded-l-md;                
+        }
+        &:last-child {
+            @apply rounded-r-md;
+        }
+    }
+}
