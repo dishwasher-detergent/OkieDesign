@@ -1,10 +1,6 @@
-import DefaultLayout from "../components/Layout"
-
-export default function Home() {
-  return (
-    <DefaultLayout>
-    <div className="alert"><p>Classes in <span className="badge emergency">red</span> are required and give the regular options, classes in blue <span className="badge info">modify</span> the default styling.</p></div>
-      <div className="w-full h-full grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+const Buttons = () => {
+    return (
+        <div className="w-full h-full grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <div className="card full fit">
           <figure className="p-2">
             <h3 className="font-bold text-2xl mb-6 ">Sizes</h3>
@@ -231,6 +227,7 @@ export default function Home() {
           </figcaption>
         </div>
       </div>
-    </DefaultLayout>
-  )
+    )
 }
+
+export default Buttons
