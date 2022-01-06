@@ -27,59 +27,102 @@
         @apply h-5;
     }
     &.secondary {            
-        @apply bg-slate-600 hover:bg-slate-500;
+        @apply 
+        bg-slate-600 
+        hover:bg-slate-500
+        hover:ring-2
+        hover:ring-slate-200
+        active:ring-4
+        active:ring-slate-200;
     }
     &.success {
-        @apply bg-green-500 hover:bg-green-400;
-    }
-    &.warning {
-        @apply bg-red-500 hover:bg-red-400;
+        @apply 
+        bg-green-500 
+        hover:bg-green-400
+        hover:ring-2
+        hover:ring-green-200
+        active:ring-4
+        active:ring-green-200;
     }
     &.emergency {
-        @apply bg-amber-500 hover:bg-amber-400;
+        @apply 
+        bg-red-500 
+        hover:bg-red-400
+        hover:ring-2
+        hover:ring-red-200
+        active:ring-4
+        active:ring-red-200;
     }
-    &.info {
-        @apply bg-blue-500 hover:bg-blue-400;
+    &.warning {
+        @apply 
+        bg-amber-500 
+        hover:bg-amber-400
+        hover:ring-2
+        hover:ring-amber-200
+        active:ring-4
+        active:ring-amber-200;
     }
-    &.no_background {
-        @apply text-slate-900 bg-transparent hover:bg-slate-100;
+    &.ghost {
+        @apply 
+        text-slate-900 
+        bg-transparent 
+        hover:bg-slate-100
+        hover:ring-2
+        hover:ring-slate-200
+        active:ring-4
+        active:ring-slate-200;
     }
     &.full {
         @apply w-full;
     }
-    &.left {
-        @apply justify-start;
-    }
-    &.right {
-        @apply justify-end;
-    }
     &.round {
         @apply rounded-full;
     }
+    &.extra_small {
+        @apply text-xs h-4 px-2;
+    }
     &.small {
-        @apply text-sm h-7;
+        @apply text-sm h-6 px-2;
     }
     &.large {
-        @apply text-lg h-11;
+        @apply text-lg h-12;
+    }
+    &.extra_large {
+        @apply text-xl h-16;
     }
     &.icon {
         @apply w-9 p-1.5;
         svg {
             @apply w-full h-full;
         }
+        &.extra_small {
+            @apply w-4 p-1;
+        }
         &.small {
-            @apply w-7 p-1;
+            @apply w-6 p-1;
         }
         &.large {
-            @apply w-11 p-2;
+            @apply w-12 p-2;
+        }
+        &.extra_large {
+            @apply w-16 p-2;
         }
     }
     &.outline {
         @apply outline-none bg-transparent border border-blue-600 text-blue-600 hover:bg-blue-50;
     }
     &:disabled {
-        @apply cursor-not-allowed bg-slate-200 text-slate-700 hover:bg-slate-200;
-        &.no_background {
+        @apply 
+        cursor-not-allowed 
+        bg-slate-200 
+        border-slate-600
+        text-slate-700 
+        hover:bg-slate-100
+        hover:ring-2
+        hover:ring-slate-200
+        active:ring-4
+        active:ring-slate-200;
+        &.ghost {
             @apply text-gray-700 bg-transparent;
         }
     }

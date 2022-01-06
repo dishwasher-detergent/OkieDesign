@@ -19,6 +19,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+p,h1,h2,h3,h4,h5,h6 {
+    @apply text-slate-800;
+}
+
 .hairage {
     font-family: 'Hairage', sans-serif;
 }
