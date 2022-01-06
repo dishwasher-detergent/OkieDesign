@@ -3,6 +3,7 @@ import DefaultLayout from "../components/Layout"
 export default function Home() {
   return (
     <DefaultLayout>
+    <div className="alert">Classes in <span className="badge emergency">red</span> are required and give the regular options, classes in blue <span className="badge info">modify</span> the defauly styling.</div>
       <div className="w-full h-full grid gap-2 grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
         <div className="card full fit">
           <figure className="p-2">
