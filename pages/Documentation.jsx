@@ -3,11 +3,11 @@ import DefaultLayout from "../components/Layout"
 export default function Home() {
   return (
     <DefaultLayout>
-    <div className="alert">Classes in <span className="badge emergency">red</span> are required and give the regular options, classes in blue <span className="badge info">modify</span> the default styling.</div>
-      <div className="w-full h-full grid gap-2 grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
+    <div className="alert"><p>Classes in <span className="badge emergency">red</span> are required and give the regular options, classes in blue <span className="badge info">modify</span> the default styling.</p></div>
+      <div className="w-full h-full grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <div className="card full fit">
           <figure className="p-2">
-            <h3 className="font-semibold text-xl">Sizes</h3>
+            <h3 className="font-bold text-2xl mb-6 ">Sizes</h3>
             <div className="list horizontal mt-2">
                 <button className="button extra_small">Extra Small</button>
                 <button className="button small">Small</button>
@@ -40,7 +40,7 @@ export default function Home() {
         </div>
         <div className="card full fit">
           <figure className="p-2">
-          <h3 className="font-semibold text-xl">Full Width</h3>
+          <h3 className="font-bold text-2xl mb-6">Full Width</h3>
             <div className="list mt-2">
                 <button className="button extra_small full">Extra Small</button>
                 <button className="button small full">Small</button>
@@ -64,7 +64,7 @@ export default function Home() {
         </div>
         <div className="card full fit">
           <figure className="p-2">
-            <h3 className="font-semibold text-xl">Styles</h3>
+            <h3 className="font-bold text-2xl mb-6">Styles</h3>
             <div className="list horizontal mt-2">
                 <button className="button">Regular</button>
                 <button className="button secondary">Secondary</button>
@@ -109,7 +109,7 @@ export default function Home() {
         </div>
         <div className="card full fit">
           <figure className="p-2">
-            <h3 className="font-semibold text-xl">Icons</h3>
+            <h3 className="font-bold text-2xl mb-6">Icons</h3>
             <div className="list horizontal mt-2">
                 <button className="button icon extra_small">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -153,7 +153,7 @@ export default function Home() {
         </div>
         <div className="card full fit">
           <figure className="p-2">
-            <h3 className="font-semibold text-xl">Text and Icons</h3>
+            <h3 className="font-bold text-2xl mb-6">Text and Icons</h3>
             <div className="list horizontal mt-2">
                 <button className="button">
                     After
@@ -180,7 +180,7 @@ export default function Home() {
         </div>
         <div className="card full fit">
           <figure className="p-2">
-            <h3 className="font-semibold text-xl">Styles</h3>
+            <h3 className="font-bold text-2xl mb-6">Styles</h3>
             <div className="list horizontal mt-2">
                 <button disabled className="button">Regular</button>
                 <button disabled className="button ghost">Ghost</button>
