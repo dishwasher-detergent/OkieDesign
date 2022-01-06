@@ -14,6 +14,9 @@ function MyApp({ Component, pageProps }) {
         <meta name="msapplication-TileColor" content="#2d89ef" />
         <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
         <meta name="theme-color" content="#ffffff" />
+        <title>
+          Okie.Design
+        </title>
       </Head>
       <Component {...pageProps} />
     </>
