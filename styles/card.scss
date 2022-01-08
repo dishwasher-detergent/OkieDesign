@@ -2,8 +2,6 @@
     @apply
     flex
     flex-col
-    w-80
-    h-96
     rounded-md
     border
     border-slate-300;
@@ -16,33 +14,6 @@
         >figcaption {
             @apply h-auto w-auto;
         }
-    }
-
-    &.horizontal {
-        @apply
-        h-80
-        w-96
-        flex-row;
-
-        >:first-child {
-            @apply
-            border-b-0
-            border-r
-            border-slate-300;
-        }
-
-        >figure {
-            @apply 
-            w-3/5 
-            h-full;
-        }
-    
-        >figcaption {
-            @apply 
-            w-2/5
-            h-full;
-        }
-
     }
 
     &.full {
