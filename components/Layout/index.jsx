@@ -2,9 +2,9 @@ import Link from "next/link"
 
 const DefaultLayout = ({children}) => {
     return (
-        <div>
-            <nav className="w-full h-16 flex justify-center items-center">
-                <div className="w-full max-w-6xl h-full flex items-center justify-between px-4 border-b border-slate-300">
+        <div className="bg-slate-50 h-screen">
+            <nav className="w-full h-16 flex justify-center items-center border-b border-slate-300 bg-white">
+                <div className="w-full max-w-6xl h-full flex items-center justify-between px-4">
                     <Link href="/">
                         <a className="hairage text-xl">Okie.Design</a>
                     </Link>

@@ -3,7 +3,7 @@
         @apply w-full font-semibold text-slate-500 text-sm mb-1;
     }
 
-    @apply flex flex-col gap-2 flex-nowrap items-center mb-1;
+    @apply flex flex-col gap-2 flex-nowrap mb-1;
     &.divider {
         >* {
             @apply w-full;

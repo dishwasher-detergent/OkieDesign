@@ -1,0 +1,126 @@
+.collapse {
+    @apply 
+    flex
+    flex-col
+    p-1
+    rounded-md
+    overflow-hidden
+    bg-white
+    focus:bg-slate-50
+    hover:bg-slate-50
+    hover:ring-2
+    hover:ring-slate-100;
+
+    * {
+        @apply 
+        ease-in
+        duration-200;
+    }
+
+    &.extra_small {
+        @apply text-xs;
+
+        h2 {
+            @apply
+            h-4
+            px-2;
+
+            &::after {
+                @apply w-4;
+            }
+        }
+    }
+
+    &.small {
+        @apply text-sm;
+
+        h2 {
+            @apply
+            h-6
+            px-2;
+        }
+    }
+
+    &.large {
+        h2 {
+            @apply
+            text-lg
+            h-12;
+
+            &::after {
+                @apply w-5;
+            }
+        }
+    }
+
+    &.extra_large {
+        h2 {
+            @apply
+            text-xl
+            h-16;
+
+            &::after {
+                @apply w-6;
+            }
+        }
+    }
+
+    h2,.title {
+        @apply
+        h-10
+        px-2
+        rounded-md
+        w-full
+        inline-flex
+        justify-between
+        truncate
+        items-center
+        font-semibold
+        text-slate-600;
+    }
+
+    &.arrow h2::after {
+        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M17 13l-5 5m0 0l-5-5m5 5V6' /%3E%3C/svg%3E");
+        @apply w-5 h-full flex justify-center items-center rotate-0 ease-in duration-100;
+    }
+
+    &.plus h2::after {
+        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M12 6v6m0 0v6m0-6h6m-6 0H6' /%3E%3C/svg%3E");
+        @apply w-5 h-full flex justify-center items-center rotate-0 ease-in duration-100;
+    }
+
+    &:not(.close), &.open {
+        &:focus, &.open  {
+            &.arrow h2::after {
+                @apply rotate-180;
+            }
+
+            &.plus h2::after {
+                @apply rotate-45;
+            }
+
+            h2 {
+                @apply bg-blue-100 text-blue-600;
+            }
+    
+            .content {
+                @apply visible h-auto p-2 opacity-100;
+            }
+        }
+    }
+    
+    &:not(.open), &.close {
+        &:not(:focus), &.close  {
+            .content {
+                @apply hidden opacity-0;
+            }
+        }
+    }
+
+    &.outline {
+        @apply outline-none border border-slate-300 focus:border-blue-600;
+        &.hover:hover {
+            @apply hover:border-blue-600;
+        }
+    }
+}
