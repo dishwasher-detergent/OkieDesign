@@ -22,7 +22,7 @@ export default function Home() {
               <div className="h-30 md:w-3/5 p-4 flex flex-col">
                 <div className="flex-1">
                   <div>
-                    <p className="text-xs text-slate-500">Womans Wear > Jeans</p>
+                    <p className="text-xs text-slate-500">Womans Wear &gt; Jeans</p>
                     <div className="mt-4 mb-6">
                       <h2 className="font-bold text-slate-800 text-3xl truncate">Denim Pants</h2>
                       <p className="text-slate-600">Straight Fit Flex Stretch Jeans</p>
