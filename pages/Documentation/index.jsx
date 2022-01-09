@@ -7,8 +7,8 @@ export default function Home() {
             <h2 className="text-xl font-bold mb-4">Components</h2>
             <div className="w-full grid gap-4 grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
                 <Link href='Documentation/Alerts'>
-                    <a className="card full fit ring-blue-200 hover:ring-2 focus:ring-4">
-                        <div className="h-20 p-2 flex items-center justify-center bg-blue-50">
+                    <a className="card full fit ring-purple-200 hover:ring-2 focus:ring-4">
+                        <div className="h-20 p-2 flex items-center justify-center bg-purple-50">
                             <div className="alert success">Free Shipping Site Wide!</div>
                         </div>
                         <div className="p-2">
@@ -17,8 +17,8 @@ export default function Home() {
                     </a>
                 </Link>
                 <Link href='Documentation/Badges'>
-                    <a className="card full fit ring-blue-200 hover:ring-2 focus:ring-4">
-                        <div className="h-20 p-2 flex items-center justify-center bg-blue-50">
+                    <a className="card full fit ring-purple-200 hover:ring-2 focus:ring-4">
+                        <div className="h-20 p-2 flex items-center justify-center bg-purple-50">
                             <div className="badge emergency">New!</div>
                         </div>
                         <div className="p-2">
@@ -27,8 +27,8 @@ export default function Home() {
                     </a>
                 </Link>
                 <Link href='Documentation/Buttons'>
-                    <a className="card full fit ring-blue-200 hover:ring-2 focus:ring-4">
-                        <div className="h-20 flex items-center justify-center bg-blue-50">
+                    <a className="card full fit ring-purple-200 hover:ring-2 focus:ring-4">
+                        <div className="h-20 flex items-center justify-center bg-purple-50">
                             <button className="button">
                                 Buy Now
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -42,8 +42,8 @@ export default function Home() {
                     </a>
                 </Link>
                 <Link href='Documentation/ButtonGroups'>
-                    <a className="card full fit ring-blue-200 hover:ring-2 focus:ring-4">
-                        <div className="h-20 flex items-center justify-center bg-blue-50">
+                    <a className="card full fit ring-purple-200 hover:ring-2 focus:ring-4">
+                        <div className="h-20 flex items-center justify-center bg-purple-50">
                             <div className="button_group pill small">
                                 <button className="button">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -67,8 +67,8 @@ export default function Home() {
                     </a>
                 </Link>
                 <Link href='Documentation/Collapse'>
-                    <a className="card full fit ring-blue-200 hover:ring-2 focus:ring-4">
-                        <div className="h-20 p-2 flex items-center justify-center bg-blue-50">
+                    <a className="card full fit ring-purple-200 hover:ring-2 focus:ring-4">
+                        <div className="h-20 p-2 flex items-center justify-center bg-purple-50">
                             <div className='collapse outline small open plus w-full' tabIndex={0}>
                                 <h2>Collapse</h2>
                                 <div className="content">

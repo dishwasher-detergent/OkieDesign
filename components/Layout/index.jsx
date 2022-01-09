@@ -21,11 +21,14 @@ const DefaultLayout = ({children}) => {
                         </div>
                     </div>
                 </nav>
-                <section className="w-full h-full flex justify-center py-4">
+                <section className="w-full h-full flex justify-center">
                     <div className="w-full max-w-6xl px-4">
                         {children}
                     </div>
                 </section>
+                <footer className="h-24 mt-6 py-6 bg-slate-900">
+
+                </footer>
             </div>
         </div>
     )
