@@ -29,7 +29,8 @@
         border-slate-300
         relative
         -left-full
-        md:left-0;
+        md:left-0
+        overflow-y-auto;
     }
 
     .deadspace {
