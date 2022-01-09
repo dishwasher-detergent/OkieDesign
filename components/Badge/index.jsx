@@ -1,8 +1,9 @@
 import SyntaxHighlighter from 'react-syntax-highlighter';
+import ComponentLayout from '../Layout/Documentation/Component';
 
 const Badge = () => {
     return (
-      <div className="w-full h-full grid grid-cols-1 gap-2">
+      <ComponentLayout title="Badges">
         <div className="card fit">
             <figure className="p-2">
                 <h3 className="font-semibold text-sm mb-2">Sizes</h3>
@@ -47,7 +48,7 @@ const Badge = () => {
               </div>
             </figcaption>
         </div>
-      </div>
+      </ComponentLayout>
     )
 }
 

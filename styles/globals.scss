@@ -6,8 +6,9 @@
 @import 'badge.scss';
 @import 'button.scss';
 @import 'card.scss';
-@import 'list.scss';
+@import 'menu.scss';
 @import 'collapse.scss';
+@import 'sidebar.scss';
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
 
@@ -26,4 +27,8 @@ p,h1,h2,h3,h4,h5,h6 {
 
 .hairage {
     font-family: 'Hairage', sans-serif;
+}
+
+.list {
+    @apply flex flex-row flex-wrap gap-2;
 }

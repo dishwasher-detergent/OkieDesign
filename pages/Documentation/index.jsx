@@ -1,18 +1,18 @@
 import Link from 'next/link'
-import DefaultLayout from '../../components/Layout'
+import DocsLayout from '../../components/Layout/Documentation'
 
 export default function Home() {
     return (
-        <DefaultLayout>
+        <DocsLayout>
             <h2 className="text-xl font-bold mb-4">Components</h2>
             <div className="w-full grid gap-4 grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
-                <Link href='Documentation/Alert'>
+                <Link href='Documentation/Alerts'>
                     <a className="card full fit ring-blue-200 hover:ring-2 focus:ring-4">
                         <div className="h-20 p-2 flex items-center justify-center bg-blue-50">
                             <div className="alert success">Free Shipping Site Wide!</div>
                         </div>
                         <div className="p-2">
-                            <h4 className="text-sm font-semibold text-slate-600">Alert</h4>
+                            <h4 className="text-sm font-semibold text-slate-600">Alerts</h4>
                         </div>
                     </a>
                 </Link>
@@ -22,7 +22,7 @@ export default function Home() {
                             <div className="badge emergency">New!</div>
                         </div>
                         <div className="p-2">
-                            <h4 className="text-sm font-semibold text-slate-600">Badge</h4>
+                            <h4 className="text-sm font-semibold text-slate-600">Badges</h4>
                         </div>
                     </a>
                 </Link>
@@ -69,19 +69,19 @@ export default function Home() {
                 <Link href='Documentation/Collapse'>
                     <a className="card full fit ring-blue-200 hover:ring-2 focus:ring-4">
                         <div className="h-20 p-2 flex items-center justify-center bg-blue-50">
-                            <div className='collapse outline small open plus' tabIndex={0}>
-                                <h2>Extra Small</h2>
+                            <div className='collapse outline small open plus w-full' tabIndex={0}>
+                                <h2>Collapse</h2>
                                 <div className="content">
-                                Extra Small Content
+                                    Hidden Content
                                 </div>
                             </div>
                         </div>
                         <div className="p-2">
-                            <h4 className="text-sm font-semibold text-slate-600">Alert</h4>
+                            <h4 className="text-sm font-semibold text-slate-600">Collapse</h4>
                         </div>
                     </a>
                 </Link>
             </div>
-        </DefaultLayout>
+        </DocsLayout>
     )
   }

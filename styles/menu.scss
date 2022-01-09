@@ -1,0 +1,51 @@
+.menu {
+    @apply flex flex-col flex-nowrap p-2;
+    h4 {
+        @apply w-full font-semibold text-slate-500 text-sm mb-1;
+    }
+
+    &.divider {
+        * {
+            @apply w-full;
+        }
+        
+        :not(:first-child){
+            @apply border-t border-slate-200;
+        }
+    }
+    &.full {
+        @apply w-full h-full m-0;
+    }
+    &.horizontal {
+        @apply flex-row flex-wrap;
+        
+        &.divider {
+            :not(:first-child){
+                @apply border-l border-slate-200;
+            }
+        }
+    }
+    li {
+        @apply
+        w-full
+        text-left
+        rounded-md
+        truncate
+        text-slate-900 
+        bg-transparent 
+        hover:bg-slate-100
+        hover:ring-2
+        hover:ring-slate-200
+        active:ring-4
+        active:ring-slate-200;
+
+        * {
+            @apply 
+            px-4
+            py-2
+            inline-flex
+            w-full
+            h-full;
+        }
+    }
+}

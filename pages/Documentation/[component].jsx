@@ -1,4 +1,4 @@
-import DefaultLayout from "../../components/Layout"
+import DocsLayout from "../../components/Layout/Documentation"
 import Alert from "../../components/Alert"
 import Badge from "../../components/Badge"
 import Buttons from "../../components/Button"
@@ -12,8 +12,8 @@ export default function Documentation() {
   
   const getDocument = () => {
     switch(component.toLowerCase()){
-      case 'alert': return <Alert />;
-      case 'badge': return <Badge />;
+      case 'alerts': return <Alert />;
+      case 'badges': return <Badge />;
       case 'buttons': return <Buttons />;
       case 'buttongroups': return <ButtonGroups />;
       case 'collapse': return <Collapse />;
@@ -22,8 +22,8 @@ export default function Documentation() {
   }
 
   return (
-    <DefaultLayout>
+    <DocsLayout>
       {component ? getDocument() : null}
-    </DefaultLayout>
+    </DocsLayout>
   )
 }
