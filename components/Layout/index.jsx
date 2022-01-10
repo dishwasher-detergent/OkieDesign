@@ -4,14 +4,14 @@ const DefaultLayout = ({children}) => {
     return (
         <div className="flex flex-col w-full min-h-screen relative bg-slate-50">
             <div className="flex-1">
-                <nav className="w-full h-16 flex justify-center items-center border-b border-slate-300 bg-white">
-                    <div className="w-full max-w-6xl h-full flex items-center justify-between px-4">
+                <nav className="w-full h-16 px-4 flex justify-center items-center border-b border-slate-300 bg-white">
+                    <div className="w-full max-w-6xl h-full flex items-center justify-between">
                         <Link href="/">
                             <a className="hairage text-2xl">Okie.Design</a>
                         </Link>
                         <div className="flex gap-2">
                             <Link href="/Documentation">
-                                <a className="button ghost">Documentation</a>
+                                <a className="button ghost hidden md:visible">Documentation</a>
                             </Link>
                             <a href="https://github.com/dishwasher-detergent/OkieDesign" target="_blank" rel="noreferrer" className="button ghost icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="currentColor">
