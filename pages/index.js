@@ -6,10 +6,10 @@ export default function Home() {
   return (
     <DefaultLayout>
       <section className="w-full flex items-center justify-center flex-col">
-        <article className="w-full p-4 my-4 md:my-10 bg-purple-200 rounded-md">
-          <h1 className="hairage text-4xl md:text-7xl pb-10 text-emerald-800">Helping you create beautiful web applications with ease.</h1>
+        <article className="w-full p-4 md:p-8 my-4 md:my-10 bg-purple-200 rounded-md">
+          <h1 className="hairage text-4xl md:text-7xl pb-4 text-emerald-800">Helping you create beautiful web applications with ease.</h1>
           <p className="text-emerald-800 text-xl">A collection of CSS components created using TailwindCSS.</p>
-          <div className="w-full flex pt-8 justify-center">
+          <div className="w-full flex pt-12 justify-center">
             <Link href="/Documentation">
               <a className="button large">Get Started</a>
             </Link>
