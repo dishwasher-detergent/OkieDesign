@@ -15,6 +15,7 @@
 @font-face {
     font-family: Hairage;
     src: url(../public/Hairage.ttf);
+    font-display: fallback;
   }
 
 * {
