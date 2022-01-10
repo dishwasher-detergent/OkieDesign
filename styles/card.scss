@@ -7,16 +7,6 @@
     border
     border-slate-300;
 
-    &.fit {
-        figure {
-            @apply h-auto w-auto;
-        }
-
-        figcaption {
-            @apply h-auto w-auto;
-        }
-    }
-
     &.full {
         @apply 
         h-full
@@ -31,19 +21,6 @@
             border-b
             border-slate-300;
         }
-
-        figure {
-            @apply 
-            h-3/5
-            w-full;
-        }
-    
-        figcaption {
-            @apply 
-            h-2/5
-            w-full
-            p-2;
-        }
     }
 
     &.horizontal {
@@ -55,23 +32,6 @@
             md:border-t-0
             md:border-r
             border-slate-300;
-        }
-        
-        figure {
-            @apply 
-            sm:w-3/5
-            sm:h-full
-            h-3/5
-            w-full;
-        }
-    
-        figcaption {
-            @apply 
-            sm:w-2/5
-            sm:h-full
-            h-2/5
-            w-full
-            p-2;
-        }   
+        }  
     }
 }
