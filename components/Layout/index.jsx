@@ -26,10 +26,10 @@ const DefaultLayout = ({children}) => {
                         {children}
                     </div>
                 </section>
-                <footer className="h-24 mt-6 py-6 bg-slate-900">
-
-                </footer>
             </div>
+            <footer className="h-24 mt-6 py-6 bg-slate-900">
+
+            </footer>
         </div>
     )
 }
