@@ -66,7 +66,7 @@ export default function Home() {
               </div>
               <div className="h-60 md:h-full md:w-2/5 relative">
                 <div className="badge success top-2 right-2 absolute">New!</div>
-                <Image alt="Product imagine for jeans" className="w-full h-full object-cover" src="https://images.pexels.com/photos/4960250/pexels-photo-4960250.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+                <img alt="Product imagine for jeans" className="w-full h-full object-cover" src="https://images.pexels.com/photos/4960250/pexels-photo-4960250.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
               </div>
             </div>
             <div className="card h-96">
