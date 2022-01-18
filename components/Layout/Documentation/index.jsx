@@ -45,7 +45,7 @@ const DocsLayout = ({children}) => {
                         {component_list.map((item, key) => {
                            return (
                            <Link href={"/Documentation/" + item.replace(/\s/g,'')} key={key}>
-                                <a className={"element " + (item == component ? 'active' : '')}>
+                                <a className={"element " + (item.replace(/\s/g,'') == component ? 'active' : '')}>
                                     <span>{item}</span>
                                     <div className="line" />
                                 </a>
