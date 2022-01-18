@@ -33,3 +33,59 @@ p,h1,h2,h3,h4,h5,h6 {
 .list {
     @apply flex flex-row flex-wrap gap-2;
 }
+
+.custom_sidebar {
+    @apply p-4 list-none flex flex-col gap-1;
+
+    h4 {
+        @apply
+        text-sm
+        text-gray-700
+        font-semibold;
+    }
+
+    .element {
+        @apply 
+        w-full 
+        px-4
+        py-2
+        flex 
+        flex-row 
+        items-center 
+        gap-4  
+        rounded-md
+        font-semibold 
+        text-gray-500
+        hover:text-purple-600
+        focus:text-purple-600
+        hover:bg-purple-50
+        focus:bg-purple-50;
+
+        span {
+            @apply flex-none;
+        }
+
+        &.active {
+            @apply
+            text-purple-600
+            bg-purple-50;
+        }
+
+        &:focus, &.active {
+            .line {
+                @apply 
+                w-full;
+            }
+        }
+    }
+
+    .line {
+        @apply 
+        w-0 
+        h-0.5 
+        rounded-full 
+        bg-purple-600
+        duration-300;
+    }
+
+}

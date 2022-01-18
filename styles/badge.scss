@@ -1,11 +1,11 @@
 .badge {
     @apply 
+    h-6
     inline-flex
     flex-row 
     gap-1 
     items-center 
-    justify-center 
-    py-0.5 
+    justify-center
     px-2 
     rounded-full 
     bg-gray-100 
@@ -20,7 +20,7 @@
     }
     
     &.small {
-        @apply text-xs;
+        @apply text-xs h-4;
         
         svg {
             @apply 
@@ -30,7 +30,7 @@
     }
     
     &.large {
-        @apply text-base;
+        @apply text-base h-8;
         
         svg {
             @apply h-5 w-5;
@@ -38,7 +38,7 @@
     }
 
     &.extra_large {
-        @apply text-2xl;
+        @apply text-2xl h-10;
         svg {
             @apply h-6 w-6;
         }

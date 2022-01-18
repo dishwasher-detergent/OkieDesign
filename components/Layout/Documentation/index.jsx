@@ -1,6 +1,20 @@
 import Link from "next/link"
+import { useRouter } from 'next/router'
+import { useState } from 'react'
 
 const DocsLayout = ({children}) => {
+    const router = useRouter()
+
+    const { component } = router.query;
+
+    const [component_list, setComponent_list] = useState([
+        "Alerts",
+        "Badges",
+        "Buttons",
+        "Button Groups",
+        "Collapse"
+    ]);
+
     return (
         <main className="w-full h-screen overflow-scoll flex flex-col md:flex-row bg-slate-50">
             <nav className="md:hidden h-16 w-full px-4 flex flex-row items-center justify-between bg-white border-b border-slate-300">
@@ -21,24 +35,24 @@ const DocsLayout = ({children}) => {
             <aside className="sidebar">
                 <input type="checkbox" className="toggle" id="sidebar_toggle"/>
                 <div className="content">
-                    <ul className="menu">
+                    <div className="hidden md:flex w-full h-16 items-center justify-center">
+                        <Link href="/">
+                            <a className="hairage text-3xl">Okie.Design</a>
+                        </Link>
+                    </div>
+                    <div className="custom_sidebar">
                         <h4>Components</h4>
-                        <li>
-                            <Link href="/Documentation/Alerts">Alerts</Link>
-                        </li>
-                        <li>
-                            <Link href="/Documentation/Badges">Badges</Link>
-                        </li>
-                        <li>
-                            <Link href="/Documentation/ButtonGroups">Button Groups</Link>
-                        </li>
-                        <li>
-                            <Link href="/Documentation/Buttons">Buttons</Link>
-                        </li>
-                        <li>
-                            <Link href="/Documentation/Collapse">Collapse</Link>
-                        </li>
-                    </ul>
+                        {component_list.map((item, key) => {
+                           return (
+                           <Link href={"/Documentation/" + item.replace(/\s/g,'')} key={key}>
+                                <a className={"element " + (item == component ? 'active' : '')}>
+                                    <span>{item}</span>
+                                    <div className="line" />
+                                </a>
+                            </Link>
+                            )
+                        })}
+                    </div>
                 </div>
                 <label className="deadspace" htmlFor="sidebar_toggle"/>
             </aside>
