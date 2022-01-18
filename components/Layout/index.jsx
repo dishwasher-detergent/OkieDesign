@@ -2,7 +2,7 @@ import Link from "next/link"
 
 const DefaultLayout = ({children}) => {
     return (
-        <div className="flex flex-col w-full min-h-screen relative bg-slate-50">
+        <div className="dot_background flex flex-col w-full min-h-screen relative bg-slate-50">
             <div className="flex-1">
                 <nav className="w-full h-16 px-4 flex justify-center items-center border-b border-slate-300 bg-white">
                     <div className="w-full max-w-6xl h-full flex items-center justify-between">

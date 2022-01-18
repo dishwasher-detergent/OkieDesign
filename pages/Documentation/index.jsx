@@ -4,7 +4,7 @@ import DocsLayout from '../../components/Layout/Documentation'
 export default function Home() {
     return (
         <DocsLayout>
-            <h2 className="text-xl font-bold mb-4">Components</h2>
+            <h2 className="inline-block text-2xl font-bold mb-4 rounded-md text-gray-700">Components</h2>
             <div className="w-full grid gap-4 grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
                 <Link href='Documentation/Alerts'>
                     <a className="card full fit ring-purple-200 hover:ring-2 focus:ring-4">

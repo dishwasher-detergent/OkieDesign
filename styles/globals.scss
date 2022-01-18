@@ -30,6 +30,12 @@ p,h1,h2,h3,h4,h5,h6 {
     font-family: 'Hairage', sans-serif;
 }
 
+.dot_background {
+    background-image: radial-gradient(#E2E8F0 20%, transparent 20%);
+    background-position: 0 0;
+    background-size: .5rem .5rem;
+}
+
 .list {
     @apply flex flex-row flex-wrap gap-2;
 }

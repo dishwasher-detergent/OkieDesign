@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <DefaultLayout>
       <section className="w-full flex items-center justify-center flex-col gap-20 pt-10">
-        <article className="w-full p-4 md:p-8 bg-purple-200 rounded-md">
+        <article className="w-full p-4 md:p-8 bg-gradient-to-tr to-green-100 from-purple-200 rounded-md">
           <h1 className="hairage text-4xl md:text-7xl pb-4 text-emerald-800">Helping you create beautiful web applications with ease.</h1>
           <p className="text-emerald-800 text-xl">A collection of CSS components created using TailwindCSS.</p>
           <div className="w-full flex pt-12 justify-center">
