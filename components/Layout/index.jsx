@@ -12,8 +12,8 @@ const DefaultLayout = ({children}) => {
                         <div className="w-full h-0.5 rounded-full bg-purple-600" />
                     </nav>
                 </header>
-                <main>
-                    <section className="max-w-6xl mx-auto py-12 md:py-24 px-6">
+                <main className="relative">
+                    <section className="z-20 relative max-w-6xl mx-auto py-12 md:py-24 px-6">
                         <h1 className="Carena font-bold text-4xl lg:text-6xl lg:leading-tight text-slate-900 lg:text-center 2xl:px-30 mb-4 lg:mb-8">Create the beautiful website you&apos;ve always wanted.</h1>
                         <p className="text-slate-600 md:text-xl md:text-center">Responsive CSS components made with TailwindCSS and Love.</p>
                         <div className="flex items-center justify-center flex-wrap gap-2 py-8">
@@ -30,9 +30,10 @@ const DefaultLayout = ({children}) => {
                             </Link>
                         </div>
                     </section>
-                    <section className="max-w-6xl w-full h-full mx-auto z-30 px-6">
+                    <section className="z-20 relative max-w-6xl w-full h-full mx-auto px-6">
                         {children}
                     </section>
+                    <div className="background_blur"/>
                 </main>
             </div>
             <footer className="w-full h-48 mt-6 flex flex-col relative">

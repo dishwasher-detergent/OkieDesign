@@ -30,10 +30,19 @@ p,h1,h2,h3,h4,h5,h6 {
     font-family: 'Carena', sans-serif;
 }
 
-.dot_background {
-    background-image: radial-gradient(#E2E8F0 20%, transparent 20%);
-    background-position: 0 0;
-    background-size: .5rem .5rem;
+.background_blur {
+    @apply z-10 h-40 -rotate-45 top-0 -left-2/3 md:-left-1/3 absolute bg-purple-600 blur-3xl opacity-20;
+    width: 200%;
+    &::before {
+        content: '';
+        @apply h-40 top-32 absolute bg-red-600 opacity-50;
+        width: 200%;
+    }
+    &::after {
+        content: '';
+        @apply h-40 -top-32 absolute bg-red-600 opacity-50;
+        width: 200%;
+    }
 }
 
 .list {
