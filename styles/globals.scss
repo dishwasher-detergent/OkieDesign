@@ -35,12 +35,12 @@ p,h1,h2,h3,h4,h5,h6 {
     width: 200%;
     &::before {
         content: '';
-        @apply h-40 top-32 absolute bg-red-600 opacity-50;
+        @apply h-40 top-32 absolute bg-red-600 opacity-40;
         width: 200%;
     }
     &::after {
         content: '';
-        @apply h-40 -top-32 absolute bg-red-600 opacity-50;
+        @apply h-40 -top-32 absolute bg-red-600 opacity-40;
         width: 200%;
     }
 }
