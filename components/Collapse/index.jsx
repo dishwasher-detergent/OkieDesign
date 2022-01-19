@@ -9,35 +9,35 @@ const Collapse = () => {
                 <h3 className="font-semibold text-sm mb-2">Sizes</h3>
                 <div className="list horizontal mt-2 items-start">
                   <div className='collapse extra_small w-48' tabIndex={0}>
-                    <h2>
+                    <p className="title">
                       Extra Small
-                    </h2>
+                    </p>
                     <div className="content">
                       Extra Small Content
                     </div>
                   </div>
                   <div className='collapse small w-48' tabIndex={0}>
-                    <h2>Small</h2>
+                    <p className="title">Small</p>
                     <div className="content">
                       Small Content
                     </div>
                   </div>
                   <div className='collapse w-48' tabIndex={0}>
-                    <h2>
+                    <p className="title">
                       Standard 
-                    </h2>
+                    </p>
                     <div className="content">
                       Standard Content
                     </div>
                   </div>
                   <div className='collapse large w-48' tabIndex={0}>
-                    <h2>Large</h2>
+                    <p className="title">Large</p>
                     <div className="content">
                       Large Content
                     </div>
                   </div>
                   <div className='collapse extra_large w-48' tabIndex={0}>
-                    <h2>Extra Large</h2>
+                    <p className="title">Extra Large</p>
                     <div className="content">
                       Extra Large Content
                     </div>
@@ -48,31 +48,31 @@ const Collapse = () => {
               <div className="rounded overflow-auto max-h-40">
                 <SyntaxHighlighter language="html" showLineNumbers={true}>
 {`<div className='collapse extra_small w-48' tabIndex={0}>
-  <h2>Extra Small</h2>
+  <p className="title">Extra Small</p>
   <div className="content">
     Extra Small Content
   </div>
 </div>
 <div className='collapse small w-48' tabIndex={0}>
-  <h2>Small</h2>
+  <p className="title">Small</p>
   <div className="content">
     Small Content
   </div>
 </div>
 <div className='collapse w-48' tabIndex={0}>
-  <h2>Standard</h2>
+  <p className="title">Standard</p>
   <div className="content">
     Standard Content
   </div>
 </div>
 <div className='collapse large w-48' tabIndex={0}>
-  <h2>Large</h2>
+  <p className="title">Large</p>
   <div className="content">
     Large Content
   </div>
 </div>
 <div className='collapse extra_large w-48' tabIndex={0}>
-  <h2>Extra Large</h2>
+  <p className="title">Extra Large</p>
   <div className="content">
     Extra Large Content
   </div>
@@ -86,23 +86,23 @@ const Collapse = () => {
                 <h3 className="font-semibold text-sm mb-2">Styles</h3>
                 <div className="list horizontal mt-2 items-start">
                   <div className='collapse w-48 outline' tabIndex={0}>
-                    <h2>
+                    <p className="title">
                       Outlined
-                    </h2>
+                    </p>
                     <div className="content">
                       Content
                     </div>
                   </div>
                   <div className='collapse w-48 plus' tabIndex={0}>
-                    <h2>
+                    <p className="title">
                       Plus
-                    </h2>
+                    </p>
                     <div className="content">
                       Content
                     </div>
                   </div>
                   <div className='collapse w-48 arrow' tabIndex={0}>
-                    <h2>Arrow</h2>
+                    <p className="title">Arrow</p>
                     <div className="content">
                       Content
                     </div>
@@ -113,23 +113,23 @@ const Collapse = () => {
               <div className="rounded overflow-auto max-h-40">
                 <SyntaxHighlighter language="html" showLineNumbers={true}>
 {`<div className='collapse w-48 outline' tabIndex={0}>
-  <h2>
+  <p className="title">
     Outlined
-  </h2>
+  </p>
   <div className="content">
     Content
   </div>
 </div>
 <div className='collapse w-48 plus' tabIndex={0}>
-  <h2>
+  <p className="title">
     Plus
-  </h2>
+  </p>
   <div className="content">
     Content
   </div>
 </div>
 <div className='collapse w-48 arrow' tabIndex={0}>
-  <h2>Arrow</h2>
+  <p className="title">Arrow</p>
   <div className="content">
     Content
   </div>
@@ -143,17 +143,17 @@ const Collapse = () => {
                 <h3 className="font-semibold text-sm mb-2">Toggles</h3>
                 <div className="list horizontal mt-2 items-start">
                   <div className='collapse w-48 open outline' tabIndex={0}>
-                    <h2>
+                    <p className="title">
                       Forced Open
-                    </h2>
+                    </p>
                     <div className="content">
                       Content
                     </div>
                   </div>
                   <div className='collapse w-48 close outline' tabIndex={0}>
-                    <h2>
+                    <p className="title">
                       Forced Close
-                    </h2>
+                    </p>
                     <div className="content">
                       Content
                     </div>
@@ -164,17 +164,17 @@ const Collapse = () => {
               <div className="rounded overflow-auto max-h-40">
                 <SyntaxHighlighter language="html" showLineNumbers={true}>
 {`<div className='collapse w-48 open outline' tabIndex={0}>
-  <h2>
+  <p className="title">
     Forced Open
-  </h2>
+  </p>
   <div className="content">
     Content
   </div>
 </div>
 <div className='collapse w-48 close outline' tabIndex={0}>
-  <h2>
+  <p className="title">
     Forced Close
-  </h2>
+  </p>
   <div className="content">
     Content
   </div>
