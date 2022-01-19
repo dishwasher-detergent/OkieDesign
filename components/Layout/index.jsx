@@ -39,7 +39,7 @@ const DefaultLayout = ({children}) => {
                 <section className="absolute bottom-0 h-24 w-full px-4 md:px-8 flex items-center justify-center z-10">
                     <p className="font-semibold text-purple-900">© 2022 Okie Design. All Rights Reserved.</p>
                 </section>
-                <div className="z-0 absolute bottom-0 w-full h-full bg-gradient-to-t from-purple-300 to-transparent" />
+                <div className="z-0 absolute bottom-0 w-full h-full bg-gradient-to-t from-purple-300 to-white" />
             </footer>
         </div>
     )
