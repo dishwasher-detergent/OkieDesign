@@ -25,7 +25,12 @@ const DocsLayout = ({children}) => {
                     </svg>
                 </label>
                 <Link href="/">
-                    <a className="Carena text-xl">Okie.Design</a>
+                    <a className="Carena text-xl flex flex-row gap-2 items-center">
+                        Okie.Design
+                        <div className="badge small flex-none">
+                            v 1.0.0
+                        </div>
+                    </a>
                 </Link>
                 <a href="https://github.com/dishwasher-detergent/OkieDesign" target="_blank" rel="noreferrer" className="button ghost icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="currentColor">
@@ -36,11 +41,15 @@ const DocsLayout = ({children}) => {
             <aside className="sidebar">
                 <input type="checkbox" className="toggle" id="sidebar_toggle"/>
                 <div className="content">
-                    <div className="hidden md:flex w-full h-16 items-center justify-center">
+                    <nav className="hidden md:flex w-full h-16 items-center justify-center px-4 gap-4">
                         <Link href="/">
-                            <a className="Carena text-3xl">Okie.Design</a>
+                            <a className="Carena flex-none text-xl text-purple-600 font-bold">Okie.Design</a>
                         </Link>
-                    </div>
+                        <div className="w-full h-0.5 rounded-full bg-purple-600" />
+                        <div className="badge small flex-none">
+                            v 1.0.0
+                        </div>
+                    </nav>
                     <div className="custom_sidebar">
                         <Link href="/Documentation">
                             <a className={"element " + (component == undefined ? 'active' : '')}>
