@@ -6,6 +6,7 @@ const DocsLayout = ({children}) => {
     const router = useRouter()
 
     const { component } = router.query;
+    console.log(component)
 
     const [component_list, setComponent_list] = useState([
         "Alerts",
@@ -41,6 +42,12 @@ const DocsLayout = ({children}) => {
                         </Link>
                     </div>
                     <div className="custom_sidebar">
+                        <Link href="/Documentation/Samples">
+                            <a className={"element " + (component == "Samples" ? 'active' : '')}>
+                                <span>Samples</span>
+                                <div className="line" />
+                            </a>
+                        </Link>
                         <h4>Components</h4>
                         {component_list.map((item, key) => {
                            return (
