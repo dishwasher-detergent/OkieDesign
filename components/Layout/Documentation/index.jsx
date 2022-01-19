@@ -78,7 +78,7 @@ const DocsLayout = ({children}) => {
                 </div>
                 <label className="deadspace" htmlFor="sidebar_toggle"/>
             </aside>
-            <section className="flex-1 px-2 pb-6 md:px-10 md:py-6 overflow-y-auto">
+            <section className="flex-1 p-6 pt-0 md:px-10 md:py-6 overflow-y-auto">
                 {children}
             </section>
         </main>
