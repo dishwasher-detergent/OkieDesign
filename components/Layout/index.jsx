@@ -33,7 +33,6 @@ const DefaultLayout = ({children}) => {
                     <section className="z-20 relative max-w-6xl w-full h-full mx-auto px-6">
                         {children}
                     </section>
-                    <div className="background_blur"/>
                 </main>
             </div>
             <footer className="w-full h-48 mt-6 flex flex-col relative">
