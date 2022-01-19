@@ -42,13 +42,19 @@ const DocsLayout = ({children}) => {
                         </Link>
                     </div>
                     <div className="custom_sidebar">
+                        <Link href="/Documentation">
+                            <a className={"element " + (component == undefined ? 'active' : '')}>
+                                <span>Documentation</span>
+                                <div className="line" />
+                            </a>
+                        </Link>
                         <Link href="/Documentation/Samples">
                             <a className={"element " + (component == "Samples" ? 'active' : '')}>
                                 <span>Samples</span>
                                 <div className="line" />
                             </a>
                         </Link>
-                        <h4>Components</h4>
+                        <h4 className="mt-4">Components</h4>
                         {component_list.map((item, key) => {
                            return (
                            <Link href={"/Documentation/" + item.replace(/\s/g,'')} key={key}>
