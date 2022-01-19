@@ -20,7 +20,7 @@
     &.extra_small {
         @apply text-xs;
 
-        h2 {
+        .title {
             @apply
             h-4
             px-2;
@@ -34,7 +34,7 @@
     &.small {
         @apply text-sm;
 
-        h2 {
+        .title {
             @apply
             h-6
             px-2;
@@ -42,7 +42,7 @@
     }
 
     &.large {
-        h2 {
+        .title {
             @apply
             text-lg
             h-12;
@@ -54,7 +54,7 @@
     }
 
     &.extra_large {
-        h2 {
+        .title {
             @apply
             text-xl
             h-16;
@@ -65,7 +65,7 @@
         }
     }
 
-    h2,.title {
+    .title {
         @apply
         h-10
         px-2
@@ -79,27 +79,27 @@
         text-slate-600;
     }
 
-    &.arrow h2::after {
+    &.arrow .title::after {
         content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M17 13l-5 5m0 0l-5-5m5 5V6' /%3E%3C/svg%3E");
         @apply w-5 h-full flex justify-center items-center rotate-0 ease-in duration-100;
     }
 
-    &.plus h2::after {
+    &.plus .title::after {
         content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M12 6v6m0 0v6m0-6h6m-6 0H6' /%3E%3C/svg%3E");
         @apply w-5 h-full flex justify-center items-center rotate-0 ease-in duration-100;
     }
 
     &:not(.close), &.open {
         &:focus, &.open  {
-            &.arrow h2::after {
+            &.arrow .title::after {
                 @apply rotate-180;
             }
 
-            &.plus h2::after {
+            &.plus .title::after {
                 @apply rotate-45;
             }
 
-            h2 {
+            .title {
                 @apply bg-purple-100 text-purple-600;
             }
     

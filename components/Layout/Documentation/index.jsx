@@ -16,7 +16,7 @@ const DocsLayout = ({children}) => {
     ]);
 
     return (
-        <main className="dot_background w-full h-screen overflow-scoll flex flex-col md:flex-row bg-slate-50">
+        <main className="w-full h-screen overflow-scoll flex flex-col md:flex-row bg-slate-50">
             <nav className="md:hidden h-16 w-full px-4 flex flex-row items-center justify-between bg-white border-b border-slate-300">
                 <label htmlFor="sidebar_toggle" className="button ghost icon">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -24,7 +24,7 @@ const DocsLayout = ({children}) => {
                     </svg>
                 </label>
                 <Link href="/">
-                    <a className="hairage text-xl">Okie.Design</a>
+                    <a className="Carena text-xl">Okie.Design</a>
                 </Link>
                 <a href="https://github.com/dishwasher-detergent/OkieDesign" target="_blank" rel="noreferrer" className="button ghost icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="currentColor">
@@ -37,7 +37,7 @@ const DocsLayout = ({children}) => {
                 <div className="content">
                     <div className="hidden md:flex w-full h-16 items-center justify-center">
                         <Link href="/">
-                            <a className="hairage text-3xl">Okie.Design</a>
+                            <a className="Carena text-3xl">Okie.Design</a>
                         </Link>
                     </div>
                     <div className="custom_sidebar">

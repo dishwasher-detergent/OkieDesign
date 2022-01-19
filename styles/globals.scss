@@ -13,8 +13,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
 
 @font-face {
-    font-family: Hairage;
-    src: url(../public/Hairage.ttf);
+    font-family: Carena;
+    src: url(../public/Carena-Regular.otf);
     font-display: fallback;
   }
 
@@ -26,8 +26,8 @@ p,h1,h2,h3,h4,h5,h6 {
     @apply text-slate-800;
 }
 
-.hairage {
-    font-family: 'Hairage', sans-serif;
+.Carena {
+    font-family: 'Carena', sans-serif;
 }
 
 .dot_background {
