@@ -15,7 +15,7 @@ const DefaultLayout = ({children}) => {
                 <main>
                     <section className="max-w-6xl mx-auto py-12 md:py-24 px-4">
                         <h1 className="Carena font-bold text-4xl lg:text-6xl lg:leading-tight text-slate-900 lg:text-center 2xl:px-30 mb-4 lg:mb-8">Create the beautiful website you&apos;ve always wanted.</h1>
-                        <p className="text-slate-600 md:text-xl text-center">Responsive CSS components made with TailwindCSS and Love.</p>
+                        <p className="text-slate-600 md:text-xl md:text-center">Responsive CSS components made with TailwindCSS and Love.</p>
                         <div className="flex items-center justify-center flex-wrap gap-2 py-8">
                             <Link href="/Documentation">
                                 <a className="button large">Get Started</a>

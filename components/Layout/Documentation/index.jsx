@@ -17,7 +17,7 @@ const DocsLayout = ({children}) => {
     ]);
 
     return (
-        <main className="w-full h-screen overflow-scoll flex flex-col md:flex-row bg-slate-50">
+        <main className="w-full min-h-screen overflow-scoll flex flex-col md:flex-row bg-slate-50">
             <nav className="md:hidden h-16 w-full px-4 flex flex-row items-center justify-between bg-white border-b border-slate-300">
                 <label htmlFor="sidebar_toggle" className="button ghost icon">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -78,7 +78,7 @@ const DocsLayout = ({children}) => {
                 </div>
                 <label className="deadspace" htmlFor="sidebar_toggle"/>
             </aside>
-            <section className="flex-1 px-5 md:px-10 py-6 overflow-y-auto">
+            <section className="flex-1 px-2 pb-6 md:px-10 md:py-6 overflow-y-auto">
                 {children}
             </section>
         </main>
