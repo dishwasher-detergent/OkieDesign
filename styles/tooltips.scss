@@ -1,0 +1,40 @@
+.tooltip {
+    @apply relative inline-block transition-all;
+
+    &::before {
+        content: attr(data-content);
+        @apply block absolute opacity-0 whitespace-nowrap text-sm bg-white border border-gray-300 text-gray-900 rounded-md px-2 py-1;
+    }
+
+    &.dark::before {
+        @apply bg-gray-700 border border-gray-900 text-white
+    }
+
+    &.success::before {
+        @apply bg-green-500 border border-green-600 text-white;
+    }
+
+    &.warning::before {
+        @apply bg-amber-500 border border-amber-600 text-white;
+    }
+
+    &.emergency::before {
+        @apply bg-red-500 border border-red-600 text-white;
+    }
+
+    &.top:hover::before {
+        @apply opacity-100 left-1/2 -translate-x-1/2 bottom-full mb-2 z-10;
+    }
+
+    &.bottom:hover::before {
+        @apply opacity-100 left-1/2 -translate-x-1/2 top-full mt-2 z-10;
+    }
+
+    &.left:hover::before {
+        @apply opacity-100 top-1/2 -translate-y-1/2 right-full mr-2 z-10;
+    }
+
+    &.right:hover::before {
+        @apply opacity-100 top-1/2 -translate-y-1/2 left-full ml-2 z-10;
+    }
+}

@@ -11,9 +11,11 @@ const DocsLayout = ({children}) => {
     const [component_list, setComponent_list] = useState([
         "Alerts",
         "Badges",
+        "Breadcrumbs",
         "Buttons",
         "Button Groups",
-        "Collapse"
+        "Collapse",
+        "Tooltips",
     ]);
 
     return (

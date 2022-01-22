@@ -1,0 +1,45 @@
+.breadcrumb {
+    @apply flex flex-row font-semibold py-1;
+
+    >:not(:last-child):after {
+        content: ">";
+        @apply px-1;
+    }
+
+    &.slash>:not(:last-child):after {
+        content: "/";
+        @apply px-2 text-xs;
+    }
+
+    &.extra_small {
+        @apply text-xs;
+        
+        >:not(:last-child):after {
+            @apply px-1;
+        }
+    }
+
+    &.small {
+        @apply text-sm;
+
+        >:not(:last-child):after {
+            @apply px-1;
+        }
+    }
+
+    &.large {
+        @apply text-lg;
+        
+        >:not(:last-child):after {
+            @apply px-2;
+        }
+    }
+
+    &.extra_large {
+        @apply text-xl;
+
+        >:not(:last-child):after {
+            @apply px-2;
+        }
+    }
+}
