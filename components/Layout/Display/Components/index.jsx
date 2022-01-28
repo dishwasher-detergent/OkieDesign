@@ -41,7 +41,6 @@ const ComponentDisplay = ({more}) => {
                     <p>Pants</p>
                 </div>    
               </div>
-              </div>
               <div className="px-4 py-2">
                 <p className="font-semibold text-purple-600">Collapse</p>
               </div>
@@ -102,7 +101,6 @@ const ComponentDisplay = ({more}) => {
                 <div data-content="I'm a tooltip!" className="tooltip top">
                     <button className="button small">Hover Me!</button>
                   </div>
-              </div>
               </div>
               <div className="px-4 py-2">
                 <p className="font-semibold text-purple-600">Collapse</p>
