@@ -33,6 +33,20 @@ const ComponentDisplay = ({more}) => {
               </div>
           </a>
         </Link>
+        <Link href="/Documentation/Breadcrumbs">
+          <a className="card h-48">
+              <div className="h-full flex items-center gap-2 justify-center p-4">
+                <div className="breadcrumb small">
+                    <p>Mensware</p>
+                    <p>Pants</p>
+                </div>    
+              </div>
+              </div>
+              <div className="px-4 py-2">
+                <p className="font-semibold text-purple-600">Collapse</p>
+              </div>
+          </a>
+        </Link>
         <Link href="/Documentation/Buttons">
           <a className="card h-48">
               <div className="h-full flex items-center gap-2 justify-center p-4">
@@ -75,6 +89,19 @@ const ComponentDisplay = ({more}) => {
                 <div className="content">
                   Hidden Content
                 </div>
+              </div>
+              </div>
+              <div className="px-4 py-2">
+                <p className="font-semibold text-purple-600">Collapse</p>
+              </div>
+          </a>
+        </Link>        
+        <Link href="/Documentation/Tooltips">
+          <a className="card h-48">
+              <div className="h-full flex items-center gap-2 justify-center p-4">
+                <div data-content="I'm a tooltip!" className="tooltip top">
+                    <button className="button small">Hover Me!</button>
+                  </div>
               </div>
               </div>
               <div className="px-4 py-2">
