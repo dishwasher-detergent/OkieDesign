@@ -21,7 +21,7 @@ const DefaultLayout = ({children}) => {
                                 <a className="button large">Get Started</a>
                             </Link>
                             <Link href="/Documentation/Examples">
-                                <a className="button large ghost">Examples</a>
+                                <a className="button large ghost">Samples</a>
                             </Link>
                             <Link href="https://www.github.com" target="_blank">
                                 <a className="button icon large ghost">
