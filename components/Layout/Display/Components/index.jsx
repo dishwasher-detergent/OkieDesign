@@ -110,7 +110,7 @@ const ComponentDisplay = ({more}) => {
         {more ? <div className="h-24 md:h-48 flex items-center justify-center">
           <Link href="/Documentation">
             <a className="button ghost">
-              More
+              Documentation
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>

@@ -7,6 +7,7 @@ import ButtonGroups from "../../components/ButtonGroup"
 import Collapse from "../../components/Collapse"
 import { useRouter } from "next/router"
 import Tooltips from "../../components/Tooltips"
+import Samples from "../../components/Layout/Documentation/Samples"
 
 export default function Documentation() {
   const router = useRouter()
@@ -14,6 +15,7 @@ export default function Documentation() {
   
   const getDocument = () => {
     switch(component.toLowerCase()){
+      case 'samples': return <Samples />;
       case 'alerts': return <Alert />;
       case 'badges': return <Badge />;
       case 'breadcrumbs': return <Breadcrumbs />;

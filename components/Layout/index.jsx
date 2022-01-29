@@ -20,7 +20,7 @@ const DefaultLayout = ({children}) => {
                             <Link href="/Documentation">
                                 <a className="button large shadow-lg shadow-purple-300">Get Started</a>
                             </Link>
-                            <Link href="/Documentation/Examples">
+                            <Link href="/Documentation/Samples">
                                 <a className="button large ghost">Samples</a>
                             </Link>
                             <Link href="https://www.github.com" target="_blank">

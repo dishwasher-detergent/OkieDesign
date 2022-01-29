@@ -1,12 +1,14 @@
 import Link from "next/link"
 import { useRouter } from 'next/router'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const DocsLayout = ({children}) => {
     const router = useRouter()
 
     const { component } = router.query;
-    console.log(component)
+    useEffect(() => {
+        console.log(router)
+    },[])
 
     const [component_list, setComponent_list] = useState([
         "Alerts",
