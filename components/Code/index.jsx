@@ -1,7 +1,7 @@
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { nnfxDark } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
 import React, { createRef, useEffect, useState } from "react";
-const code = ({children}) => {
+const Code = ({children}) => {
     const html = createRef()
     const [getHTML, setHTML] = useState("")
 
@@ -43,4 +43,4 @@ const code = ({children}) => {
   );
 };
 
-export default code
+export default Code

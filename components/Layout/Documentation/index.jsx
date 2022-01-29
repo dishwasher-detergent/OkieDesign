@@ -6,9 +6,6 @@ const DocsLayout = ({children}) => {
     const router = useRouter()
 
     const { component } = router.query;
-    useEffect(() => {
-        console.log(router)
-    },[])
 
     const [component_list, setComponent_list] = useState([
         "Alerts",
