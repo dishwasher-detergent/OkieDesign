@@ -42,7 +42,7 @@ const ComponentDisplay = ({more}) => {
                 </div>    
               </div>
               <div className="px-4 py-2">
-                <p className="font-semibold text-purple-600">Collapse</p>
+                <p className="font-semibold text-purple-600">Breadcrumbs</p>
               </div>
           </a>
         </Link>
@@ -99,11 +99,11 @@ const ComponentDisplay = ({more}) => {
           <a className="card h-48">
               <div className="h-full flex items-center gap-2 justify-center p-4">
                 <div data-content="I'm a tooltip!" className="tooltip top">
-                    <button className="button small">Hover Me!</button>
+                    <button className="button">Hover Me!</button>
                   </div>
               </div>
               <div className="px-4 py-2">
-                <p className="font-semibold text-purple-600">Collapse</p>
+                <p className="font-semibold text-purple-600">Tooltips</p>
               </div>
           </a>
         </Link>

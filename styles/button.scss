@@ -143,41 +143,11 @@
     &.pill {
         @apply gap-1;
         
-        >*{
+        >* {
             @apply rounded-md;
         }
     }
-    
-    &.vertical {
-        @apply flex-col w-32 h-auto rounded-none;
-        &.full {
-            @apply w-full;
-            >* {
-                @apply flex-none;
-            }
-        }
-        button, a {
-            @apply w-full;
-            &:not(:first-child) {
-                @apply m-0 mt-0.5;
-            }
-            &:first-child {
-                @apply rounded-t-md rounded-b-none;
-            }
-            &:last-child {
-                @apply rounded-b-md rounded-t-none;
-            }
-            &.icon {
-                @apply w-full h-10;
-            }
-            &.small {
-                @apply w-24;
-            }
-            &.large {
-                @apply w-40;
-            }
-        }
-    }
+
     button, a {
         @apply rounded-none;
         

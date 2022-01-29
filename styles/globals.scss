@@ -24,31 +24,20 @@
     font-family: 'Poppins', sans-serif;
 }
 
-p,h1,h2,h3,h4,h5,h6 {
-    @apply text-slate-800;
-}
+// p,h1,h2,h3,h4,h5,h6 {
+//     @apply text-slate-800;
+// }
 
 .Carena {
     font-family: 'Carena', sans-serif;
 }
 
-.background_blur {
-    @apply z-10 h-40 -rotate-45 top-0 -left-2/3 md:-left-1/3 absolute bg-purple-600 blur-3xl opacity-20;
-    width: 200%;
-    &::before {
-        content: '';
-        @apply h-40 top-32 absolute bg-red-600 opacity-40;
-        width: 200%;
-    }
-    &::after {
-        content: '';
-        @apply h-40 -top-32 absolute bg-red-600 opacity-40;
-        width: 200%;
-    }
-}
-
 .list {
-    @apply flex flex-row flex-wrap gap-2;
+    @apply flex flex-row flex-wrap gap-2 p-4 items-center justify-center;
+
+    &.vertical {
+        @apply flex-col;
+    }
 }
 
 .custom_sidebar {

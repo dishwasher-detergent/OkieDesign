@@ -18,7 +18,7 @@ const DefaultLayout = ({children}) => {
                         <p className="text-slate-600 md:text-xl md:text-center">Responsive CSS components made with TailwindCSS and Love.</p>
                         <div className="flex items-center justify-center flex-wrap gap-2 py-8">
                             <Link href="/Documentation">
-                                <a className="button large">Get Started</a>
+                                <a className="button large shadow-lg shadow-purple-300">Get Started</a>
                             </Link>
                             <Link href="/Documentation/Examples">
                                 <a className="button large ghost">Samples</a>
