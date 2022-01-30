@@ -1,13 +1,11 @@
 import DocsLayout from '../../components/Layout/Documentation'
 import ComponentDisplay from "../../components/Layout/Display/Components"
+import GettingStarted from "../../components/GettingStarted"
 
 export default function Home() {
     return (
         <DocsLayout>
-            <div className="w-full h-16 px-12 flex items-center gap-4">
-                <p className="flex-none text-gray-500 font-semibold">Components</p>
-                <div className="w-full h-0.5 rounded-full bg-gray-500" />
-            </div>
+            <GettingStarted />
             <ComponentDisplay more={false}/>
         </DocsLayout>
     )

@@ -1,8 +1,10 @@
 import Link from "next/link"
+import ComponentLayout from "../../Documentation/Component"
 
 const ComponentDisplay = ({more}) => {
     return (
-        <div className="w-full px-4 grid grid-1 md:grid-cols-3 gap-4 z-10">
+      <ComponentLayout title="Components">
+        <div className="w-full grid grid-1 md:grid-cols-3 gap-4 z-10">
         <Link href="/Documentation/Alerts">
           <a className="card h-48">
               <div className="h-full flex items-center justify-center p-4">
@@ -118,7 +120,8 @@ const ComponentDisplay = ({more}) => {
           </Link>
         </div> : null}
       </div>
-    )
+    </ComponentLayout>
+  )
 }
 
 export default ComponentDisplay
