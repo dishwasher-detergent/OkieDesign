@@ -1,0 +1,38 @@
+.tooltip{position:relative;display:inline-block;}
+  .tooltip.open:before,.tooltip:hover:before{opacity:1;}
+  .tooltip:before{
+    content:attr(data-content);
+    pointer-events:none;
+    position:absolute;
+    display:block;
+    width:-webkit-max-content;
+    width:-moz-max-content;
+    width:max-content;
+    white-space:nowrap;
+    border-radius:.375rem;
+    border-width:1px;
+    --tw-border-opacity:1;
+    border-color:rgba(209, 213, 219, var(--tw-border-opacity));
+    --tw-bg-opacity:1;
+    background-color:rgba(255, 255, 255, var(--tw-bg-opacity));
+    padding:.25rem .5rem;
+    font-size:.875rem;
+    line-height:1.25rem;
+    --tw-text-opacity:1;
+    color:rgba(17, 24, 39, var(--tw-text-opacity));
+    opacity:0;
+    transition-property:background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+    transition-property:background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-property:background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+    transition-duration:.15s;
+    transition-delay:.1s;
+    transition-duration:.1s;
+    transition-timing-function:cubic-bezier(.4, 0, .2, 1); }
+  .tooltip.dark:before{border-width:0;--tw-bg-opacity:1;background-color:rgba(55, 65, 81, var(--tw-bg-opacity));--tw-text-opacity:1;color:rgba(255, 255, 255, var(--tw-text-opacity));}
+  .tooltip.success:before{border-width:0;--tw-bg-opacity:1;background-color:rgba(16, 185, 129, var(--tw-bg-opacity));--tw-text-opacity:1;color:rgba(255, 255, 255, var(--tw-text-opacity));}
+  .tooltip.warning:before{border-width:0;--tw-bg-opacity:1;background-color:rgba(245, 158, 11, var(--tw-bg-opacity));--tw-text-opacity:1;color:rgba(255, 255, 255, var(--tw-text-opacity));}
+  .tooltip.emergency:before{border-width:0;--tw-bg-opacity:1;background-color:rgba(239, 68, 68, var(--tw-bg-opacity));--tw-text-opacity:1;color:rgba(255, 255, 255, var(--tw-text-opacity));}
+  .tooltip.top:before{left:50%;bottom:100%;z-index:10;margin-bottom:.5rem;--tw-translate-x:-50%;transform:var(--tw-transform);}
+  .tooltip.bottom:before{left:50%;top:100%;z-index:10;margin-top:.5rem;--tw-translate-x:-50%;transform:var(--tw-transform);}
+  .tooltip.left:before{top:50%;right:100%;z-index:10;margin-right:.5rem;--tw-translate-y:-50%;transform:var(--tw-transform);}
+  .tooltip.right:before{top:50%;left:100%;z-index:10;margin-left:.5rem;--tw-translate-y:-50%;transform:var(--tw-transform);}

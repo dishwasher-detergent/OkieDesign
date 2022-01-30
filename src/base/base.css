@@ -1,0 +1,13 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import '../components/css/alert.css';
+@import '../components/css/badge.css';
+@import '../components/css/breadcrumbs.css';
+@import '../components/css/button.css';
+@import '../components/css/card.css';
+@import '../components/css/menu.css';
+@import '../components/css/collapse.css';
+@import '../components/css/sidebar.css';
+@import '../components/css/tooltips.css';

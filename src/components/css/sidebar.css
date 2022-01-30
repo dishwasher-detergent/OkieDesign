@@ -1,0 +1,40 @@
+.sidebar {
+  @apply relative
+    inset-0
+    z-50
+    flex
+    flex-row
+    pointer-events-none; }
+  .sidebar * {
+    @apply ease-out
+        duration-200
+        pointer-events-auto; }
+  .sidebar .toggle {
+    @apply hidden; }
+  .sidebar .content {
+    @apply h-full 
+        w-72  
+        flex-none
+        bg-white 
+        border-r 
+        border-gray-300
+        relative
+        left-0
+        overflow-y-auto; }
+  @media (max-width: 640px) {
+    .sidebar {
+      position: absolute; }
+    .sidebar .content {
+      left: -100%; } }
+  .sidebar .deadspace {
+    @apply opacity-0
+        w-full
+        flex-1
+        bg-gray-900
+        relative
+        -left-full; }
+  .sidebar .toggle:checked ~ .content {
+    @apply left-0; }
+  .sidebar .toggle:checked ~ .deadspace {
+    @apply left-0
+            opacity-10; }

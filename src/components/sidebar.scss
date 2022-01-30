@@ -1,7 +1,6 @@
 .sidebar {
     @apply 
-    absolute
-    md:relative
+    relative
     inset-0
     z-50
     flex
@@ -28,10 +27,20 @@
         border-r 
         border-gray-300
         relative
-        -left-full
-        md:left-0
+        left-0
         overflow-y-auto;
     }
+
+    @media (max-width: 640px){
+        & {
+            position: absolute;
+        }
+
+        .content {
+            left: -100%;
+        }
+    }
+
 
     .deadspace {
         @apply 

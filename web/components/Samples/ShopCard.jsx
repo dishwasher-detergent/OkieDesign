@@ -11,8 +11,8 @@ const ProductCard = () => {
                         </div>
                     </div>
                     <div className="mt-4 mb-6">
-                        <h2 className="font-bold text-slate-800 text-3xl truncate">Denim Pants</h2>
-                        <p className="text-slate-600">Straight Fit Flex Stretch Jeans</p>
+                        <h2 className="font-bold text-gray-800 text-3xl truncate">Denim Pants</h2>
+                        <p className="text-gray-600">Straight Fit Flex Stretch Jeans</p>
                         <div data-content="Badge" className="tooltip bottom">
                             <p className="badge info mt-2">$77.00</p>
                         </div>
@@ -21,7 +21,7 @@ const ProductCard = () => {
             </div>
             <div>
                 <div className="pb-6 flex flex-col">
-                <p className="text-xs text-slate-500">Sizes</p>
+                <p className="text-xs text-gray-500">Sizes</p>
                 <div data-content="Button Group" className="tooltip top">
                     <div className="button_group pill w-auto">
                         <button className="button secondary icon">

@@ -18,8 +18,8 @@ const DocsLayout = ({children}) => {
     ]);
 
     return (
-        <main className="w-full min-h-screen overflow-scoll flex flex-col md:flex-row bg-slate-50">
-            <nav className="md:hidden h-16 w-full px-4 flex flex-row items-center justify-between bg-white border-b border-slate-300">
+        <main className="w-full min-h-screen overflow-scoll flex flex-col md:flex-row bg-gray-50">
+            <nav className="md:hidden h-16 w-full px-4 flex flex-row items-center justify-between bg-white border-b border-gray-300">
                 <label htmlFor="sidebar_toggle" className="button ghost icon">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />

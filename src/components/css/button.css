@@ -1,0 +1,134 @@
+.button {
+  @apply inline-flex
+    items-center
+    justify-center
+    gap-2
+    h-9
+    px-4
+    text-base
+    text-center
+    rounded-md
+    bg-purple-600
+    text-white
+    font-semibold
+    truncate
+
+    ease-in
+    duration-100
+
+    hover:bg-purple-500
+    hover:ring-2
+    hover:ring-purple-200
+    active:ring-4
+    active:ring-purple-200; }
+  .button svg {
+    @apply h-5; }
+  .button.secondary {
+    @apply bg-gray-600 
+        hover:bg-gray-500
+        hover:ring-2
+        hover:ring-gray-200
+        active:ring-4
+        active:ring-gray-200; }
+  .button.success {
+    @apply bg-green-500 
+        hover:bg-green-400
+        hover:ring-2
+        hover:ring-green-200
+        active:ring-4
+        active:ring-green-200; }
+  .button.emergency {
+    @apply bg-red-500 
+        hover:bg-red-400
+        hover:ring-2
+        hover:ring-red-200
+        active:ring-4
+        active:ring-red-200; }
+  .button.warning {
+    @apply bg-yellow-500 
+        hover:bg-yellow-400
+        hover:ring-2
+        hover:ring-yellow-200
+        active:ring-4
+        active:ring-yellow-200; }
+  .button.ghost {
+    @apply text-gray-900 
+        bg-transparent 
+        hover:bg-gray-100
+        hover:ring-2
+        hover:ring-gray-200
+        active:ring-4
+        active:ring-gray-200; }
+  .button.full {
+    @apply w-full; }
+  .button.round {
+    @apply rounded-full; }
+  .button.extra_small {
+    @apply text-xs h-4 px-2; }
+  .button.small {
+    @apply text-sm h-6 px-2; }
+  .button.large {
+    @apply text-lg h-12; }
+  .button.extra_large {
+    @apply text-xl h-16; }
+  .button.icon {
+    @apply w-9 p-1.5 flex-none; }
+    .button.icon svg {
+      @apply w-full h-full; }
+    .button.icon.extra_small {
+      @apply w-4 p-0.5; }
+    .button.icon.small {
+      @apply w-6 p-1; }
+    .button.icon.large {
+      @apply w-12 p-2; }
+    .button.icon.extra_large {
+      @apply w-16 p-2; }
+  .button.outline {
+    @apply outline-none bg-transparent border border-purple-600 text-purple-600 hover:bg-purple-50; }
+  .button:disabled {
+    @apply cursor-not-allowed 
+        bg-gray-200 
+        border-gray-600
+        text-gray-700 
+        hover:bg-gray-100
+        hover:ring-2
+        hover:ring-gray-200
+        active:ring-4
+        active:ring-gray-200; }
+    .button:disabled.ghost {
+      @apply text-gray-700 bg-transparent; }
+
+.button_group {
+  @apply flex flex-nowrap flex-row p-1; }
+  .button_group.full {
+    @apply w-full; }
+    .button_group.full > * {
+      @apply flex-1; }
+  .button_group.pill {
+    @apply gap-1; }
+    .button_group.pill > * {
+      @apply rounded-md; }
+  .button_group button, .button_group a {
+    @apply rounded-none; }
+    .button_group button:not(:first-child), .button_group a:not(:first-child) {
+      @apply m-0 ml-0.5; }
+    .button_group button:first-child, .button_group a:first-child {
+      @apply rounded-l-md; }
+    .button_group button:last-child, .button_group a:last-child {
+      @apply rounded-r-md; }
+  .button_group.extra_small > button {
+    @apply text-xs h-4 px-2; }
+    .button_group.extra_small > button.icon {
+      @apply w-4 p-0.5; }
+  .button_group.small > button {
+    @apply text-sm h-6 px-2; }
+    .button_group.small > button.icon {
+      @apply w-6 p-1; }
+  .button_group.large > button {
+    @apply text-lg h-12; }
+    .button_group.large > button.icon {
+      @apply w-12 p-2; }
+  .button_group.extra_large > button {
+    @apply text-xl h-16; }
+    .button_group.extra_large > button.icon {
+      @apply w-16 p-2; }

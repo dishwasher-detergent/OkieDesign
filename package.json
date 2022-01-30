@@ -1,0 +1,60 @@
+{
+  "name": "okiedesign",
+  "version": "1.0.36",
+  "description": "Responsive CSS components",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dishwasher-detergent/OkieDesign.git"
+  },
+  "author": "Kenneth Bass <kenny@kennethbass.com> (https://kennethbass.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dishwasher-detergent/OkieDesign/issues"
+  },
+  "homepage": "https://okie.design",
+  "keywords": [
+    "design-system",
+    "tailwindcss",
+    "components",
+    "ui-library",
+    "component",
+    "framework",
+    "tailwind",
+    "theming",
+    "postcss",
+    "design",
+    "css",
+    "ui"
+  ],
+  "main": "index.js",
+  "files": [
+    "dist/*.js",
+    "dist/{base,components}.css",
+    "index.js"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "branches": [
+      "master"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "cssnano": "^4.1.11",
+    "postcss": "^8.4.5",
+    "postcss-cli": "^8.3.1",
+    "postcss-import": "^13.0.0",
+    "postcss-nested": "^5.0.6",
+    "prejss-cli": "^0.3.3",
+    "tailwindcss": "^2.2.19"
+  },
+  "scripts": {
+    "prebase": "postcss --config src/base src/base/*.css --base src --dir dist",
+    "base": "type dist\\base\\*.css > dist\\base.css",
+    "postbase": "prejss-cli dist/base.css --format commonjs",
+    "precomponents": "node-sass src/components/ -o src/components/css/ | postcss --config src/components/css src/components/css/*.css --base src --dir dist",
+    "components": "type dist\\components\\css\\*.css > dist\\components.css",
+    "postcomponents": "prejss-cli dist/components.css --format commonjs",
+    "build": "npm run base && npm run components"
+  }
+}

@@ -1,0 +1,11 @@
+.menu{display:flex;flex-direction:column;flex-wrap:nowrap;padding:.5rem}
+  .menu h4{margin-bottom:.25rem;width:100%;font-size:.875rem;line-height:1.25rem;font-weight:600;--tw-text-opacity:1;color:rgba(107, 114, 128, var(--tw-text-opacity))}
+  .menu.divider *{width:100%}
+  .menu.divider :not(:first-child){border-top-width:1px;--tw-border-opacity:1;border-color:rgba(229, 231, 235, var(--tw-border-opacity))}
+  .menu.full{margin:0;height:100%;width:100%}
+  .menu.horizontal{flex-direction:row;flex-wrap:wrap}
+  .menu.horizontal.divider :not(:first-child){border-left-width:1px;--tw-border-opacity:1;border-color:rgba(229, 231, 235, var(--tw-border-opacity))}
+  .menu li{width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;border-radius:.375rem;background-color:transparent;text-align:left;--tw-text-opacity:1;color:rgba(17, 24, 39, var(--tw-text-opacity))}
+  .menu li:hover{--tw-bg-opacity:1;background-color:rgba(243, 244, 246, var(--tw-bg-opacity));--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 transparent);--tw-ring-opacity:1;--tw-ring-color:rgba(229, 231, 235, var(--tw-ring-opacity))}
+  .menu li:active{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 transparent);--tw-ring-opacity:1;--tw-ring-color:rgba(229, 231, 235, var(--tw-ring-opacity))}
+  .menu li *{display:inline-flex;height:100%;width:100%;padding:.5rem 1rem}

@@ -1,0 +1,17 @@
+.breadcrumb{display:flex;flex-direction:row;font-weight:600;}
+  .breadcrumb>:not(:last-child):after{
+    content:"/";
+    padding-left:.25rem;
+    padding-right:.25rem; }
+  .breadcrumb.arrow>:not(:last-child):after{
+    content:">";
+    padding-left:.5rem;
+    padding-right:.5rem; }
+  .breadcrumb.extra_small{font-size:.75rem;line-height:1rem;}
+  .breadcrumb.extra_small>:not(:last-child):after{padding-left:.25rem;padding-right:.25rem;}
+  .breadcrumb.small{font-size:.875rem;line-height:1.25rem;}
+  .breadcrumb.small>:not(:last-child):after{padding-left:.25rem;padding-right:.25rem;}
+  .breadcrumb.large{font-size:1.125rem;line-height:1.75rem;}
+  .breadcrumb.large>:not(:last-child):after{padding-left:.375rem;padding-right:.375rem;}
+  .breadcrumb.extra_large{font-size:1.25rem;line-height:1.75rem;}
+  .breadcrumb.extra_large>:not(:last-child):after{padding-left:.375rem;padding-right:.375rem;}
