@@ -21,8 +21,6 @@ Responsive CSS components made with TailwindCSS.
     - [x]  Regular With Icon
     - [x]  Link
 - [x]  Button Groups
-    - [x]  Horizontal
-    - [x]  Vertical
 - [ ]  Forms
     - [ ]  Checkbox
         - [ ]  Checkbox Group
