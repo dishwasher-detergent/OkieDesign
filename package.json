@@ -7,7 +7,7 @@
     "url": "git+https://github.com/dishwasher-detergent/OkieDesign.git"
   },
   "author": "Kenneth Bass <kenny@kennethbass.com> (https://kennethbass.com)",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/dishwasher-detergent/OkieDesign/issues"
   },
