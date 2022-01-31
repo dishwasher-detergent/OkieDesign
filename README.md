@@ -38,6 +38,7 @@ Responsive CSS components made with TailwindCSS.
 - [x]  Alert
 - [ ]  Avatar
 - [x]  Badge
+- [x]  Breadcrumb
 - [x]  Card
 - [ ]  Divider
 - [x]  Drawer
@@ -51,7 +52,7 @@ Responsive CSS components made with TailwindCSS.
 - [x]  Pagination
 - [ ]  Tab
 - [ ]  Table
-- [ ]  Tooltip
+- [x]  Tooltip
 
 
 
