@@ -5,7 +5,7 @@ const ComponentLayout = ({title,children}) => {
                 <p className="flex-none text-gray-500 font-semibold">{title}</p>
                 <div className="w-full h-0.5 rounded-full bg-gray-500" />
             </div>
-            <section className="w-full grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <section className="w-full grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-6">
                 {children}
             </section>
         </>
