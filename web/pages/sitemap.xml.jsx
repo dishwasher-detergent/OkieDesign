@@ -76,3 +76,5 @@ export const getServerSideProps = ({ res }) => {
     props: {},
   };
 };
+
+export default Sitemap;
