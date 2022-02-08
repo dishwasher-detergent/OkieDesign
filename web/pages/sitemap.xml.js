@@ -1,7 +1,9 @@
-export default function Sitemap() {
-  return (
-        <>
-            <?xml version="1.0" encoding="UTF-8"?>
+import React from "react";
+
+const Sitemap = () => {};
+
+export const getServerSideProps = ({ res }) => {
+  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
             <urlset
                   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -63,9 +65,14 @@ export default function Sitemap() {
               <lastmod>2022-02-08T13:51:58+00:00</lastmod>
               <priority>0.64</priority>
             </url>
+          </urlset>
+  `;
 
+  res.setHeader("Content-Type", "text/xml");
+  res.write(sitemap);
+  res.end();
 
-            </urlset>
-        </>
-  )
-}
+  return {
+    props: {},
+  };
+};
