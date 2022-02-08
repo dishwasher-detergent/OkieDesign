@@ -140,7 +140,7 @@
   }
   
   .button.lg {
-    @apply text-xl
+    @apply text-lg
     h-12;
   }
   
@@ -151,7 +151,7 @@
   
   .button.icon {
     @apply p-0
-    w-8
+    w-9
     flex-none
     truncate;
   }
@@ -168,12 +168,12 @@
   
   .button.icon.lg {
     @apply text-xl
-    w-10;
+    w-12;
   }
   
   .button.icon.xl {
     @apply text-2xl
-    w-12;
+    w-16;
   }
   
   .button.icon svg {
