@@ -1,4 +1,4 @@
-export default function Home() {
+export default function Sitemap() {
   return (
         <>
             <?xml version="1.0" encoding="UTF-8"?>
