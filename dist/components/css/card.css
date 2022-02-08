@@ -1,8 +1,22 @@
-.card{display:flex;overflow:hidden;border-radius:.375rem;border-width:1px;--tw-border-opacity:1;border-color:rgba(209, 213, 219, var(--tw-border-opacity));--tw-bg-opacity:1;background-color:rgba(255, 255, 255, var(--tw-bg-opacity))}
-  .card.full{height:100%;width:100%}
-  .card:not(.horizontal){flex-direction:column}
-  .card:not(.horizontal)>:first-child{border-bottom-width:1px;--tw-border-opacity:1;border-color:rgba(209, 213, 219, var(--tw-border-opacity))}
-  .card.horizontal{flex-direction:column-reverse}
-  @media (min-width:768px){.card.horizontal{flex-direction:row}}
-  .card.horizontal>:first-child{border-top-width:1px;--tw-border-opacity:1;border-color:rgba(209, 213, 219, var(--tw-border-opacity))}
-  @media (min-width:768px){.card.horizontal>:first-child{border-top-width:0}.card.horizontal>:first-child{border-right-width:1px}}
+.card {
+  @apply flex
+    overflow-hidden
+    rounded-md
+    bg-white
+    border
+    border-gray-300; }
+  .card.full {
+    @apply h-full
+        w-full; }
+  .card:not(.horizontal) {
+    @apply flex-col; }
+    .card:not(.horizontal) > :first-child {
+      @apply border-b
+            border-gray-300; }
+  .card.horizontal {
+    @apply flex-col-reverse md:flex-row; }
+    .card.horizontal > :first-child {
+      @apply border-t
+            md:border-t-0
+            md:border-r
+            border-gray-300; }

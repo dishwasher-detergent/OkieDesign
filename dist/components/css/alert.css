@@ -1,7 +1,0 @@
-.alert{margin-bottom:1rem;display:flex;width:100%;flex-direction:row;flex-wrap:wrap;align-items:center;gap:.5rem;border-radius:.25rem;--tw-bg-opacity:1;background-color:rgba(243, 244, 246, var(--tw-bg-opacity));padding:.5rem 1rem;--tw-text-opacity:1;color:rgba(75, 85, 99, var(--tw-text-opacity))}
-  .alert.toast{width:24rem}
-  .alert.info{--tw-bg-opacity:1;background-color:rgba(237, 233, 254, var(--tw-bg-opacity));--tw-text-opacity:1;color:rgba(124, 58, 237, var(--tw-text-opacity))}
-  .alert.success{--tw-bg-opacity:1;background-color:rgba(209, 250, 229, var(--tw-bg-opacity));--tw-text-opacity:1;color:rgba(5, 150, 105, var(--tw-text-opacity))}
-  .alert.warning{--tw-bg-opacity:1;background-color:rgba(254, 243, 199, var(--tw-bg-opacity));--tw-text-opacity:1;color:rgba(217, 119, 6, var(--tw-text-opacity))}
-  .alert.emergency{--tw-bg-opacity:1;background-color:rgba(254, 226, 226, var(--tw-bg-opacity));--tw-text-opacity:1;color:rgba(220, 38, 38, var(--tw-text-opacity))}
-  .alert>.content{display:flex;flex:1 1 0%;flex-direction:row;gap:.5rem}

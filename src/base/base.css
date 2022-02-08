@@ -2,7 +2,7 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-@import '../components/css/alert.css';
+@import '../components/css/notification.css';
 @import '../components/css/badge.css';
 @import '../components/css/breadcrumbs.css';
 @import '../components/css/button.css';

@@ -16,15 +16,15 @@
     }
 
     &.success::before {
-        @apply bg-green-500 text-white border-0;
+        @apply bg-success-500 text-white border-0;
     }
 
     &.warning::before {
-        @apply bg-yellow-500 text-white border-0;
+        @apply bg-warning-500 text-white border-0;
     }
 
     &.emergency::before {
-        @apply bg-red-500 text-white border-0;
+        @apply bg-emergency-500 text-white border-0;
     }
 
     &.top::before {

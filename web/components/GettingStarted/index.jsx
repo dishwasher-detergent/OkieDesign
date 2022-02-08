@@ -2,7 +2,7 @@ import ComponentLayout from '../Layout/Documentation/Component';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { nnfxDark } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
 
-const Collapse = () => {
+const Installation = () => {
     return (
       <ComponentLayout title="Installation">
           <div className="mb-12">
@@ -27,4 +27,4 @@ const Collapse = () => {
     )
 }
 
-export default Collapse
+export default Installation

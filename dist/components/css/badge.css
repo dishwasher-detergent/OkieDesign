@@ -1,12 +1,35 @@
-.badge{display:inline-flex;height:1.5rem;flex-direction:row;align-items:center;justify-content:center;gap:.25rem;white-space:nowrap;border-radius:9999px;--tw-bg-opacity:1;background-color:rgba(243, 244, 246, var(--tw-bg-opacity));padding-left:.5rem;padding-right:.5rem;font-size:.875rem;line-height:1.25rem;--tw-text-opacity:1;color:rgba(75, 85, 99, var(--tw-text-opacity))}
-  .badge svg{height:1rem;width:1rem}
-  .badge.small{height:1rem;font-size:.75rem;line-height:1rem}
-  .badge.small svg{height:.75rem;width:75%}
-  .badge.large{height:2rem;font-size:1rem;line-height:1.5rem}
-  .badge.large svg{height:1.25rem;width:1.25rem}
-  .badge.extra_large{height:2.5rem;font-size:1.5rem;line-height:2rem}
-  .badge.extra_large svg{height:1.5rem;width:1.5rem}
-  .badge.success{--tw-bg-opacity:1;background-color:rgba(209, 250, 229, var(--tw-bg-opacity));--tw-text-opacity:1;color:rgba(5, 150, 105, var(--tw-text-opacity))}
-  .badge.info{--tw-bg-opacity:1;background-color:rgba(237, 233, 254, var(--tw-bg-opacity));--tw-text-opacity:1;color:rgba(124, 58, 237, var(--tw-text-opacity))}
-  .badge.emergency{--tw-bg-opacity:1;background-color:rgba(254, 226, 226, var(--tw-bg-opacity));--tw-text-opacity:1;color:rgba(220, 38, 38, var(--tw-text-opacity))}
-  .badge.warning{--tw-bg-opacity:1;background-color:rgba(254, 243, 199, var(--tw-bg-opacity));--tw-text-opacity:1;color:rgba(217, 119, 6, var(--tw-text-opacity))}
+.badge {
+  @apply inline-flex 
+    flex-nowrap
+    items-center
+    gap-2
+    px-3 
+    py-1 
+    rounded-full 
+    bg-primary-100 
+    text-primary-900 
+    font-semibold; }
+
+.badge.success {
+  @apply bg-success-100 text-success-900; }
+
+.badge.warning {
+  @apply bg-warning-100 text-warning-900; }
+
+.badge.emergency {
+  @apply bg-emergency-100 text-emergency-900; }
+
+.badge.xs {
+  @apply text-xs; }
+
+.badge.sm {
+  @apply text-sm; }
+
+.badge.lg {
+  @apply text-lg; }
+
+.badge.xl {
+  @apply text-xl; }
+
+.badge.xxl {
+  @apply text-2xl; }

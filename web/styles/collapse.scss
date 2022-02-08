@@ -100,7 +100,7 @@
             }
 
             .title {
-                @apply bg-purple-100 text-purple-600;
+                @apply bg-primary-100 text-primary-600;
             }
     
             .content {
@@ -118,9 +118,9 @@
     }
 
     &.outline {
-        @apply outline-none border border-gray-300 focus:border-purple-600;
+        @apply outline-none border border-gray-300 focus:border-primary-600;
         &.hover:hover {
-            @apply hover:border-purple-600;
+            @apply hover:border-primary-600;
         }
     }
 }

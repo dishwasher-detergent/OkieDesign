@@ -9,7 +9,7 @@
     text-base
     text-center
     rounded-md
-    bg-purple-600
+    bg-primary-600
     text-white
     font-semibold
     truncate
@@ -17,11 +17,11 @@
     ease-in
     duration-100
 
-    hover:bg-purple-500
+    hover:bg-primary-500
     hover:ring-2
-    hover:ring-purple-200
+    hover:ring-primary-200
     active:ring-4
-    active:ring-purple-200;
+    active:ring-primary-200;
         
     svg {
         @apply h-5;
@@ -37,30 +37,30 @@
     }
     &.success {
         @apply 
-        bg-green-500 
-        hover:bg-green-400
+        bg-success-500 
+        hover:bg-success-400
         hover:ring-2
-        hover:ring-green-200
+        hover:ring-success-200
         active:ring-4
-        active:ring-green-200;
+        active:ring-success-200;
     }
     &.emergency {
         @apply 
-        bg-red-500 
-        hover:bg-red-400
+        bg-emergency-500 
+        hover:bg-emergency-400
         hover:ring-2
-        hover:ring-red-200
+        hover:ring-emergency-200
         active:ring-4
-        active:ring-red-200;
+        active:ring-emergency-200;
     }
     &.warning {
         @apply 
-        bg-yellow-500 
-        hover:bg-yellow-400
+        bg-warning-500 
+        hover:bg-warning-400
         hover:ring-2
-        hover:ring-yellow-200
+        hover:ring-warning-200
         active:ring-4
-        active:ring-yellow-200;
+        active:ring-warning-200;
     }
     &.ghost {
         @apply 
@@ -109,7 +109,7 @@
         }
     }
     &.outline {
-        @apply outline-none bg-transparent border border-purple-600 text-purple-600 hover:bg-purple-50;
+        @apply outline-none bg-transparent border border-primary-600 text-primary-600 hover:bg-primary-50;
     }
     &:disabled {
         @apply 

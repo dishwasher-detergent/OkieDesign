@@ -21,9 +21,9 @@ const ProductCard = () => {
             </div>
             <div>
                 <div className="pb-6 flex flex-col">
-                <p className="text-xs text-gray-500">Sizes</p>
+                <p className="text-xs text-gray-500 mb-2 font-semibold">Sizes</p>
                 <div data-content="Button Group" className="tooltip top">
-                    <div className="button_group pill w-auto">
+                    <div className="button_group pill">
                         <button className="button secondary icon">
                         XS
                         </button>
@@ -43,7 +43,7 @@ const ProductCard = () => {
                 </div>
                 </div>
                 <div data-content="Button Group" className="tooltip top w-full">
-                    <div className="button_group pill">
+                    <div className="button_group pill w-full">
                         <button className="button full">
                             Add to Cart
                         </button>

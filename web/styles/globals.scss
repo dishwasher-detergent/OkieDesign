@@ -22,6 +22,15 @@
     font-family: 'Carena', sans-serif;
 }
 
+// .title {
+//     @apply flex flex-row flex-grow items-center gap-2;
+
+//     &:after {
+//         content: "";
+//         @apply flex-1 h-0.5 rounded-full bg-purple-600;
+//     }
+// }
+
 .list {
     @apply flex flex-row flex-wrap gap-2 p-4 items-center justify-center;
 
@@ -52,10 +61,10 @@
         rounded-md
         font-semibold 
         text-gray-500
-        hover:text-purple-600
-        focus:text-purple-600
-        hover:bg-purple-50
-        focus:bg-purple-50;
+        hover:text-primary-600
+        focus:text-primary-600
+        hover:bg-primary-50
+        focus:bg-primary-50;
 
         span {
             @apply flex-none;
@@ -63,8 +72,8 @@
 
         &.active {
             @apply
-            text-purple-600
-            bg-purple-50;
+            text-primary-600
+            bg-primary-50;
         }
 
         &:focus, &.active {
@@ -80,7 +89,7 @@
         w-0 
         h-0.5 
         rounded-full 
-        bg-purple-600
+        bg-primary-600
         duration-300;
     }
 

@@ -1,6 +1,6 @@
 {
   "name": "okiedesign",
-  "version": "1.0.36",
+  "version": "1.1.1",
   "description": "Responsive CSS components",
   "repository": {
     "type": "git",
@@ -28,6 +28,7 @@
   "main": "index.js",
   "files": [
     "dist/*.js",
+    "dist/colors/default_colors.js",
     "dist/{base,components}.css",
     "index.js"
   ],
@@ -48,12 +49,11 @@
     "tailwindcss": "^2.2.19"
   },
   "scripts": {
-    "prebase": "postcss --config src/base src/base/*.css --base src --dir dist",
     "base": "type dist\\base\\*.css > dist\\base.css",
     "postbase": "prejss-cli dist/base.css --format commonjs",
-    "precomponents": "node-sass src/components/ -o src/components/css/ | postcss --config src/components/css src/components/css/*.css --base src --dir dist",
+    "precomponents": "node-sass src/components/ -o dist/components/css/",
     "components": "type dist\\components\\css\\*.css > dist\\components.css",
     "postcomponents": "prejss-cli dist/components.css --format commonjs",
-    "build": "npm run base && npm run components"
+    "build": "npm run components && npm run base"
   }
 }

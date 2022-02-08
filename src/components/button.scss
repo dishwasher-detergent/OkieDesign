@@ -1,188 +1,204 @@
 .button {
-    @apply
+    @apply px-4
+    h-8
     inline-flex
+    flex-row
+    gap-2
     items-center
     justify-center
-    gap-2
-    h-9
-    px-4
-    text-base
-    text-center
-    rounded-md
-    bg-purple-600
+    bg-primary-600
     text-white
     font-semibold
-    truncate
-
-    ease-in
-    duration-100
-
-    hover:bg-purple-500
-    hover:ring-2
-    hover:ring-purple-200
-    active:ring-4
-    active:ring-purple-200;
-        
-    svg {
-        @apply h-5;
-    }
-    &.secondary {            
-        @apply 
-        bg-gray-600 
-        hover:bg-gray-500
-        hover:ring-2
-        hover:ring-gray-200
-        active:ring-4
-        active:ring-gray-200;
-    }
-    &.success {
-        @apply 
-        bg-green-500 
-        hover:bg-green-400
-        hover:ring-2
-        hover:ring-green-200
-        active:ring-4
-        active:ring-green-200;
-    }
-    &.emergency {
-        @apply 
-        bg-red-500 
-        hover:bg-red-400
-        hover:ring-2
-        hover:ring-red-200
-        active:ring-4
-        active:ring-red-200;
-    }
-    &.warning {
-        @apply 
-        bg-yellow-500 
-        hover:bg-yellow-400
-        hover:ring-2
-        hover:ring-yellow-200
-        active:ring-4
-        active:ring-yellow-200;
-    }
-    &.ghost {
-        @apply 
-        text-gray-900 
-        bg-transparent 
-        hover:bg-gray-100
-        hover:ring-2
-        hover:ring-gray-200
-        active:ring-4
-        active:ring-gray-200;
-    }
-    &.full {
-        @apply w-full;
-    }
-    &.round {
-        @apply rounded-full;
-    }
-    &.extra_small {
-        @apply text-xs h-4 px-2;
-    }
-    &.small {
-        @apply text-sm h-6 px-2;
-    }
-    &.large {
-        @apply text-lg h-12;
-    }
-    &.extra_large {
-        @apply text-xl h-16;
-    }
-    &.icon {
-        @apply w-9 p-1.5 flex-none;
-        svg {
-            @apply w-full h-full;
-        }
-        &.extra_small {
-            @apply w-4 p-0.5;
-        }
-        &.small {
-            @apply w-6 p-1;
-        }
-        &.large {
-            @apply w-12 p-2;
-        }
-        &.extra_large {
-            @apply w-16 p-2;
-        }
-    }
-    &.outline {
-        @apply outline-none bg-transparent border border-purple-600 text-purple-600 hover:bg-purple-50;
-    }
-    &:disabled {
-        @apply 
-        cursor-not-allowed 
-        bg-gray-200 
-        border-gray-600
-        text-gray-700 
-        hover:bg-gray-100
-        hover:ring-2
-        hover:ring-gray-200
-        active:ring-4
-        active:ring-gray-200;
-        &.ghost {
-            @apply text-gray-700 bg-transparent;
-        }
-    }
-}
-
-// Button group
-
-.button_group {
-    @apply flex flex-nowrap flex-row p-1;
-
-    &.full {
-        @apply w-full;
-        >* {
-            @apply flex-1;
-        }
-    }
-
-    &.pill {
-        @apply gap-1;
-        
-        >* {
-            @apply rounded-md;
-        }
-    }
-
-    button, a {
-        @apply rounded-none;
-        
-        &:not(:first-child) {
-            @apply m-0 ml-0.5;
-        }
-        &:first-child {
-            @apply rounded-l-md;                
-        }
-        &:last-child {
-            @apply rounded-r-md;
-        }
-    }
-    &.extra_small > button {
-        @apply text-xs h-4 px-2;
-        &.icon {
-            @apply w-4 p-0.5;
-        }
-    }
-    &.small > button {
-        @apply text-sm h-6 px-2;
-        &.icon {
-            @apply w-6 p-1;
-        }
-    }
-    &.large > button {
-        @apply text-lg h-12;
-        &.icon {
-            @apply w-12 p-2;
-        }
-    }
-    &.extra_large > button {
-        @apply text-xl h-16;
-        &.icon {
-            @apply w-16 p-2;
-        }
-    }
-}
+    border 
+    border-primary-600
+    rounded-md
+    transition-all
+    ease-in-out;
+  }
+  
+  .button:hover,
+  .button:focus {
+    @apply bg-primary-500
+    border-primary-500
+    ring-2
+    ring-primary-200;
+  }
+  
+  .button:focus {
+    @apply outline-2 outline-primary-200;
+  }
+  
+  .button:active {
+    @apply ring-4
+    ring-primary-200;
+  }
+  
+  .button.full {
+    @apply w-full block;
+  }
+  
+  .button.round {
+    @apply rounded-full;
+  }
+  
+  .button.outlined {
+    @apply bg-transparent text-primary-600;
+  }
+  
+  .button.ghost {
+    @apply bg-transparent border-none text-primary-600;
+  }
+  
+  .button.ghost:hover {
+    @apply bg-primary-100;
+  }
+  
+  .button.success {
+    @apply bg-success-500 border-success-500;
+  }
+  
+  .button.success:hover,
+  .button.success:focus {
+    @apply bg-success-400
+    border-success-400
+    ring-2
+    ring-success-200;
+  }
+  
+  .button.success:focus {
+    @apply outline-2 outline-success-200;
+  }
+  
+  .button.success:active {
+    @apply ring-4
+    ring-success-200;
+  }
+  
+  .button.warning {
+    @apply bg-warning-500 border-warning-500;
+  }
+  
+  .button.warning:hover,
+  .button.warning:focus {
+    @apply bg-warning-400
+    border-warning-500
+    ring-2
+    ring-warning-200;
+  }
+  
+  .button.warning:focus {
+    @apply outline-2 outline-warning-200;
+  }
+  
+  .button.warning:active {
+    @apply ring-4
+    ring-warning-200;
+  }
+  
+  .button.emergency {
+    @apply bg-emergency-500 border-emergency-500;
+  }
+  
+  .button.emergency:hover,
+  .button.emergency:focus {
+    @apply bg-emergency-400
+    border-emergency-400
+    ring-2
+    ring-emergency-200;
+  }
+  
+  .button.emergency:focus {
+    @apply outline-2 outline-emergency-200;
+  }
+  
+  .button.emergency:active {
+    @apply ring-4
+    ring-emergency-200;
+  }
+  
+  .button:disabled {
+    @apply bg-slate-200 text-slate-900 border-slate-200;
+  }
+  
+  .button:disabled:hover {
+    @apply ring-0 bg-slate-200;
+  }
+  
+  .button.outlined:disabled {
+    @apply border-slate-900;
+  }
+  
+  .button.xs {
+    @apply text-xs
+    h-4
+    px-2;
+  }
+  
+  .button.sm {
+    @apply text-sm
+    h-6;
+  }
+  
+  .button.lg {
+    @apply text-xl
+    h-10;
+  }
+  
+  .button.xl {
+    @apply text-2xl
+    h-12;
+  }
+  
+  .button.icon {
+    @apply p-0
+    w-8
+    flex-none
+    truncate;
+  }
+  
+  .button.icon.xs {
+    @apply text-xs
+    w-4;
+  }
+  
+  .button.icon.sm {
+    @apply text-sm
+    w-6;
+  }
+  
+  .button.icon.lg {
+    @apply text-xl
+    w-10;
+  }
+  
+  .button.icon.xl {
+    @apply text-2xl
+    w-12;
+  }
+  
+  .button.icon svg {
+    @apply h-3/5 w-auto;
+  }
+  
+  .button svg {
+    @apply h-1/2 w-auto;
+  }
+  
+  .button_group {
+    @apply inline-flex
+    flex-row
+    overflow-hidden
+    rounded-md;
+  }
+  
+  .button_group:not(.pill) * {
+    @apply rounded-none;
+  }
+  
+  .button_group.pill {
+    @apply gap-1;
+  }
+  
+  .button_group .button {
+    @apply border-none ring-0;
+  }

@@ -8,12 +8,12 @@ const DocsLayout = ({children}) => {
     const { component } = router.query;
 
     const [component_list, setComponent_list] = useState([
-        "Alerts",
         "Badges",
         "Breadcrumbs",
         "Buttons",
         "Button Groups",
         "Collapse",
+        "Notifications",
         "Tooltips",
     ]);
 
@@ -28,8 +28,8 @@ const DocsLayout = ({children}) => {
                 <Link href="/">
                     <a className="Carena text-xl flex flex-row gap-2 items-center">
                         Okie.Design
-                        <div className="badge small flex-none">
-                            v 1.0.0
+                        <div className="badge sm flex-none">
+                            v 1.1.1
                         </div>
                     </a>
                 </Link>
@@ -44,11 +44,11 @@ const DocsLayout = ({children}) => {
                 <div className="content">
                     <nav className="hidden md:flex w-full h-16 items-center justify-center px-4 gap-4">
                         <Link href="/">
-                            <a className="Carena flex-none text-xl text-purple-600 font-bold">Okie.Design</a>
+                            <a className="Carena title flex-none text-xl text-purple-600 font-bold">Okie.Design</a>
                         </Link>
                         <div className="w-full h-0.5 rounded-full bg-purple-600" />
-                        <div className="badge small flex-none">
-                            v 1.0.0
+                        <div className="badge sm flex-none">
+                            v 1.1.1
                         </div>
                     </nav>
                     <div className="custom_sidebar">

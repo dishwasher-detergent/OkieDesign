@@ -1,8 +1,8 @@
 const okieInfo = require('./package.json')
 const components = require('./dist/components')
-const base = require('./dist/base')
+const colors = require('./dist/colors/default_colors')
 
-const mainFunction = ({addComponents,addBase}) => {
+const mainFunction = ({addComponents, config}) => {
     console.log()
     console.log('   ','\x1b[45m','            ','\x1b[0m')
     console.log('   ','    ','\x1b[45m','       ','\x1b[0m')
@@ -11,7 +11,6 @@ const mainFunction = ({addComponents,addBase}) => {
     console.log('\x1b[35m%s\x1b[1m%s\x1b[0m', 'Okie.Design v' + okieInfo.version, '\x1b[0m', okieInfo.homepage)
     console.group()
 
-    addBase(base)
     addComponents(components)
 
     console.log()
@@ -29,8 +28,8 @@ try {
 
 if (isTailwindInstalled !== false) {
   module.exports = require("tailwindcss/plugin")(
-    mainFunction
+    mainFunction, { theme: { extend: { colors } } }
   );
 } else {
-  module.exports = mainFunction;
+  console.log("Install Tailwindcss: npm i tailwindcss")
 }

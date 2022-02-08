@@ -1,52 +1,165 @@
-.button{display:inline-flex;height:2.25rem;align-items:center;justify-content:center;gap:.5rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;border-radius:.375rem;--tw-bg-opacity:1;background-color:rgba(124, 58, 237, var(--tw-bg-opacity));padding-left:1rem;padding-right:1rem;text-align:center;font-size:1rem;line-height:1.5rem;font-weight:600;--tw-text-opacity:1;color:rgba(255, 255, 255, var(--tw-text-opacity));transition-duration:.1s;transition-timing-function:cubic-bezier(.4, 0, 1, 1)}.button:hover{--tw-bg-opacity:1;background-color:rgba(139, 92, 246, var(--tw-bg-opacity));--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 transparent);--tw-ring-opacity:1;--tw-ring-color:rgba(221, 214, 254, var(--tw-ring-opacity))}.button:active{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 transparent);--tw-ring-opacity:1;--tw-ring-color:rgba(221, 214, 254, var(--tw-ring-opacity))}
-  .button svg{height:1.25rem}
-  .button.secondary{--tw-bg-opacity:1;background-color:rgba(75, 85, 99, var(--tw-bg-opacity))}
-  .button.secondary:hover{--tw-bg-opacity:1;background-color:rgba(107, 114, 128, var(--tw-bg-opacity));--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 transparent);--tw-ring-opacity:1;--tw-ring-color:rgba(229, 231, 235, var(--tw-ring-opacity))}
-  .button.secondary:active{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 transparent);--tw-ring-opacity:1;--tw-ring-color:rgba(229, 231, 235, var(--tw-ring-opacity))}
-  .button.success{--tw-bg-opacity:1;background-color:rgba(16, 185, 129, var(--tw-bg-opacity))}
-  .button.success:hover{--tw-bg-opacity:1;background-color:rgba(52, 211, 153, var(--tw-bg-opacity));--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 transparent);--tw-ring-opacity:1;--tw-ring-color:rgba(167, 243, 208, var(--tw-ring-opacity))}
-  .button.success:active{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 transparent);--tw-ring-opacity:1;--tw-ring-color:rgba(167, 243, 208, var(--tw-ring-opacity))}
-  .button.emergency{--tw-bg-opacity:1;background-color:rgba(239, 68, 68, var(--tw-bg-opacity))}
-  .button.emergency:hover{--tw-bg-opacity:1;background-color:rgba(248, 113, 113, var(--tw-bg-opacity));--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 transparent);--tw-ring-opacity:1;--tw-ring-color:rgba(254, 202, 202, var(--tw-ring-opacity))}
-  .button.emergency:active{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 transparent);--tw-ring-opacity:1;--tw-ring-color:rgba(254, 202, 202, var(--tw-ring-opacity))}
-  .button.warning{--tw-bg-opacity:1;background-color:rgba(245, 158, 11, var(--tw-bg-opacity))}
-  .button.warning:hover{--tw-bg-opacity:1;background-color:rgba(251, 191, 36, var(--tw-bg-opacity));--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 transparent);--tw-ring-opacity:1;--tw-ring-color:rgba(253, 230, 138, var(--tw-ring-opacity))}
-  .button.warning:active{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 transparent);--tw-ring-opacity:1;--tw-ring-color:rgba(253, 230, 138, var(--tw-ring-opacity))}
-  .button.ghost{background-color:transparent;--tw-text-opacity:1;color:rgba(17, 24, 39, var(--tw-text-opacity))}
-  .button.ghost:hover{--tw-bg-opacity:1;background-color:rgba(243, 244, 246, var(--tw-bg-opacity));--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 transparent);--tw-ring-opacity:1;--tw-ring-color:rgba(229, 231, 235, var(--tw-ring-opacity))}
-  .button.ghost:active{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 transparent);--tw-ring-opacity:1;--tw-ring-color:rgba(229, 231, 235, var(--tw-ring-opacity))}
-  .button.full{width:100%}
-  .button.round{border-radius:9999px}
-  .button.extra_small{height:1rem;padding-left:.5rem;padding-right:.5rem;font-size:.75rem;line-height:1rem}
-  .button.small{height:1.5rem;padding-left:.5rem;padding-right:.5rem;font-size:.875rem;line-height:1.25rem}
-  .button.large{height:3rem;font-size:1.125rem;line-height:1.75rem}
-  .button.extra_large{height:4rem;font-size:1.25rem;line-height:1.75rem}
-  .button.icon{width:2.25rem;flex:none;padding:.375rem}
-  .button.icon svg{height:100%;width:100%}
-  .button.icon.extra_small{width:1rem;padding:.125rem}
-  .button.icon.small{width:1.5rem;padding:.25rem}
-  .button.icon.large{width:3rem;padding:.5rem}
-  .button.icon.extra_large{width:4rem;padding:.5rem}
-  .button.outline{border-width:1px;--tw-border-opacity:1;border-color:rgba(124, 58, 237, var(--tw-border-opacity));background-color:transparent;--tw-text-opacity:1;color:rgba(124, 58, 237, var(--tw-text-opacity));outline:2px solid transparent;outline-offset:2px}
-  .button.outline:hover{--tw-bg-opacity:1;background-color:rgba(245, 243, 255, var(--tw-bg-opacity))}
-  .button:disabled{cursor:not-allowed;--tw-border-opacity:1;border-color:rgba(75, 85, 99, var(--tw-border-opacity));--tw-bg-opacity:1;background-color:rgba(229, 231, 235, var(--tw-bg-opacity));--tw-text-opacity:1;color:rgba(55, 65, 81, var(--tw-text-opacity))}
-  .button:disabled:hover{--tw-bg-opacity:1;background-color:rgba(243, 244, 246, var(--tw-bg-opacity));--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 transparent);--tw-ring-opacity:1;--tw-ring-color:rgba(229, 231, 235, var(--tw-ring-opacity))}
-  .button:disabled:active{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 transparent);--tw-ring-opacity:1;--tw-ring-color:rgba(229, 231, 235, var(--tw-ring-opacity))}
-  .button:disabled.ghost{background-color:transparent;--tw-text-opacity:1;color:rgba(55, 65, 81, var(--tw-text-opacity))}
-  .button_group{display:flex;flex-direction:row;flex-wrap:nowrap;padding:.25rem}
-  .button_group.full{width:100%}
-  .button_group.full>*{flex:1 1 0%}
-  .button_group.pill{gap:.25rem}
-  .button_group.pill>*{border-radius:.375rem}
-  .button_group a,.button_group button{border-radius:0}
-  .button_group a:not(:first-child),.button_group button:not(:first-child){margin:0 0 0 .125rem}
-  .button_group a:first-child,.button_group button:first-child{border-top-left-radius:.375rem;border-bottom-left-radius:.375rem}
-  .button_group a:last-child,.button_group button:last-child{border-top-right-radius:.375rem;border-bottom-right-radius:.375rem}
-  .button_group.extra_small>button{height:1rem;padding-left:.5rem;padding-right:.5rem;font-size:.75rem;line-height:1rem}
-  .button_group.extra_small>button.icon{width:1rem;padding:.125rem}
-  .button_group.small>button{height:1.5rem;padding-left:.5rem;padding-right:.5rem;font-size:.875rem;line-height:1.25rem}
-  .button_group.small>button.icon{width:1.5rem;padding:.25rem}
-  .button_group.large>button{height:3rem;font-size:1.125rem;line-height:1.75rem}
-  .button_group.large>button.icon{width:3rem;padding:.5rem}
-  .button_group.extra_large>button{height:4rem;font-size:1.25rem;line-height:1.75rem}
-  .button_group.extra_large>button.icon{width:4rem;padding:.5rem}
+.button {
+  @apply px-4
+    h-8
+    inline-flex
+    flex-row
+    gap-2
+    items-center
+    justify-center
+    bg-primary-600
+    text-white
+    font-semibold
+    border 
+    border-primary-600
+    rounded-md
+    transition-all
+    ease-in-out; }
+
+.button:hover,
+.button:focus {
+  @apply bg-primary-500
+    border-primary-500
+    ring-2
+    ring-primary-200; }
+
+.button:focus {
+  @apply outline-2 outline-primary-200; }
+
+.button:active {
+  @apply ring-4
+    ring-primary-200; }
+
+.button.full {
+  @apply w-full block; }
+
+.button.round {
+  @apply rounded-full; }
+
+.button.outlined {
+  @apply bg-transparent text-primary-600; }
+
+.button.ghost {
+  @apply bg-transparent border-none text-primary-600; }
+
+.button.ghost:hover {
+  @apply bg-primary-100; }
+
+.button.success {
+  @apply bg-success-500 border-success-500; }
+
+.button.success:hover,
+.button.success:focus {
+  @apply bg-success-400
+    border-success-400
+    ring-2
+    ring-success-200; }
+
+.button.success:focus {
+  @apply outline-2 outline-success-200; }
+
+.button.success:active {
+  @apply ring-4
+    ring-success-200; }
+
+.button.warning {
+  @apply bg-warning-500 border-warning-500; }
+
+.button.warning:hover,
+.button.warning:focus {
+  @apply bg-warning-400
+    border-warning-500
+    ring-2
+    ring-warning-200; }
+
+.button.warning:focus {
+  @apply outline-2 outline-warning-200; }
+
+.button.warning:active {
+  @apply ring-4
+    ring-warning-200; }
+
+.button.emergency {
+  @apply bg-emergency-500 border-emergency-500; }
+
+.button.emergency:hover,
+.button.emergency:focus {
+  @apply bg-emergency-400
+    border-emergency-400
+    ring-2
+    ring-emergency-200; }
+
+.button.emergency:focus {
+  @apply outline-2 outline-emergency-200; }
+
+.button.emergency:active {
+  @apply ring-4
+    ring-emergency-200; }
+
+.button:disabled {
+  @apply bg-slate-200 text-slate-900 border-slate-200; }
+
+.button:disabled:hover {
+  @apply ring-0 bg-slate-200; }
+
+.button.outlined:disabled {
+  @apply border-slate-900; }
+
+.button.xs {
+  @apply text-xs
+    h-4
+    px-2; }
+
+.button.sm {
+  @apply text-sm
+    h-6; }
+
+.button.lg {
+  @apply text-xl
+    h-10; }
+
+.button.xl {
+  @apply text-2xl
+    h-12; }
+
+.button.icon {
+  @apply p-0
+    w-8
+    flex-none
+    truncate; }
+
+.button.icon.xs {
+  @apply text-xs
+    w-4; }
+
+.button.icon.sm {
+  @apply text-sm
+    w-6; }
+
+.button.icon.lg {
+  @apply text-xl
+    w-10; }
+
+.button.icon.xl {
+  @apply text-2xl
+    w-12; }
+
+.button.icon svg {
+  @apply h-3/5 w-auto; }
+
+.button svg {
+  @apply h-1/2 w-auto; }
+
+.button_group {
+  @apply inline-flex
+    flex-row
+    overflow-hidden
+    rounded-md; }
+
+.button_group:not(.pill) * {
+  @apply rounded-none; }
+
+.button_group.pill {
+  @apply gap-1; }
+
+.button_group .button {
+  @apply border-none ring-0; }

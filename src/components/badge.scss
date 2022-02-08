@@ -1,62 +1,44 @@
 .badge {
-    @apply 
-    h-6
-    inline-flex
-    flex-row 
-    gap-1 
-    items-center 
-    justify-center
-    px-2 
+    @apply inline-flex 
+    flex-nowrap
+    items-center
+    gap-2
+    px-3 
+    py-1 
     rounded-full 
-    bg-gray-100 
-    text-gray-600 
-    text-sm 
-    whitespace-nowrap;
-    
-    svg {
-        @apply 
-        h-4 
-        w-4;
-    }
-    
-    &.small {
-        @apply text-xs h-4;
-        
-        svg {
-            @apply 
-            h-3 
-            w-3/4;
-        }
-    }
-    
-    &.large {
-        @apply text-base h-8;
-        
-        svg {
-            @apply h-5 w-5;
-        }
-    }
-
-    &.extra_large {
-        @apply text-2xl h-10;
-        svg {
-            @apply h-6 w-6;
-        }
-    }
-
-    &.success {
-        @apply bg-green-100 text-green-600;
-    }
-    
-    &.info {
-        @apply bg-purple-100 text-purple-600;
-    }
-
-    &.emergency {
-        @apply bg-red-100 text-red-600;
-    }
-
-    &.warning {
-        @apply bg-yellow-100 text-yellow-600;
-    }
-}
+    bg-primary-100 
+    text-primary-900 
+    font-semibold;
+  }
+  
+  .badge.success {
+    @apply bg-success-100 text-success-900;
+  }
+  
+  .badge.warning {
+    @apply bg-warning-100 text-warning-900;
+  }
+  
+  .badge.emergency {
+    @apply bg-emergency-100 text-emergency-900;
+  }
+  
+  .badge.xs {
+    @apply text-xs;
+  }
+  
+  .badge.sm {
+    @apply text-sm;
+  }
+  
+  .badge.lg {
+    @apply text-lg;
+  }
+  
+  .badge.xl {
+    @apply text-xl;
+  }
+  
+  .badge.xxl {
+    @apply text-2xl;
+  }

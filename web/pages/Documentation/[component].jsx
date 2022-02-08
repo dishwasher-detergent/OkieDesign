@@ -1,5 +1,5 @@
 import DocsLayout from "../../components/Layout/Documentation"
-import Alert from "../../components/Alert"
+import Notifications from "../../components/Notifications"
 import Breadcrumbs from "../../components/Breadcrumbs"
 import Badge from "../../components/Badge"
 import Buttons from "../../components/Button"
@@ -16,7 +16,7 @@ export default function Documentation() {
   const getDocument = () => {
     switch(component.toLowerCase()){
       case 'samples': return <Samples />;
-      case 'alerts': return <Alert />;
+      case 'notifications': return <Notifications />;
       case 'badges': return <Badge />;
       case 'breadcrumbs': return <Breadcrumbs />;
       case 'buttons': return <Buttons />;
