@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
+const config = require('okiedesign/package.json');
 
 const DocsLayout = ({children}) => {
     const router = useRouter()
@@ -28,8 +29,8 @@ const DocsLayout = ({children}) => {
                 <Link href="/">
                     <a className="Carena text-xl flex flex-row gap-2 items-center">
                         Okie.Design
-                        <div className="badge sm flex-none">
-                            v 1.1.1
+                        <div className="badge xs flex-none">
+                            v{config.version}
                         </div>
                     </a>
                 </Link>
@@ -47,8 +48,8 @@ const DocsLayout = ({children}) => {
                             <a className="Carena title flex-none text-xl text-purple-600 font-bold">Okie.Design</a>
                         </Link>
                         <div className="w-full h-0.5 rounded-full bg-purple-600" />
-                        <div className="badge sm flex-none">
-                            v 1.1.1
+                        <div className="badge xs flex-none">
+                            v{config.version}
                         </div>
                     </nav>
                     <div className="custom_sidebar">
