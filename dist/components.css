@@ -59,7 +59,7 @@
       @apply px-1.5; }
 .button {
   @apply px-4
-    h-8
+    h-9
     inline-flex
     flex-row
     gap-2
@@ -174,11 +174,11 @@
 
 .button.lg {
   @apply text-xl
-    h-10; }
+    h-12; }
 
 .button.xl {
-  @apply text-2xl
-    h-12; }
+  @apply text-xl
+    h-16; }
 
 .button.icon {
   @apply p-0
