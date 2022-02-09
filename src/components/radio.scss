@@ -1,7 +1,7 @@
 .radio {
   @apply appearance-none
-  h-4
-  w-4
+  h-5
+  w-5
   relative
   rounded-full
   border
@@ -59,4 +59,24 @@
 
 .radio.emergency:checked {
   @apply bg-emergency-400;
+}
+
+.radio.xs {
+  @apply w-3
+  h-3;
+}
+
+.radio.sm {
+  @apply w-4
+  h-4;
+}
+
+.radio.lg {
+  @apply w-6
+  h-6;
+}
+
+.radio.xl {
+  @apply w-7
+  h-7;
 }
