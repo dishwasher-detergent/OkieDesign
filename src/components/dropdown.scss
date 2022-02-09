@@ -3,7 +3,7 @@
 }
 
 .dropdown .content {
-  @apply opacity-0 invisible absolute z-50;
+  @apply opacity-0 invisible absolute z-50 transition-all ease-in-out;
 }
 
 .dropdown.end .content {
