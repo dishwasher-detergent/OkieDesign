@@ -9,7 +9,7 @@
   rounded-md
   bg-white
   border
-  border-gray-300;
+  border-slate-300;
 }
 
 .menu.horizontal {
@@ -25,9 +25,13 @@
 }
 
 .menu .divider {
-  @apply w-full border-t border-gray-300;
+  @apply w-full border-t border-slate-300;
+}
+
+.horizontal.menu .divider {
+  @apply w-auto border-l border-t-0;
 }
 
 .menu * {
-  @apply block w-full;
+  @apply block;
 }
