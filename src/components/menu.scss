@@ -1,51 +1,33 @@
 .menu {
-    @apply flex flex-col flex-nowrap p-2;
-    h4 {
-        @apply w-full font-semibold text-gray-500 text-sm mb-1;
-    }
+  @apply w-36
+  flex 
+  flex-col 
+  flex-nowrap 
+  gap-1
+  p-2 
+  shadow 
+  rounded-md
+  bg-white
+  border
+  border-gray-300;
+}
 
-    &.divider {
-        * {
-            @apply w-full;
-        }
-        
-        :not(:first-child){
-            @apply border-t border-gray-200;
-        }
-    }
-    &.full {
-        @apply w-full h-full m-0;
-    }
-    &.horizontal {
-        @apply flex-row flex-wrap;
-        
-        &.divider {
-            :not(:first-child){
-                @apply border-l border-gray-200;
-            }
-        }
-    }
-    li {
-        @apply
-        w-full
-        text-left
-        rounded-md
-        truncate
-        text-gray-900 
-        bg-transparent 
-        hover:bg-gray-100
-        hover:ring-2
-        hover:ring-gray-200
-        active:ring-4
-        active:ring-gray-200;
+.menu.horizontal {
+  @apply flex-row w-auto;
+}
 
-        * {
-            @apply 
-            px-4
-            py-2
-            inline-flex
-            w-full
-            h-full;
-        }
-    }
+.menu.icon {
+  @apply w-12;
+}
+
+.menu .title {
+  @apply text-sm font-semibold text-slate-600;
+}
+
+.menu .divider {
+  @apply w-full border-t border-gray-300;
+}
+
+.menu * {
+  @apply block w-full;
 }
