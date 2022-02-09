@@ -1,0 +1,62 @@
+.checkbox {
+  @apply appearance-none
+  h-4
+  w-4
+  relative
+  rounded-md
+  border
+  border-primary-600;
+}
+
+.checkbox:focus {
+  @apply outline-none;
+}
+
+.checkbox:hover,
+.checkbox:focus {
+  @apply ring-2
+  ring-primary-200;
+}
+
+.checkbox:checked {
+  @apply bg-primary-400;
+}
+
+.checkbox.success {
+  @apply border-success-600;
+}
+
+.checkbox.succes:hover,
+.checkbox.success:focus {
+  @apply ring-success-200;
+}
+
+.checkbox.success:checked {
+  @apply bg-success-400;
+}
+
+.checkbox.warning {
+  @apply border-warning-600;
+}
+
+.checkbox.warning:hover,
+.checkbox.warning:focus {
+  @apply ring-warning-200;
+}
+
+.checkbox.warning:checked {
+  @apply bg-warning-400;
+}
+
+.checkbox.emergency {
+  @apply border-emergency-600;
+}
+
+.checkbox.emergency:hover,
+.checkbox.emergency:focus {
+  @apply ring-emergency-200;
+}
+
+.checkbox.emergency:checked {
+  @apply bg-emergency-400;
+}
