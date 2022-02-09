@@ -1,0 +1,62 @@
+.radio {
+  @apply appearance-none
+  h-4
+  w-4
+  relative
+  rounded-full
+  border
+  border-primary-600;
+}
+
+.radio:focus {
+  @apply outline-none;
+}
+
+.radio:hover,
+.radio:focus {
+  @apply ring-2
+  ring-primary-200;
+}
+
+.radio:checked {
+  @apply bg-primary-400;
+}
+
+.radio.success {
+  @apply border-success-600;
+}
+
+.radio.succes:hover,
+.radio.success:focus {
+  @apply ring-success-200;
+}
+
+.radio.success:checked {
+  @apply bg-success-400;
+}
+
+.radio.warning {
+  @apply border-warning-600;
+}
+
+.radio.warning:hover,
+.radio.warning:focus {
+  @apply ring-warning-200;
+}
+
+.radio.warning:checked {
+  @apply bg-warning-400;
+}
+
+.radio.emergency {
+  @apply border-emergency-600;
+}
+
+.radio.emergency:hover,
+.radio.emergency:focus {
+  @apply ring-emergency-200;
+}
+
+.radio.emergency:checked {
+  @apply bg-emergency-400;
+}
