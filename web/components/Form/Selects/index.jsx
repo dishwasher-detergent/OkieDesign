@@ -5,38 +5,38 @@ const Selects = () => {
     return (
       <ComponentLayout title="Selects">
         <ComponentDocs classes="list" title="Sizes">
-          <select class="select xs">
+          <select ClassName="select xs">
             <option>Extra Small</option>
           </select>
-          <select class="select sm">
+          <select ClassName="select sm">
             <option>Small</option>
           </select>
-          <select class="select">
+          <select ClassName="select">
             <option>Standard</option>
           </select>
-          <select class="select lg">
+          <select ClassName="select lg">
             <option>Large</option>
           </select>
-          <select class="select xl">
+          <select ClassName="select xl">
             <option>Extra Large</option>
           </select>
         </ComponentDocs>
         <ComponentDocs classes="list" title="Styles">
-          <select class="select">
+          <select ClassName="select">
             <option>Standard</option>
           </select>
-          <select class="select success">
+          <select ClassName="select success">
             <option>Success</option>
           </select>
-          <select class="select warning">
+          <select ClassName="select warning">
             <option>Warning</option>
           </select>
-          <select class="select emergency">
+          <select ClassName="select emergency">
             <option>Emergency</option>
           </select>
         </ComponentDocs>
         <ComponentDocs classes="list" title="Disabled">
-          <select disabled class="select">
+          <select disabled ClassName="select">
             <option>Disabled</option>
           </select>
         </ComponentDocs>
