@@ -1,0 +1,139 @@
+.range {
+  @apply bg-transparent
+    w-44
+    appearance-none;
+}
+
+.range::-webkit-slider-runnable-track {
+  @apply bg-primary-200 rounded-full h-1 w-full;
+}
+.range::-moz-range-track {
+  @apply bg-primary-200 rounded-full h-1 w-full;
+}
+
+.range::-webkit-slider-thumb {
+  @apply appearance-none 
+  bg-primary-600
+    rounded-full 
+    w-2 
+    h-4 
+    top-1/2
+    -translate-y-1/2
+    relative 
+    transition-all 
+    ease-in-out 
+    duration-300 
+    border-none
+    cursor-pointer;
+}
+
+.range::-moz-range-thumb {
+  @apply bg-primary-600
+    rounded-full 
+    w-2 
+    h-4 
+    relative 
+    transition-all 
+    ease-in-out 
+    duration-300 
+    border-none
+    cursor-pointer;
+}
+
+.range.sm::-webkit-slider-runnable-track {
+  @apply h-0.5;
+}
+.range.sm::-moz-range-track {
+  @apply h-0.5;
+}
+
+.range.sm::-webkit-slider-thumb {
+  @apply bg-primary-600 rounded-full w-2 h-3 relative transition-all ease-in-out duration-300 border-none;
+}
+.range.sm::-moz-range-thumb {
+  @apply bg-primary-600 rounded-full w-2 h-3 relative transition-all ease-in-out duration-300 border-none;
+}
+
+.range.lg::-webkit-slider-runnable-track {
+  @apply h-1.5;
+}
+.range.lg::-moz-range-track {
+  @apply h-1.5;
+}
+
+.range.lg::-webkit-slider-thumb {
+  @apply bg-primary-600 rounded-full w-3 h-5 relative transition-all ease-in-out duration-300 border-none;
+}
+.range.lg::-moz-range-thumb {
+  @apply bg-primary-600 rounded-full w-3 h-5 relative transition-all ease-in-out duration-300 border-none;
+}
+
+.range.xl::-webkit-slider-runnable-track {
+  @apply h-1.5;
+}
+.range.xl::-moz-range-track {
+  @apply h-1.5;
+}
+
+.range.xl::-webkit-slider-thumb {
+  @apply bg-primary-600 rounded-full w-3 h-6 relative transition-all ease-in-out duration-300 border-none;
+}
+.range.xl::-moz-range-thumb {
+  @apply bg-primary-600 rounded-full w-3 h-6 relative transition-all ease-in-out duration-300 border-none;
+}
+
+.range.success::-webkit-slider-runnable-track {
+  @apply bg-success-200;
+}
+.range.success::-moz-range-track {
+  @apply bg-success-200;
+}
+
+.range.success::-webkit-slider-thumb {
+  @apply bg-success-600;
+}
+.range.success::-moz-range-thumb {
+  @apply bg-success-600;
+}
+
+.range.warning::-webkit-slider-runnable-track {
+  @apply bg-warning-200;
+}
+.range.warning::-moz-range-track {
+  @apply bg-warning-200;
+}
+
+.range.warning::-webkit-slider-thumb {
+  @apply bg-warning-600;
+}
+.range.warning::-moz-range-thumb {
+  @apply bg-warning-600;
+}
+
+.range.emergency::-webkit-slider-runnable-track {
+  @apply bg-emergency-200;
+}
+.range.emergency::-moz-range-track {
+  @apply bg-emergency-200;
+}
+
+.range.emergency::-webkit-slider-thumb {
+  @apply bg-emergency-600;
+}
+.range.emergency::-moz-range-thumb {
+  @apply bg-emergency-600;
+}
+
+.range:disabled::-webkit-slider-runnable-track {
+  @apply bg-slate-200;
+}
+.range:disabled::-moz-range-track {
+  @apply bg-slate-200;
+}
+
+.range:disabled::-webkit-slider-thumb {
+  @apply bg-slate-600 cursor-not-allowed;
+}
+.range:disabled::-moz-range-thumb {
+  @apply bg-slate-600 cursor-not-allowed;
+}
