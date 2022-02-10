@@ -22,16 +22,16 @@ Responsive CSS components made with TailwindCSS.
     - [x]  Link
 - [x]  Button Groups
 - [ ]  Forms
-    - [ ]  Checkbox
+    - [x]  Checkbox
         - [ ]  Checkbox Group
-    - [ ]  Radio
+    - [x]  Radio
         - [ ]  Radio Group
-    - [ ]  Input
-        - [ ]  Textarea
+    - [x]  Input
+        - [x]  Textarea
     - [ ]  Date
-    - [ ]  Range
-    - [ ]  Select
-    - [ ]  Toggle
+    - [x]  Range
+    - [x]  Select
+    - [x]  Toggle
 
 #### Components
 - [ ]  Accordion
