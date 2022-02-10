@@ -1,6 +1,6 @@
 {
   "name": "okiedesign",
-  "version": "1.1.4",
+  "version": "1.2.0",
   "description": "Responsive CSS components",
   "repository": {
     "type": "git",
@@ -43,7 +43,7 @@
     "prejss-cli": "^0.3.3"
   },
   "scripts": {
-    "precomponents": "node-sass src/components/ -o dist/components/css/",
+    "precomponents": "del /S dist\\components\\css\\*.css | del dist\\components.css | del dist\\components.js | node-sass src/components/ -o dist/components/css/",
     "components": "type dist\\components\\css\\*.css > dist\\components.css",
     "postcomponents": "prejss-cli dist/components.css --format commonjs",
     "build": "npm run components"

@@ -8,6 +8,13 @@ import Collapse from "../../components/Collapse"
 import { useRouter } from "next/router"
 import Tooltips from "../../components/Tooltips"
 import Samples from "../../components/Layout/Documentation/Samples"
+import Checkboxes from "../../components/Form/Checkboxes"
+import Radios from "../../components/Form/Radios"
+import Toggles from "../../components/Form/Toggles"
+import Inputs from "../../components/Form/Inputs"
+import Selects from "../../components/Form/Selects"
+import Textareas from "../../components/Form/Textareas"
+import Ranges from "../../components/Form/Ranges"
 
 export default function Documentation() {
   const router = useRouter()
@@ -23,6 +30,13 @@ export default function Documentation() {
       case 'buttongroups': return <ButtonGroups />;
       case 'collapse': return <Collapse />;
       case 'tooltips': return <Tooltips />;
+      case 'checkboxes': return <Checkboxes />;
+      case 'radios': return <Radios />;
+      case 'toggles': return <Toggles />;
+      case 'inputs': return <Inputs />;
+      case 'selects': return <Selects />;
+      case 'textareas': return <Textareas />;
+      case 'ranges': return <Ranges />;
       default: router.push('/Documentation');
     }
   }

@@ -1,0 +1,29 @@
+.dropdown {
+  @apply relative inline-block; }
+
+.dropdown .content {
+  @apply opacity-0 invisible absolute z-50 transition-all ease-in-out; }
+
+.dropdown.end .content {
+  @apply right-0; }
+
+.dropdown.left .content {
+  @apply top-0 right-full bottom-auto; }
+
+.dropdown.right .content {
+  @apply left-full top-0 bottom-auto; }
+
+.dropdown.top .content {
+  @apply bottom-full top-auto; }
+
+.dropdown.end.right .content {
+  @apply bottom-0 top-auto; }
+
+.dropdown.end.left .content {
+  @apply bottom-0 top-auto; }
+
+.dropdown.open .content,
+.dropdown.hover:hover .content,
+.dropdown:not(.dropdown.hover):focus .content,
+.dropdown:not(.dropdown.hover):focus-within .content {
+  @apply visible opacity-100; }

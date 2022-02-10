@@ -1,6 +1,5 @@
 .toggle {
   --handleoffset: 1.25rem;
-
   @apply appearance-none 
   bg-primary-600 
   w-10
@@ -11,57 +10,44 @@
   cursor-pointer 
   ease-in-out 
   duration-300;
-
   transition: background, box-shadow 0.25s ease-in-out;
-  box-shadow: calc(var(--handleoffset) * -1) 0 0 2px #fff inset,
-    0 0 0 2px #fff inset;
-}
+  box-shadow: calc(var(--handleoffset) * -1) 0 0 2px #fff inset, 0 0 0 2px #fff inset; }
 
 .toggle:disabled {
   @apply bg-slate-600
   border-slate-600
   cursor-not-allowed;
-  box-shadow: calc(var(--handleoffset) * -1) 0 0 2px #E2E8F0 inset,
-  0 0 0 2px #fff inset;
-}
+  box-shadow: calc(var(--handleoffset) * -1) 0 0 2px #E2E8F0 inset, 0 0 0 2px #fff inset; }
 
 .toggle:checked,
 .toggle[checked="true"] {
-  box-shadow: var(--handleoffset) 0 0 2px #fff inset, 0 0 0 2px #fff inset;
-}
+  box-shadow: var(--handleoffset) 0 0 2px #fff inset, 0 0 0 2px #fff inset; }
 
 .toggle.xs {
   --handleoffset: 0.75rem;
   @apply w-6
-  h-3;
-}
+  h-3; }
 
 .toggle.sm {
   --handleoffset: 1rem;
   @apply w-8
-  h-4;
-}
+  h-4; }
 
 .toggle.lg {
   --handleoffset: 1.5rem;
   @apply w-12
-  h-6;
-}
+  h-6; }
 
 .toggle.xl {
   --handleoffset: 1.75rem;
   @apply w-14
-  h-7;
-}
+  h-7; }
 
 .toggle.success {
-  @apply bg-success-600 border-success-600;
-}
+  @apply bg-success-600 border-success-600; }
 
 .toggle.warning {
-  @apply bg-warning-600 border-warning-600;
-}
+  @apply bg-warning-600 border-warning-600; }
 
 .toggle.emergency {
-  @apply bg-emergency-600 border-emergency-600;
-}
+  @apply bg-emergency-600 border-emergency-600; }

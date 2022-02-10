@@ -18,6 +18,16 @@ const DocsLayout = ({children}) => {
         "Tooltips",
     ]);
 
+    const [form_list, setForm_list] = useState([
+        "Checkboxes",
+        "Radios",
+        "Toggles",
+        "Inputs",
+        "Textareas",
+        "Selects",
+        "Ranges"
+    ])
+
     return (
         <main className="w-full min-h-screen overflow-scoll flex flex-col md:flex-row bg-gray-50">
             <nav className="md:hidden h-16 w-full px-4 flex flex-row items-center justify-between bg-white border-b border-gray-300">
@@ -67,6 +77,17 @@ const DocsLayout = ({children}) => {
                         </Link>
                         <h4 className="mt-4">Components</h4>
                         {component_list.map((item, key) => {
+                           return (
+                           <Link href={"/Documentation/" + item.replace(/\s/g,'')} key={key}>
+                                <a className={"element " + (item.replace(/\s/g,'') == component ? 'active' : '')}>
+                                    <span>{item}</span>
+                                    <div className="line" />
+                                </a>
+                            </Link>
+                            )
+                        })}
+                        <h4 className="mt-4">Form Elements</h4>
+                        {form_list.map((item, key) => {
                            return (
                            <Link href={"/Documentation/" + item.replace(/\s/g,'')} key={key}>
                                 <a className={"element " + (item.replace(/\s/g,'') == component ? 'active' : '')}>

@@ -1,32 +1,30 @@
 .menu {
-  @apply flex flex-col flex-nowrap p-2; }
-  .menu h4 {
-    @apply w-full font-semibold text-gray-500 text-sm mb-1; }
-  .menu.divider * {
-    @apply w-full; }
-  .menu.divider :not(:first-child) {
-    @apply border-t border-gray-200; }
-  .menu.full {
-    @apply w-full h-full m-0; }
-  .menu.horizontal {
-    @apply flex-row flex-wrap; }
-    .menu.horizontal.divider :not(:first-child) {
-      @apply border-l border-gray-200; }
-  .menu li {
-    @apply w-full
-        text-left
-        rounded-md
-        truncate
-        text-gray-900 
-        bg-transparent 
-        hover:bg-gray-100
-        hover:ring-2
-        hover:ring-gray-200
-        active:ring-4
-        active:ring-gray-200; }
-    .menu li * {
-      @apply px-4
-            py-2
-            inline-flex
-            w-full
-            h-full; }
+  @apply w-36
+  flex 
+  flex-col 
+  flex-nowrap 
+  gap-2
+  p-2 
+  shadow 
+  rounded-md
+  bg-white
+  border
+  border-gray-300; }
+
+.menu.horizontal {
+  @apply flex-row w-auto; }
+
+.menu.icon {
+  @apply w-auto; }
+
+.menu .title {
+  @apply text-sm font-semibold text-slate-600 pl-2; }
+
+.menu .divider {
+  @apply w-full border-t border-gray-300; }
+
+.horizontal.menu .divider {
+  @apply w-auto border-l border-t-0; }
+
+.menu * {
+  @apply block; }
