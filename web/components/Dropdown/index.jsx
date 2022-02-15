@@ -1,6 +1,7 @@
 import ComponentLayout from '../Layout/Documentation/Component';
 import ComponentDocs from '../Layout/Display/Components/Component';
 import { Menu } from '@headlessui/react'
+import Link from 'next/link';
 
 const Dropdown = () => {
     return (
