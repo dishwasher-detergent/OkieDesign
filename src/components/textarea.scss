@@ -1,0 +1,99 @@
+.textarea {
+    @apply px-4
+    py-2
+    h-16
+    rounded-md
+    border
+    border-primary-600
+    text-slate-700
+    font-semibold
+    truncate
+    outline-none;
+    min-height: 4rem;
+}
+
+.textarea:disabled {
+    @apply border
+    border-slate-600
+    bg-slate-200
+    cursor-not-allowed;
+}
+  
+.textarea:disabled:hover {
+    @apply border-slate-600
+    bg-slate-200;
+}
+  
+.textarea:hover {
+    @apply ring-2
+    ring-primary-200;
+}
+  
+.textarea:focus {
+    @apply ring-4;
+}
+
+.textarea.success {
+    @apply border-success-600;
+}
+
+.textarea.success:hover {
+    @apply ring-2
+    ring-success-200;
+}
+  
+.textarea.success:focus {
+    @apply ring-4;
+}
+
+.textarea.warning {
+    @apply border-warning-600;
+}
+
+.textarea.warning:hover {
+    @apply ring-2
+    ring-warning-200;
+}
+  
+.textarea.warning:focus {
+    @apply ring-4;
+}
+
+.textarea.emergency {
+    @apply border-emergency-600;
+}
+
+.textarea.emergency:hover {
+    @apply ring-2
+    ring-emergency-200;
+}
+  
+.textarea.emergency:focus {
+    @apply ring-4;
+}
+  
+.textarea.xs {
+    @apply text-xs
+    px-2
+    h-12;
+    min-height: 3rem
+}
+  
+.textarea.sm {
+    @apply text-sm
+    px-2
+    h-14;
+    min-height: 3.5rem
+}
+  
+.textarea.lg {
+    @apply text-lg
+    h-20;
+    min-height: 5rem;
+}
+  
+.textarea.xl {
+    @apply text-xl
+    h-24;
+    min-height: 6rem;
+}

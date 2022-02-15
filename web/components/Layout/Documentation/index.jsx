@@ -13,7 +13,6 @@ const DocsLayout = ({children}) => {
         "Breadcrumbs",
         "Buttons",
         "Button Groups",
-        "Collapse",
         "Notifications",
         "Tooltips",
     ]);
@@ -26,6 +25,10 @@ const DocsLayout = ({children}) => {
         "Textareas",
         "Selects",
         "Ranges"
+    ]);
+
+    const [requireJS_list, setRequireJS_list] = useState([
+        "Collapse"
     ])
 
     return (
@@ -88,6 +91,17 @@ const DocsLayout = ({children}) => {
                         })}
                         <h4 className="mt-4">Form Elements</h4>
                         {form_list.map((item, key) => {
+                           return (
+                           <Link href={"/Documentation/" + item.replace(/\s/g,'')} key={key}>
+                                <a className={"element " + (item.replace(/\s/g,'') == component ? 'active' : '')}>
+                                    <span>{item}</span>
+                                    <div className="line" />
+                                </a>
+                            </Link>
+                            )
+                        })}
+                        <h4 className="mt-4">Requires JS</h4>
+                        {requireJS_list.map((item, key) => {
                            return (
                            <Link href={"/Documentation/" + item.replace(/\s/g,'')} key={key}>
                                 <a className={"element " + (item.replace(/\s/g,'') == component ? 'active' : '')}>

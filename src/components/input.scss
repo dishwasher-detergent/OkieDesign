@@ -1,0 +1,93 @@
+.input {
+    @apply px-4
+    h-9
+    rounded-md
+    border
+    border-primary-600
+    text-slate-700
+    font-semibold
+    truncate
+    outline-none;
+}
+
+.input:disabled {
+    @apply border
+    border-slate-600
+    bg-slate-200
+    cursor-not-allowed;
+}
+  
+.input:disabled:hover {
+    @apply border-slate-600
+    bg-slate-200;
+}
+  
+.input:hover {
+    @apply ring-2
+    ring-primary-200;
+}
+  
+.input:focus {
+    @apply ring-4;
+}
+
+.input.success {
+    @apply border-success-600;
+}
+
+.input.success:hover {
+    @apply ring-2
+    ring-success-200;
+}
+  
+.input.success:focus {
+    @apply ring-4;
+}
+
+.input.warning {
+    @apply border-warning-600;
+}
+
+.input.warning:hover {
+    @apply ring-2
+    ring-warning-200;
+}
+  
+.input.warning:focus {
+    @apply ring-4;
+}
+
+.input.emergency {
+    @apply border-emergency-600;
+}
+
+.input.emergency:hover {
+    @apply ring-2
+    ring-emergency-200;
+}
+  
+.input.emergency:focus {
+    @apply ring-4;
+}
+  
+.input.xs {
+    @apply text-xs
+    h-4
+    px-2;
+}
+  
+.input.sm {
+    @apply text-sm
+    px-2
+    h-6;
+}
+  
+.input.lg {
+    @apply text-lg
+    h-12;
+}
+  
+.input.xl {
+    @apply text-xl
+    h-16;
+}

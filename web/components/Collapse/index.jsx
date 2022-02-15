@@ -1,85 +1,98 @@
 import ComponentLayout from '../Layout/Documentation/Component';
 import ComponentDocs from '../Layout/Display/Components/Component';
+import { Disclosure } from '@headlessui/react'
 
 const Collapse = () => {
     return (
       <ComponentLayout title="Collapse">
+        <div className='notification'>
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+            These examples utilize <a className='button sm' href="https://headlessui.dev/react/disclosure">HeadlessUI</a>.
+        </div>
         <ComponentDocs classes="list" title="Sizes">
-          <div className='collapse extra_small w-48' tabIndex={0}>
-            <p className="title">
-              Extra Small
-            </p>
-            <div className="content">
-              Extra Small Content
-            </div>
+          <div className='collapse xs w-60'>
+            <Disclosure>
+              <Disclosure.Button className="title">
+                Extra Small
+              </Disclosure.Button>
+              <Disclosure.Panel className="content">
+                Content
+              </Disclosure.Panel>
+            </Disclosure>
           </div>
-          <div className='collapse small w-48' tabIndex={0}>
-            <p className="title">Small</p>
-            <div className="content">
-              Small Content
-            </div>
+          <div className='collapse sm w-60'>
+            <Disclosure>
+              <Disclosure.Button className="title">
+                Small
+              </Disclosure.Button>
+              <Disclosure.Panel className="content">
+                Content
+              </Disclosure.Panel>
+            </Disclosure>
           </div>
-          <div className='collapse w-48' tabIndex={0}>
-            <p className="title">
-              Standard 
-            </p>
-            <div className="content">
-              Standard Content
-            </div>
+          <div className='collapse w-60'>
+            <Disclosure>
+              <Disclosure.Button className="title">
+                Standard
+              </Disclosure.Button>
+              <Disclosure.Panel className="content">
+                Content
+              </Disclosure.Panel>
+            </Disclosure>
           </div>
-          <div className='collapse large w-48' tabIndex={0}>
-            <p className="title">Large</p>
-            <div className="content">
-              Large Content
-            </div>
+          <div className='collapse lg w-60'>
+            <Disclosure>
+              <Disclosure.Button className="title">
+                Large
+              </Disclosure.Button>
+              <Disclosure.Panel className="content">
+              Content
+              </Disclosure.Panel>
+            </Disclosure>
           </div>
-          <div className='collapse extra_large w-48' tabIndex={0}>
-            <p className="title">Extra Large</p>
-            <div className="content">
-              Extra Large Content
-            </div>
+          <div className='collapse xl w-60'>
+            <Disclosure>
+              <Disclosure.Button className="title">
+                Extra Large
+              </Disclosure.Button>
+              <Disclosure.Panel className="content">
+                Content
+              </Disclosure.Panel>
+            </Disclosure>
           </div>
         </ComponentDocs>
         <ComponentDocs classes="list" title="Styles">
-          <div className='collapse w-48 outline' tabIndex={0}>
-            <p className="title">
-              Outlined
-            </p>
-            <div className="content">
-              Content
-            </div>
+        <div className='collapse w-60 outline'>
+            <Disclosure>
+              <Disclosure.Button className="title">
+                Outlined
+              </Disclosure.Button>
+              <Disclosure.Panel className="content">
+                Content
+              </Disclosure.Panel>
+            </Disclosure>
           </div>
-          <div className='collapse w-48 plus' tabIndex={0}>
-            <p className="title">
-              Plus
-            </p>
-            <div className="content">
+          <div className='collapse plus w-60'>
+            <Disclosure>
+              <Disclosure.Button className="title">
+                Plus
+              </Disclosure.Button>
+              <Disclosure.Panel className="content">
               Content
-            </div>
+              </Disclosure.Panel>
+            </Disclosure>
           </div>
-          <div className='collapse w-48 arrow' tabIndex={0}>
-            <p className="title">Arrow</p>
-            <div className="content">
-              Content
-            </div>
-          </div>
-        </ComponentDocs>
-        <ComponentDocs classes="list" title="Toggles">
-          <div className='collapse w-48 open outline' tabIndex={0}>
-            <p className="title">
-              Forced Open
-            </p>
-            <div className="content">
-              Content
-            </div>
-          </div>
-          <div className='collapse w-48 close outline' tabIndex={0}>
-            <p className="title">
-              Forced Close
-            </p>
-            <div className="content">
-              Content
-            </div>
+          <div className='collapse arrow w-60'>
+            <Disclosure>
+              <Disclosure.Button className="title">
+                Arrow
+              </Disclosure.Button>
+              <Disclosure.Panel className="content">
+                Content
+              </Disclosure.Panel>
+            </Disclosure>
           </div>
         </ComponentDocs>
       </ComponentLayout>

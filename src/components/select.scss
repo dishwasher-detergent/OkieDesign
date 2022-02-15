@@ -1,0 +1,104 @@
+.select {
+    @apply pl-4 pr-8
+      h-9
+      w-44
+      max-w-sm
+      rounded-md
+      border
+      border-primary-600
+      text-slate-700
+      bg-white
+      font-semibold
+      truncate
+      outline-none
+      appearance-none;
+    background-image: linear-gradient(45deg, transparent 50%, currentColor 0),
+      linear-gradient(135deg, currentColor 50%, transparent 0);
+    background-position: calc(100% - 20px) calc(1px + 50%), calc(100% - 16px) calc(1px + 50%);
+    background-size: 4px 4px, 4px 4px;
+    background-repeat: no-repeat;
+  }
+  
+  .select:disabled {
+    @apply border
+      border-slate-600
+      bg-slate-200
+      cursor-not-allowed;
+  }
+  
+  .select:disabled:hover {
+    @apply border-slate-600
+      bg-slate-200;
+  }
+  
+  .select:hover {
+    @apply ring-2
+      ring-primary-200;
+  }
+  
+  .select:focus {
+    @apply ring-4;
+  }
+  
+  .select.success {
+    @apply border-success-600;
+  }
+  
+  .select.success:hover {
+    @apply ring-2
+      ring-success-200;
+  }
+  
+  .select.success:focus {
+    @apply ring-4;
+  }
+  
+  .select.warning {
+    @apply border-warning-600;
+  }
+  
+  .select.warning:hover {
+    @apply ring-2
+      ring-warning-200;
+  }
+  
+  .select.warning:focus {
+    @apply ring-4;
+  }
+  
+  .select.emergency {
+    @apply border-emergency-600;
+  }
+  
+  .select.emergency:hover {
+    @apply ring-2
+      ring-emergency-200;
+  }
+  
+  .select.emergency:focus {
+    @apply ring-4;
+  }
+  
+  .select.xs {
+    @apply text-xs
+      h-4
+      pl-1
+      pr-1;
+  }
+  
+  .select.sm {
+    @apply text-sm
+      px-2
+      h-6;
+  }
+  
+  .select.lg {
+    @apply text-lg
+      h-12;
+  }
+  
+  .select.xl {
+    @apply text-xl
+      h-16;
+  }
+  
