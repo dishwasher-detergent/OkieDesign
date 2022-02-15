@@ -18,22 +18,16 @@ const Dropdown = () => {
                 <Menu.Items className="menu w-auto content">
                     <Menu.Item>
                     {({ active }) => (
-                        <a
-                        className={`${active && 'active'} button ghost`}
-                        href="/account-settings"
-                        >
+                    <a className={`${active && 'active'} button ghost`}>
                         Menu Item One
-                        </a>
+                    </a>
                     )}
                     </Menu.Item>
                     <Menu.Item>
                     {({ active }) => (
-                        <a
-                        className={`${active && 'active'} button ghost`}
-                        href="/account-settings"
-                        >
+                    <a className={`${active && 'active'} button ghost`}>
                         Menu Item Two
-                        </a>
+                    </a>
                     )}
                     </Menu.Item>
                 </Menu.Items>
@@ -43,22 +37,16 @@ const Dropdown = () => {
                 <Menu.Items className="menu w-auto content">
                     <Menu.Item>
                     {({ active }) => (
-                        <a
-                        className={`${active && 'active'} button ghost`}
-                        href="/account-settings"
-                        >
+                    <a className={`${active && 'active'} button ghost`}>
                         Menu Item One
-                        </a>
+                    </a>
                     )}
                     </Menu.Item>
                     <Menu.Item>
                     {({ active }) => (
-                        <a
-                        className={`${active && 'active'} button ghost`}
-                        href="/account-settings"
-                        >
+                    <a className={`${active && 'active'} button ghost`}>
                         Menu Item Two
-                        </a>
+                    </a>
                     )}
                     </Menu.Item>
                 </Menu.Items>
@@ -68,22 +56,16 @@ const Dropdown = () => {
                 <Menu.Items className="menu w-auto content">
                     <Menu.Item>
                     {({ active }) => (
-                        <a
-                        className={`${active && 'active'} button ghost`}
-                        href="/account-settings"
-                        >
+                    <a className={`${active && 'active'} button ghost`}>
                         Menu Item One
-                        </a>
+                    </a>
                     )}
                     </Menu.Item>
                     <Menu.Item>
                     {({ active }) => (
-                        <a
-                        className={`${active && 'active'} button ghost`}
-                        href="/account-settings"
-                        >
+                    <a className={`${active && 'active'} button ghost`}>
                         Menu Item Two
-                        </a>
+                    </a>
                     )}
                     </Menu.Item>
                 </Menu.Items>
@@ -93,22 +75,16 @@ const Dropdown = () => {
                 <Menu.Items className="menu w-auto content">
                     <Menu.Item>
                     {({ active }) => (
-                        <a
-                        className={`${active && 'active'} button ghost`}
-                        href="/account-settings"
-                        >
+                    <a className={`${active && 'active'} button ghost`}>
                         Menu Item One
-                        </a>
+                    </a>
                     )}
                     </Menu.Item>
                     <Menu.Item>
                     {({ active }) => (
-                        <a
-                        className={`${active && 'active'} button ghost`}
-                        href="/account-settings"
-                        >
+                    <a className={`${active && 'active'} button ghost`}>
                         Menu Item Two
-                        </a>
+                    </a>
                     )}
                     </Menu.Item>
                 </Menu.Items>
