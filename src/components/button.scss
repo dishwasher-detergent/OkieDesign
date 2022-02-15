@@ -18,7 +18,8 @@
   }
   
   .button:hover,
-  .button:focus {
+  .button:focus,
+  .button.active {
     @apply bg-primary-500
     border-primary-500
     ring-2
@@ -50,7 +51,8 @@
     @apply bg-transparent border-none text-primary-600 ring-0;
   }
   
-  .button.ghost:hover {
+  .button.ghost:hover,
+  .button.ghost.active {
     @apply bg-primary-100;
   }
   
@@ -59,7 +61,8 @@
   }
   
   .button.success:hover,
-  .button.success:focus {
+  .button.success:focus,
+  .button.success.active {
     @apply bg-success-400
     border-success-400
     ring-2
@@ -80,7 +83,8 @@
   }
   
   .button.warning:hover,
-  .button.warning:focus {
+  .button.warning:focus,
+  .button.warning.active {
     @apply bg-warning-400
     border-warning-500
     ring-2
@@ -101,7 +105,8 @@
   }
   
   .button.emergency:hover,
-  .button.emergency:focus {
+  .button.emergency:focus,
+  .button.emergency.active {
     @apply bg-emergency-400
     border-emergency-400
     ring-2

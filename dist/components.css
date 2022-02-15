@@ -76,7 +76,8 @@
     truncate; }
 
 .button:hover,
-.button:focus {
+.button:focus,
+.button.active {
   @apply bg-primary-500
     border-primary-500
     ring-2
@@ -101,14 +102,16 @@
 .button.ghost {
   @apply bg-transparent border-none text-primary-600 ring-0; }
 
-.button.ghost:hover {
+.button.ghost:hover,
+.button.ghost.active {
   @apply bg-primary-100; }
 
 .button.success {
   @apply bg-success-500 border-success-500; }
 
 .button.success:hover,
-.button.success:focus {
+.button.success:focus,
+.button.success.active {
   @apply bg-success-400
     border-success-400
     ring-2
@@ -125,7 +128,8 @@
   @apply bg-warning-500 border-warning-500; }
 
 .button.warning:hover,
-.button.warning:focus {
+.button.warning:focus,
+.button.warning.active {
   @apply bg-warning-400
     border-warning-500
     ring-2
@@ -142,7 +146,8 @@
   @apply bg-emergency-500 border-emergency-500; }
 
 .button.emergency:hover,
-.button.emergency:focus {
+.button.emergency:focus,
+.button.emergency.active {
   @apply bg-emergency-400
     border-emergency-400
     ring-2
