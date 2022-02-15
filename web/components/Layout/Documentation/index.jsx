@@ -28,7 +28,8 @@ const DocsLayout = ({children}) => {
     ]);
 
     const [requireJS_list, setRequireJS_list] = useState([
-        "Collapse"
+        "Collapse",
+        "Menu"
     ])
 
     return (

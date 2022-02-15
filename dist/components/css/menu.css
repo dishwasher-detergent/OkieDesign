@@ -1,6 +1,5 @@
 .menu {
-  @apply w-36
-  flex 
+  @apply flex 
   flex-col 
   flex-nowrap 
   gap-2
@@ -27,4 +26,4 @@
   @apply w-auto border-l border-t-0; }
 
 .menu * {
-  @apply block; }
+  @apply flex; }

@@ -13,7 +13,8 @@
     border-primary-600
     rounded-md
     transition-all
-    ease-in-out;
+    ease-in-out
+    truncate;
   }
   
   .button:hover,
@@ -46,7 +47,7 @@
   }
   
   .button.ghost {
-    @apply bg-transparent border-none text-primary-600;
+    @apply bg-transparent border-none text-primary-600 ring-0;
   }
   
   .button.ghost:hover {

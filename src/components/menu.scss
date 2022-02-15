@@ -1,5 +1,5 @@
 .menu {
-  @apply w-36
+  @apply
   flex 
   flex-col 
   flex-nowrap 
@@ -33,6 +33,6 @@
 }
 
 .menu * {
-  @apply block;
+  @apply flex;
 }
 

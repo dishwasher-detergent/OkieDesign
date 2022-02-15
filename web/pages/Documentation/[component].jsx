@@ -15,6 +15,7 @@ import Inputs from "../../components/Form/Inputs"
 import Selects from "../../components/Form/Selects"
 import Textareas from "../../components/Form/Textareas"
 import Ranges from "../../components/Form/Ranges"
+import MenuDocs from "../../components/Menu"
 
 export default function Documentation() {
   const router = useRouter()
@@ -37,6 +38,7 @@ export default function Documentation() {
       case 'selects': return <Selects />;
       case 'textareas': return <Textareas />;
       case 'ranges': return <Ranges />;
+      case 'menu': return <MenuDocs />;
       default: router.push('/Documentation');
     }
   }
