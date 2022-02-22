@@ -25,3 +25,9 @@ const Inputs = () => {
 }
 
 export default Inputs
+
+export const InputSample = () => {
+  return (
+    <input type="text" className='input emergency' placeHolder="Required"/>
+  )
+}

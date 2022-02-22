@@ -45,3 +45,13 @@ const Selects = () => {
 }
 
 export default Selects
+
+export const SelectSample = () => {
+  return (
+    <select className="select">
+      <option>Alfred</option>
+      <option>Bruce</option>
+      <option>Dick</option>
+    </select>
+  )
+}

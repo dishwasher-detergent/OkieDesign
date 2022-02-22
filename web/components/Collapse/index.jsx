@@ -101,3 +101,18 @@ const Collapse = () => {
 }
 
 export default Collapse
+
+export const CollapseSample = () => {
+  return (
+    <div className='collapse w-60 outline'>
+      <Disclosure>
+        <Disclosure.Button className="title">
+          Outlined
+        </Disclosure.Button>
+        <Disclosure.Panel className="content">
+          Content
+        </Disclosure.Panel>
+      </Disclosure>
+    </div>
+  )
+}

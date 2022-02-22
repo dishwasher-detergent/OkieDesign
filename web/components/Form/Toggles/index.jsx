@@ -25,3 +25,14 @@ const Toggles = () => {
 }
 
 export default Toggles
+
+export const ToggleSample = () => {
+  return (
+    <div className="flex gap-1">
+      <input type="checkbox" className='toggle' />
+      <input type="checkbox" className='toggle success' />
+      <input type="checkbox" className='toggle warning' />
+      <input type="checkbox" className='toggle emergency' />
+    </div>
+  )
+}

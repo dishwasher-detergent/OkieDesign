@@ -1,7 +1,7 @@
 import ComponentLayout from '../Layout/Documentation/Component';
 import ComponentDocs from '../Layout/Display/Components/Component';
 
-const Breadcrumps = () => {
+const Breadcrumbs = () => {
     return (
       <ComponentLayout title="Breadcrumbs">
         <ComponentDocs classes="list vertical" title="Sizes">
@@ -40,4 +40,15 @@ const Breadcrumps = () => {
     )
 }
 
-export default Breadcrumps
+export default Breadcrumbs
+
+export const BreadcrumbSample = () => {
+  return (
+    <>
+      <div className="breadcrumb lg">
+        <p>Mensware</p>
+        <p>Pants</p>
+      </div>
+    </>
+  )
+}

@@ -1,36 +1,12 @@
 import Link from "next/link"
 import { useRouter } from 'next/router'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
+import components from "../../components";
 const config = require('okiedesign/package.json');
 
 const DocsLayout = ({children}) => {
     const router = useRouter()
-
     const { component } = router.query;
-
-    const [component_list, setComponent_list] = useState([
-        "Badges",
-        "Breadcrumbs",
-        "Buttons",
-        "Button Groups",
-        "Notifications",
-        "Tooltips",
-    ]);
-
-    const [form_list, setForm_list] = useState([
-        "Checkboxes",
-        "Radios",
-        "Toggles",
-        "Inputs",
-        "Textareas",
-        "Selects",
-        "Ranges"
-    ]);
-
-    const [requireJS_list, setRequireJS_list] = useState([
-        "Collapse",
-        "Menu"
-    ])
 
     return (
         <main className="w-full min-h-screen overflow-scoll flex flex-col md:flex-row bg-gray-50">
@@ -73,40 +49,40 @@ const DocsLayout = ({children}) => {
                                 <div className="line" />
                             </a>
                         </Link>
-                        <Link href="/Documentation/Samples">
-                            <a className={"element " + (component == "Samples" ? 'active' : '')}>
+                        <Link href="/Documentation/samples">
+                            <a className={"element " + (component == "samples" ? 'active' : '')}>
                                 <span>Samples</span>
                                 <div className="line" />
                             </a>
                         </Link>
                         <h4 className="mt-4">Components</h4>
-                        {component_list.map((item, key) => {
+                        {components.content.components.map((item, key) => {
                            return (
-                           <Link href={"/Documentation/" + item.replace(/\s/g,'')} key={key}>
-                                <a className={"element " + (item.replace(/\s/g,'') == component ? 'active' : '')}>
-                                    <span>{item}</span>
+                           <Link href={"/Documentation/" + item.link} key={key}>
+                                <a className={"element " + (item.link == component ? 'active' : '')}>
+                                    <span>{item.name}</span>
                                     <div className="line" />
                                 </a>
                             </Link>
                             )
                         })}
                         <h4 className="mt-4">Form Elements</h4>
-                        {form_list.map((item, key) => {
+                        {components.content.componentsForm.map((item, key) => {
                            return (
-                           <Link href={"/Documentation/" + item.replace(/\s/g,'')} key={key}>
-                                <a className={"element " + (item.replace(/\s/g,'') == component ? 'active' : '')}>
-                                    <span>{item}</span>
+                           <Link href={"/Documentation/" + item.link} key={key}>
+                                <a className={"element " + (item.link == component ? 'active' : '')}>
+                                    <span>{item.name}</span>
                                     <div className="line" />
                                 </a>
                             </Link>
                             )
                         })}
                         <h4 className="mt-4">Requires JS</h4>
-                        {requireJS_list.map((item, key) => {
+                        {components.content.componentsJS.map((item, key) => {
                            return (
-                           <Link href={"/Documentation/" + item.replace(/\s/g,'')} key={key}>
-                                <a className={"element " + (item.replace(/\s/g,'') == component ? 'active' : '')}>
-                                    <span>{item}</span>
+                           <Link href={"/Documentation/" + item.link} key={key}>
+                                <a className={"element " + (item.link == component ? 'active' : '')}>
+                                    <span>{item.name}</span>
                                     <div className="line" />
                                 </a>
                             </Link>

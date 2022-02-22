@@ -95,3 +95,27 @@ const Dropdown = () => {
 }
 
 export default Dropdown
+
+export const DropdownSample = () => {
+    return (
+        <Menu as="div" className="dropdown bottom">
+            <Menu.Button className="button">More</Menu.Button>
+            <Menu.Items className="menu w-auto content">
+                <Menu.Item>
+                {({ active }) => (
+                <a className={`${active && 'active'} button ghost`}>
+                    Menu Item One
+                </a>
+                )}
+                </Menu.Item>
+                <Menu.Item>
+                {({ active }) => (
+                <a className={`${active && 'active'} button ghost`}>
+                    Menu Item Two
+                </a>
+                )}
+                </Menu.Item>
+            </Menu.Items>
+        </Menu>
+    )
+  }

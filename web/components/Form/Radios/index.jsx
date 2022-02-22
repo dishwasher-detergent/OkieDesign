@@ -25,3 +25,14 @@ const Radios = () => {
 }
 
 export default Radios
+
+export const RadioSample = () => {
+  return (
+    <div className="flex gap-1">
+      <input type="radio" className='radio' />
+      <input type="radio" className='radio success' />
+      <input type="radio" className='radio warning' />
+      <input type="radio" className='radio emergency' />
+    </div>
+  )
+}

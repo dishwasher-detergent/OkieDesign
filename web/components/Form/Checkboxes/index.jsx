@@ -25,3 +25,14 @@ const Checkboxes = () => {
 }
 
 export default Checkboxes
+
+export const CheckboxSample = () => {
+  return (
+    <div className="flex gap-1">
+      <input type="checkbox" className='checkbox' />
+      <input type="checkbox" className='checkbox success' />
+      <input type="checkbox" className='checkbox warning' />
+      <input type="checkbox" className='checkbox emergency' />
+    </div>
+  )
+}

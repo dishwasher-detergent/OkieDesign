@@ -42,3 +42,11 @@ const Tooltips = () => {
 }
 
 export default Tooltips
+
+export const TooltipSample = () => {
+  return (
+    <div data-content="Success" className="tooltip top success open">
+      <button className="button">Save</button>
+    </div>
+  )
+}

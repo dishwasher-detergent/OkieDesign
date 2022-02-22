@@ -23,3 +23,9 @@ const Badge = () => {
 }
 
 export default Badge
+
+export const BadgeSample = () => {
+  return (
+    <div className="badge success">Good Job!</div>
+  )
+}

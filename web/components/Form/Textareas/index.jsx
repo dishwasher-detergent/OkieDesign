@@ -25,3 +25,9 @@ const Textareas = () => {
 }
 
 export default Textareas
+
+export const TextareaSample = () => {
+  return (
+    <textarea className='textarea emergency' placeHolder="Required"></textarea>
+  )
+}

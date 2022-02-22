@@ -24,3 +24,11 @@ const Ranges = () => {
 }
 
 export default Ranges
+
+export const RangeSample = () => {
+  return (
+    <>
+      <input type="range" className='range' placeHolder="Standard"/>
+    </>
+  )
+}
