@@ -34,14 +34,14 @@ Responsive CSS components made with TailwindCSS.
     - [x]  Toggle
 
 #### Components
-- [ ]  Accordion
-- [x]  Alert
+- [x]  Collapse
+- [x]  Notification
 - [ ]  Avatar
 - [x]  Badge
 - [x]  Breadcrumb
-- [x]  Card
+- [ ]  Card
 - [ ]  Divider
-- [x]  Drawer
+- [ ]  Drawer
 - [x]  Dropdown
 - [ ]  Footer
 - [ ]  Hero Section
