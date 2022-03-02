@@ -1,9 +1,9 @@
 import ComponentLayout from '../Layout/Documentation/Component';
 import ComponentDocs from '../Layout/Display/Components/Component';
 
-const Breadcrumbs = () => {
+const Breadcrumbs = ({title}) => {
     return (
-      <ComponentLayout title="Breadcrumbs">
+      <ComponentLayout title={title}>
         <ComponentDocs classes="list vertical" title="Sizes">
           <div className="breadcrumb extra_small">
             <p>Mensware</p>

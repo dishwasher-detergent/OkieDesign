@@ -20,16 +20,17 @@
   @apply bg-emergency-100 text-emergency-900; }
 
 .badge.xs {
-  @apply text-xs; }
+  font-size: .5rem;
+  line-height: .75rem; }
 
 .badge.sm {
-  @apply text-sm; }
+  @apply text-xs; }
 
 .badge.lg {
-  @apply text-lg; }
+  @apply text-sm; }
 
 .badge.xl {
-  @apply text-xl; }
+  @apply text-lg; }
 
 .badge.xxl {
-  @apply text-2xl; }
+  @apply text-xl; }

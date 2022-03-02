@@ -1,9 +1,9 @@
 import ComponentLayout from '../Layout/Documentation/Component';
 import ComponentDocs from '../Layout/Display/Components/Component';
 
-const ButtonGroups = () => {
+const ButtonGroups = ({title}) => {
     return (
-      <ComponentLayout title="Button Groups">
+      <ComponentLayout title={title}>
         <ComponentDocs classes="list" title="Sizes">
           <div className="button_group">
             <button className="button xs">

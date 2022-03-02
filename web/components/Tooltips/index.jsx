@@ -1,9 +1,9 @@
 import ComponentLayout from '../Layout/Documentation/Component';
 import ComponentDocs from '../Layout/Display/Components/Component';
 
-const Tooltips = () => {
+const Tooltips = ({title}) => {
     return (
-      <ComponentLayout title="Collapse">
+      <ComponentLayout title={title}>
         <ComponentDocs classes="list" title="Locations">
           <div className="list horizontal my-4 items-start">
             <div data-content="I'm on the top!" className="tooltip top">

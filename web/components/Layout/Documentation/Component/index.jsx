@@ -1,7 +1,7 @@
 const ComponentLayout = ({title,children}) => {
     return (
         <>
-            <div className="w-full h-16 px-8 flex items-center gap-4">
+            <div className="flex-none w-full px-4 flex items-center gap-4">
                 <p className="flex-none text-gray-500 font-semibold">{title}</p>
                 <div className="w-full h-0.5 rounded-full bg-gray-500" />
             </div>

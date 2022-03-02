@@ -1,9 +1,9 @@
 import ComponentLayout from '../../Layout/Documentation/Component';
 import ComponentDocs from '../../Layout/Display/Components/Component';
 
-const Radios = () => {
+const Radios = ({title}) => {
     return (
-      <ComponentLayout title="Radios">
+      <ComponentLayout title={title}>
         <ComponentDocs classes="list" title="Sizes">
             <input type="radio" className='radio xs' />
             <input type="radio" className='radio sm' />

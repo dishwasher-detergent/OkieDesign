@@ -1,9 +1,9 @@
 import ComponentLayout from '../Layout/Documentation/Component';
 import ComponentDocs from '../Layout/Display/Components/Component';
 
-const Buttons = () => {
+const Buttons = ({title}) => {
     return (
-      <ComponentLayout title="Buttons">
+      <ComponentLayout title={title}>
         <ComponentDocs classes="list" title="Sizes">
           <button className="button xs">Extra Small</button>
           <button className="button sm">Small</button>

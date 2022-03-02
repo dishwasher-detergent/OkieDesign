@@ -1,9 +1,9 @@
 import ComponentLayout from '../../Layout/Documentation/Component';
 import ComponentDocs from '../../Layout/Display/Components/Component';
 
-const Ranges = () => {
+const Ranges = ({title}) => {
     return (
-      <ComponentLayout title="Ranges">
+      <ComponentLayout title={title}>
         <ComponentDocs classes="list" title="Sizes">
             <input type="range" className='range sm' placeHolder="Small"/>
             <input type="range" className='range' placeHolder="Standard"/>

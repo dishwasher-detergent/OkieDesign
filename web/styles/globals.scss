@@ -42,6 +42,10 @@
 .custom_sidebar {
     @apply p-4 list-none flex flex-col gap-1;
 
+    ul {
+        @apply flex flex-col flex-nowrap gap-1;
+    }
+
     h4 {
         @apply
         text-sm

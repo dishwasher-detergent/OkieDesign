@@ -17,6 +17,13 @@ import Dropdown, { DropdownSample } from "./Dropdown"
 
 const components = {
     content: {
+        samples: [
+            {
+                name: "Samples",
+                link: "samples",
+                component: Samples,
+            } 
+        ],
         components: [
             {
                 name: "Badges",

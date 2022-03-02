@@ -13,7 +13,7 @@ export default function Documentation() {
       found = components.content[key].find(item => item.link == component)
       if(found) break
     }
-    return React.createElement(found.component);
+    return React.createElement(found.component,{title: found.name});
   }
 
   return (

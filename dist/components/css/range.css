@@ -10,13 +10,10 @@
   @apply bg-primary-200 rounded-full h-1 w-full; }
 
 .range::-webkit-slider-thumb {
-  @apply appearance-none 
-  bg-primary-600
+  @apply bg-primary-600
     rounded-full 
     w-2 
     h-4 
-    top-1/2
-    -translate-y-1/2
     relative 
     transition-all 
     ease-in-out 

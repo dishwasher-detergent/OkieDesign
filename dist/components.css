@@ -20,19 +20,20 @@
   @apply bg-emergency-100 text-emergency-900; }
 
 .badge.xs {
-  @apply text-xs; }
+  font-size: .5rem;
+  line-height: .75rem; }
 
 .badge.sm {
-  @apply text-sm; }
+  @apply text-xs; }
 
 .badge.lg {
-  @apply text-lg; }
+  @apply text-sm; }
 
 .badge.xl {
-  @apply text-xl; }
+  @apply text-lg; }
 
 .badge.xxl {
-  @apply text-2xl; }
+  @apply text-xl; }
 .breadcrumb {
   @apply flex flex-row font-semibold; }
   .breadcrumb > :not(:last-child):after {
@@ -650,13 +651,10 @@
   @apply bg-primary-200 rounded-full h-1 w-full; }
 
 .range::-webkit-slider-thumb {
-  @apply appearance-none 
-  bg-primary-600
+  @apply bg-primary-600
     rounded-full 
     w-2 
     h-4 
-    top-1/2
-    -translate-y-1/2
     relative 
     transition-all 
     ease-in-out 

@@ -1,9 +1,9 @@
 import ComponentLayout from '../../Layout/Documentation/Component';
 import ComponentDocs from '../../Layout/Display/Components/Component';
 
-const Selects = () => {
+const Selects = ({title}) => {
     return (
-      <ComponentLayout title="Selects">
+      <ComponentLayout title={title}>
         <ComponentDocs classes="list" title="Sizes">
           <select className="select xs">
             <option>Extra Small</option>

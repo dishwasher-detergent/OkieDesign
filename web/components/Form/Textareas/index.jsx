@@ -1,9 +1,9 @@
 import ComponentLayout from '../../Layout/Documentation/Component';
 import ComponentDocs from '../../Layout/Display/Components/Component';
 
-const Textareas = () => {
+const Textareas = ({title}) => {
     return (
-      <ComponentLayout title="Textareas">
+      <ComponentLayout title={title}>
         <ComponentDocs classes="list" title="Sizes">
           <textarea className='textarea xs' placeHolder="Extra Small"></textarea>
           <textarea className='textarea sm' placeHolder="Small"></textarea>

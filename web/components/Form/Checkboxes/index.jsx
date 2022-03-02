@@ -1,9 +1,9 @@
 import ComponentLayout from '../../Layout/Documentation/Component';
 import ComponentDocs from '../../Layout/Display/Components/Component';
 
-const Checkboxes = () => {
+const Checkboxes = ({title}) => {
     return (
-      <ComponentLayout title="CheckBoxes">
+      <ComponentLayout title={title}>
         <ComponentDocs classes="list" title="Sizes">
             <input type="checkbox" className='checkbox xs' />
             <input type="checkbox" className='checkbox sm' />

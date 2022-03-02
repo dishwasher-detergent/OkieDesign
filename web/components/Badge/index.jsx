@@ -1,9 +1,9 @@
 import ComponentLayout from '../Layout/Documentation/Component';
 import ComponentDocs from '../Layout/Display/Components/Component';
 
-const Badge = () => {
+const Badge = ({title}) => {
     return (
-      <ComponentLayout title="Badges">
+      <ComponentLayout title={title}>
         <ComponentDocs classes="list" title="Sizes">
           <div className="badge xs">Extra Small</div>
           <div className="badge sm">Small</div>

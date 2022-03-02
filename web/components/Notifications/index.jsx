@@ -1,9 +1,9 @@
 import ComponentLayout from '../Layout/Documentation/Component';
 import ComponentDocs from '../Layout/Display/Components/Component';
 
-const Notifications = () => {
+const Notifications = ({title}) => {
     return (
-      <ComponentLayout title="Notifications">
+      <ComponentLayout title={title}>
         <ComponentDocs classes="list vertical" title="Sizes">
           <div className="notification">Standard notification</div>
           <div className="notification toast">Toast notification</div>
