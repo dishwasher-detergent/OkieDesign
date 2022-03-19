@@ -11,7 +11,7 @@
     "@headlessui/react": "^1.4.3",
     "jsx-to-string": "^1.4.0",
     "next": "12.0.7",
-    "okiedesign": "^1.2.6",
+    "okiedesign": "^1.2.7",
     "pretty": "2.0.0",
     "pretty-js": "^0.2.2",
     "prismjs": "^1.26.0",
