@@ -18,7 +18,7 @@ const ComponentDisplay = ({more}) => {
 
     return (
       <ComponentLayout title="Components">
-        <div className="w-full grid grid-1 md:grid-cols-3 gap-4 z-10">
+        <div className="w-full grid grid-1 md:grid-cols-3 gap-4 z-10 pt-6">
         {allComps.map((item, key) => {
           return (
             <Link href={'/Documentation/'+item.link} key={key}>

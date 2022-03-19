@@ -49,6 +49,7 @@
     "build": "npm run components"
   },
   "dependencies": {
-    "node-sass": "^7.0.1"
+    "node-sass": "^7.0.1",
+    "tailwindcss": "^3.0.23"
   }
 }

@@ -1,5 +1,5 @@
 .breadcrumb {
-  @apply flex flex-row font-semibold; }
+  @apply flex flex-row font-medium; }
   .breadcrumb > :not(:last-child):after {
     content: "/";
     @apply px-1; }

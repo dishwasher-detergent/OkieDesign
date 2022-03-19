@@ -1,3 +1,5 @@
+import DocNavigation from "../Navigation";
+
 const ComponentLayout = ({title,children}) => {
     return (
         <>
@@ -8,6 +10,7 @@ const ComponentLayout = ({title,children}) => {
             <section className="w-full grid grid-cols-1 gap-6">
                 {children}
             </section>
+            <DocNavigation />
         </>
     )
 }

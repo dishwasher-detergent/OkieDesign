@@ -17,7 +17,7 @@
   @apply w-auto; }
 
 .menu .title {
-  @apply text-sm font-semibold text-slate-600 pl-2; }
+  @apply text-sm font-medium text-slate-600 pl-2; }
 
 .menu .divider {
   @apply w-full border-t border-gray-300; }

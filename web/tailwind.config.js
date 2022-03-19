@@ -13,6 +13,6 @@ module.exports = {
     },
   },
   plugins: [
-    require("okiedesign")
+    require("../index.js")
   ],
 }

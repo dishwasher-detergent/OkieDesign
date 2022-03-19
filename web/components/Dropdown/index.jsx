@@ -12,7 +12,7 @@ const Dropdown = ({title}) => {
           </svg>
             These examples utilize <Link target="_blank" href="https://headlessui.dev/react/menu"><a className='button sm'>HeadlessUI</a></Link>.
         </div>
-        <ComponentDocs classes="list" title="Sizes">
+        <ComponentDocs classes="list" title="Positions">
             <Menu as="div" className="dropdown left">
                 <Menu.Button className="button">More</Menu.Button>
                 <Menu.Items className="menu w-auto content">

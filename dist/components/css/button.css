@@ -8,7 +8,7 @@
     justify-center
     bg-primary-600
     text-white
-    font-semibold
+    font-medium
     border 
     border-primary-600
     rounded-md
@@ -121,11 +121,13 @@
 
 .button.lg {
   @apply text-lg
-    h-12; }
+    h-12
+    px-6; }
 
 .button.xl {
   @apply text-xl
-    h-16; }
+    h-16
+    px-6; }
 
 .button.icon {
   @apply p-0
