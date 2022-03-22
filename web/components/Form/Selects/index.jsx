@@ -3,7 +3,7 @@ import ComponentDocs from '../../Layout/Display/Components/Component';
 
 const Selects = ({title}) => {
     return (
-      <ComponentLayout title={title}>
+      <ComponentLayout title={title} docNav={true}>
         <ComponentDocs classes="list" title="Sizes">
           <select className="select xs">
             <option>Extra Small</option>

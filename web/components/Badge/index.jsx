@@ -3,7 +3,7 @@ import ComponentDocs from '../Layout/Display/Components/Component';
 
 const Badge = ({title}) => {
     return (
-      <ComponentLayout title={title}>
+      <ComponentLayout title={title} docNav={true}>
         <ComponentDocs classes="list" title="Sizes">
           <div className="badge xs">Extra Small</div>
           <div className="badge sm">Small</div>

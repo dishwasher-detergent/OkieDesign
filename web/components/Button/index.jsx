@@ -3,7 +3,7 @@ import ComponentDocs from '../Layout/Display/Components/Component';
 
 const Buttons = ({title}) => {
     return (
-      <ComponentLayout title={title}>
+      <ComponentLayout title={title} docNav={true}>
         <ComponentDocs classes="list" title="Sizes">
           <button className="button xs">Extra Small</button>
           <button className="button sm">Small</button>

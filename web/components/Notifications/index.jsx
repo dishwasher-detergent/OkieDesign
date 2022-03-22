@@ -3,7 +3,7 @@ import ComponentDocs from '../Layout/Display/Components/Component';
 
 const Notifications = ({title}) => {
     return (
-      <ComponentLayout title={title}>
+      <ComponentLayout title={title} docNav={true}>
         <ComponentDocs classes="list vertical" title="Sizes">
           <div className="notification">Standard notification</div>
           <div className="notification toast">Toast notification</div>

@@ -3,7 +3,7 @@ import ComponentDocs from '../Layout/Display/Components/Component';
 
 const Breadcrumbs = ({title}) => {
     return (
-      <ComponentLayout title={title}>
+      <ComponentLayout title={title} docNav={true}>
         <ComponentDocs classes="list vertical" title="Sizes">
           <div className="breadcrumb extra_small">
             <p>Mensware</p>

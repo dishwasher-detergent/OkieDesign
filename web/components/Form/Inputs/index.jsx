@@ -3,7 +3,7 @@ import ComponentDocs from '../../Layout/Display/Components/Component';
 
 const Inputs = ({title}) => {
     return (
-      <ComponentLayout title={title}>
+      <ComponentLayout title={title} docNav={true}>
         <ComponentDocs classes="list" title="Sizes">
             <input type="text" className='input xs' placeHolder="Extra Small"/>
             <input type="text" className='input sm' placeHolder="Small"/>

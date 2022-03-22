@@ -371,12 +371,13 @@
         items-center
         font-medium
         text-primary-600
+        bg-primary-50
         text-center
         border
         border-transparent
         truncate; }
   .collapse .title:hover, .collapse .title:focus {
-    @apply bg-primary-50
+    @apply bg-primary-100
         border
         border-primary-300; }
   .collapse.arrow .title, .collapse.plus .title {

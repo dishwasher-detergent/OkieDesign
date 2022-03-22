@@ -3,7 +3,7 @@ import ComponentDocs from '../Layout/Display/Components/Component';
 
 const Tooltips = ({title}) => {
     return (
-      <ComponentLayout title={title}>
+      <ComponentLayout title={title} docNav={true}>
         <ComponentDocs classes="list" title="Locations">
           <div className="list horizontal my-4 items-start">
             <div data-content="I'm on the top!" className="tooltip top">

@@ -71,6 +71,7 @@
         items-center
         font-medium
         text-primary-600
+        bg-primary-50
         text-center
         border
         border-transparent
@@ -79,7 +80,7 @@
 
     .title:hover,.title:focus {
         @apply
-        bg-primary-50
+        bg-primary-100
         border
         border-primary-300
     }

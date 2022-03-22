@@ -3,7 +3,7 @@ import ComponentDocs from '../../Layout/Display/Components/Component';
 
 const Toggles = ({title}) => {
     return (
-      <ComponentLayout title={title}>
+      <ComponentLayout title={title} docNav={true}>
         <ComponentDocs classes="list" title="Sizes">
             <input type="checkbox" className='toggle xs' />
             <input type="checkbox" className='toggle sm' />

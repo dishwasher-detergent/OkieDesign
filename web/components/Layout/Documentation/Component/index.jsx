@@ -1,6 +1,6 @@
 import DocNavigation from "../Navigation";
 
-const ComponentLayout = ({title,children}) => {
+const ComponentLayout = ({title,docNav = false, children}) => {
     return (
         <>
             <div className="flex-none w-full px-4 flex items-center gap-4">
@@ -10,7 +10,7 @@ const ComponentLayout = ({title,children}) => {
             <section className="w-full grid grid-cols-1 gap-6">
                 {children}
             </section>
-            <DocNavigation />
+            {docNav ? <DocNavigation /> : null }
         </>
     )
 }

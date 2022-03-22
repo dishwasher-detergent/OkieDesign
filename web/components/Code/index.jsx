@@ -5,13 +5,14 @@ import React from "react";
 import pretty from "pretty";
 
 const Code = ({ children }) => {
+  console.log(ReactDOMServer.renderToStaticMarkup(children))
   return (
     <SyntaxHighlighter
       language="markdown"
       style={nnfxDark}
       showLineNumbers={true}
     >
-      {pretty(ReactDOMServer.renderToStaticMarkup(children))}
+      {pretty(ReactDOMServer.renderToStaticMarkup(children),{inline : [""]})}
     </SyntaxHighlighter>
   );
 };

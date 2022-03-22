@@ -3,7 +3,7 @@ import ComponentDocs from '../../Layout/Display/Components/Component';
 
 const Ranges = ({title}) => {
     return (
-      <ComponentLayout title={title}>
+      <ComponentLayout title={title} docNav={true}>
         <ComponentDocs classes="list" title="Sizes">
             <input type="range" className='range sm' placeHolder="Small"/>
             <input type="range" className='range' placeHolder="Standard"/>

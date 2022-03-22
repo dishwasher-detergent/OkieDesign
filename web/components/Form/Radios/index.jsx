@@ -3,7 +3,7 @@ import ComponentDocs from '../../Layout/Display/Components/Component';
 
 const Radios = ({title}) => {
     return (
-      <ComponentLayout title={title}>
+      <ComponentLayout title={title} docNav={true}>
         <ComponentDocs classes="list" title="Sizes">
             <input type="radio" className='radio xs' />
             <input type="radio" className='radio sm' />

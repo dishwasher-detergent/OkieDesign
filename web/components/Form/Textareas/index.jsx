@@ -3,7 +3,7 @@ import ComponentDocs from '../../Layout/Display/Components/Component';
 
 const Textareas = ({title}) => {
     return (
-      <ComponentLayout title={title}>
+      <ComponentLayout title={title} docNav={true}>
         <ComponentDocs classes="list" title="Sizes">
           <textarea className='textarea xs' placeHolder="Extra Small"></textarea>
           <textarea className='textarea sm' placeHolder="Small"></textarea>
