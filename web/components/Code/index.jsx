@@ -1,6 +1,6 @@
 import ReactDOMServer from "react-dom/server";
-import SyntaxHighlighter from "react-syntax-highlighter";
-import { materialOceanic } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { materialOceanic } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 import React from "react";
 import pretty from "pretty";
 
