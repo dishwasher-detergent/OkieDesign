@@ -11,6 +11,7 @@ const Code = ({ children }) => {
       language="markdown"
       style={materialOceanic}
       showLineNumbers={true}
+      customStyle={{'margin': '0'}}
     >
       {pretty(ReactDOMServer.renderToStaticMarkup(children),{inline : [""]})}
     </SyntaxHighlighter>

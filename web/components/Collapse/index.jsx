@@ -65,16 +65,6 @@ const Collapse = ({title}) => {
           </div>
         </ComponentDocs>
         <ComponentDocs classes="list" title="Styles">
-        <div className='collapse w-60 outline'>
-            <Disclosure>
-              <Disclosure.Button className="title">
-                Outlined
-              </Disclosure.Button>
-              <Disclosure.Panel className="content">
-                Content
-              </Disclosure.Panel>
-            </Disclosure>
-          </div>
           <div className='collapse plus w-60'>
             <Disclosure>
               <Disclosure.Button className="title">
