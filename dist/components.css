@@ -36,29 +36,27 @@
 .badge.xxl {
   @apply text-xl; }
 .breadcrumb {
-  @apply flex flex-row font-medium; }
+  @apply flex flex-row font-medium p-2; }
+  .breadcrumb * {
+    transition: all .25s;
+    @apply mr-3 px-2 p-0.5 cursor-pointer relative rounded-md; }
   .breadcrumb > :not(:last-child):after {
     content: "/";
-    @apply px-1; }
+    @apply absolute -right-3; }
+  .breadcrumb > :last-child {
+    @apply font-bold; }
+  .breadcrumb > :not(:last-child):hover {
+    @apply bg-primary-100 text-primary-900; }
   .breadcrumb.arrow > :not(:last-child):after {
-    content: ">";
-    @apply px-2; }
+    content: ">"; }
   .breadcrumb.extra_small {
     @apply text-xs; }
-    .breadcrumb.extra_small > :not(:last-child):after {
-      @apply px-1; }
   .breadcrumb.small {
     @apply text-sm; }
-    .breadcrumb.small > :not(:last-child):after {
-      @apply px-1; }
   .breadcrumb.large {
     @apply text-lg; }
-    .breadcrumb.large > :not(:last-child):after {
-      @apply px-1.5; }
   .breadcrumb.extra_large {
     @apply text-xl; }
-    .breadcrumb.extra_large > :not(:last-child):after {
-      @apply px-1.5; }
 .button {
   @apply px-4
     h-9
@@ -370,16 +368,13 @@
         justify-center
         items-center
         font-medium
-        text-primary-600
+        text-primary-900
         bg-primary-50
+        border border-primary-300
         text-center
-        border
-        border-transparent
         truncate; }
   .collapse .title:hover, .collapse .title:focus {
-    @apply bg-primary-100
-        border
-        border-primary-300; }
+    @apply bg-primary-100; }
   .collapse.arrow .title, .collapse.plus .title {
     @apply justify-between; }
   .collapse.arrow .title::after {

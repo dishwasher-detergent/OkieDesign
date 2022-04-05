@@ -1,45 +1,41 @@
 .breadcrumb {
-    @apply flex flex-row font-medium;
+    @apply flex flex-row font-medium p-2;
+
+    * {
+        transition: all .25s;
+        @apply mr-3 px-2 p-0.5 cursor-pointer relative rounded-md;
+    }
 
     >:not(:last-child):after {
         content: "/";
-        @apply px-1;
+        @apply absolute -right-3;
+    }
+
+    >:last-child {
+        @apply font-bold;
+    }
+
+    >:not(:last-child):hover {
+        @apply bg-primary-100 text-primary-900;
     }
 
     &.arrow>:not(:last-child):after {
         content: ">";
-        @apply px-2;
     }
 
     &.extra_small {
         @apply text-xs;
-        
-        >:not(:last-child):after {
-            @apply px-1;
-        }
     }
 
     &.small {
         @apply text-sm;
-
-        >:not(:last-child):after {
-            @apply px-1;
-        }
     }
 
     &.large {
         @apply text-lg;
-        
-        >:not(:last-child):after {
-            @apply px-1.5;
-        }
     }
 
     &.extra_large {
         @apply text-xl;
-
-        >:not(:last-child):after {
-            @apply px-1.5;
-        }
     }
 }

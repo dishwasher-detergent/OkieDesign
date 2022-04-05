@@ -70,19 +70,16 @@
         justify-center
         items-center
         font-medium
-        text-primary-600
+        text-primary-900
         bg-primary-50
+        border border-primary-300
         text-center
-        border
-        border-transparent
         truncate;
     }
 
     .title:hover,.title:focus {
         @apply
         bg-primary-100
-        border
-        border-primary-300
     }
 
     &.arrow .title, &.plus .title {
