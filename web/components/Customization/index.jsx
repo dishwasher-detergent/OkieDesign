@@ -12,7 +12,7 @@ const Customization = () => {
 {`module.exports = {
     theme: {
         colors: {
-            primary: colors.purple,
+            primary: colors.primary,
             success: colors.emerald,
             warning: colors.amber,
             emergency: colors.red,

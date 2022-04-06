@@ -22,12 +22,12 @@ const ComponentDisplay = ({more}) => {
         {allComps.map((item, key) => {
           return (
             <Link href={'/Documentation/'+item.link} key={key}>
-              <a className="card h-48 hover:shadow-lg hover:shadow-purple-200">
-                  <div className="h-full flex items-center justify-center p-4">
+              <a className="card h-48 dark:bg-dark-800 dark:border-dark-700">
+                  <div className="h-full flex items-center justify-center p-4 dark:border-dark-700">
                     {React.createElement(item.sample)}
                   </div>
                   <div className="px-4 py-2">
-                    <p className="font-semibold text-purple-600">{item.name}</p>
+                    <p className="font-semibold text-primary-600 dark:text-primary-300">{item.name}</p>
                   </div>
               </a>
             </Link>

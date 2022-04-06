@@ -8,11 +8,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: colors.purple
+        primary: colors.purple,
+        dark: colors.slate
       }
     },
   },
   plugins: [
-    require("okiedesign")
+    require("../index")
   ],
 }

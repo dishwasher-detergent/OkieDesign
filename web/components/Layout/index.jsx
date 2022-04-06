@@ -3,14 +3,14 @@ const config = require('okiedesign/package.json');
 
 const DefaultLayout = ({children}) => {
     return (
-        <div className="flex flex-col w-full min-h-screen relative">
+        <div className="flex flex-col w-full min-h-screen relative dark:bg-dark-900">
             <div className="flex-1">
                 <header>
                     <nav className="w-full h-16 px-4 md:px-8 flex items-center gap-4">
                         <Link href="/">
-                            <a className="Carena flex-none text-xl text-purple-600 font-bold">Okie.Design</a>
+                            <a className="Carena flex-none text-xl text-primary-600 font-bold">Okie.Design</a>
                         </Link>
-                        <div className="w-full h-0.5 rounded-full bg-purple-600" />
+                        <div className="w-full h-0.5 rounded-full bg-primary-600" />
                         <div className="badge sm">v{config.version}</div>
                         <Link href="https://www.github.com" target="_blank">
                             <a className="button icon lg ghost">
@@ -21,12 +21,12 @@ const DefaultLayout = ({children}) => {
                 </header>
                 <main className="relative">
                     <section className="z-20 relative max-w-6xl mx-auto py-12 md:py-24 px-6">
-                        <h1 className="Carena font-bold text-4xl lg:text-6xl lg:leading-tight text-gray-900 lg:text-center 2xl:px-30 mb-4 lg:mb-8">Create the beautiful website you&apos;ve always wanted.</h1>
-                        <p className="text-gray-600 md:text-xl md:text-center">Responsive CSS components made with TailwindCSS and Love.</p>
+                        <h1 className="Carena font-bold text-4xl lg:text-6xl lg:leading-tight text-gray-900 lg:text-center 2xl:px-30 mb-4 lg:mb-8 dark:text-dark-50">Create the beautiful website you&apos;ve always wanted.</h1>
+                        <p className="text-gray-600 md:text-xl md:text-center dark:text-dark-100">Responsive CSS components made with TailwindCSS and Love.</p>
                         <div className="flex items-center justify-center flex-wrap gap-2 py-8">
                                 <input value="npm i okiedesign" readOnly className="h-12 w-48 text-center border border-gray-300 px-4 rounded-md shadow-lg"/>
                                 <Link href="/Documentation">
-                                    <a className="button lg shadow-lg shadow-purple-300">Get Started</a>
+                                    <a className="button lg shadow-lg">Get Started</a>
                                 </Link>
                         </div>
                     </section>
@@ -37,9 +37,9 @@ const DefaultLayout = ({children}) => {
             </div>
             <footer className="w-full h-48 mt-6 flex flex-col relative">
                 <section className="absolute bottom-0 h-24 w-full px-4 md:px-8 flex items-center justify-center z-10">
-                    <p className="font-semibold text-purple-900">© 2022 Okie Design. All Rights Reserved.</p>
+                    <p className="font-semibold text-primary-900 dark:text-primary-200">© 2022 Okie Design. All Rights Reserved.</p>
                 </section>
-                <div className="z-0 absolute bottom-0 w-full h-full bg-gradient-to-t from-purple-300 to-white" />
+                <div className="z-0 absolute bottom-0 w-full h-full bg-gradient-to-t from-primary-300 to-white dark:from-primary-900 dark:to-dark-900" />
             </footer>
         </div>
     )
