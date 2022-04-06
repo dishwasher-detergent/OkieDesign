@@ -32,7 +32,7 @@ const DocsLayout = ({children}) => {
 
     return (
         <main className="h-screen w-full flex flex-col flex-nowrap overflow-hidden">
-            <nav className="w-full h-16 px-4 md:px-8 flex items-center gap-2 md:gap-4 border-b border-slate-300 shadow-sm">
+            <nav className="w-full h-16 px-4 md:px-8 flex items-center gap-2 md:gap-4 border-b border-slate-300">
                 <Link href="/">
                     <a className="Carena flex-none md:text-xl text-purple-600 font-bold">Okie.Design</a>
                 </Link>
@@ -50,7 +50,7 @@ const DocsLayout = ({children}) => {
                 </button>
             </nav>
             <div className="relative h-full w-full flex flex-row flex-nowrap overflow-hidden">
-                <aside className={(sidebarToggle ? "block" : "hidden") + " absolute left-0 top-0 md:relative md:block flex-none w-72 h-full overflow-y-hidden border-r border-slate-300 shadow-md bg-white"}>
+                <aside className={(sidebarToggle ? "block" : "hidden") + " absolute left-0 top-0 md:relative md:block flex-none w-72 h-full overflow-y-hidden border-r border-slate-300 bg-white"}>
                     <div className="absolute top-0 h-8 w-full bg-gradient-to-b from-white"></div>
                         <nav className="h-full pt-2 pb-6 overflow-y-auto custom_sidebar">
                             <ul className="pt-2">
@@ -132,16 +132,6 @@ const DocsLayout = ({children}) => {
                     <div className="absolute bottom-0 h-8 w-full bg-gradient-to-t from-white"></div>
                 </aside>
                 <section className="p-6 flex-1 flex flex-col flex-nowrap overflow-y-auto gap-6">
-                    {/* <article className="w-full h-auto border border-slate-300 rounded-md overflow-hidden">
-                        <h2 className="p-2 font-semibold text-sm border-b border-slate-300">Test</h2>
-                        <div className="w-full h-36 p-2"></div>
-                        <div className="w-full h-36 bg-slate-900"></div>
-                    </article>
-                    <article className="w-full h-auto border border-slate-300 rounded-md overflow-hidden">
-                        <h2 className="p-2 font-semibold text-sm border-b border-slate-300">Test</h2>
-                        <div className="w-full h-36 p-2"></div>
-                        <div className="w-full h-36 bg-slate-900"></div>
-                    </article> */}
                     {children}
                 </section>
             </div>
