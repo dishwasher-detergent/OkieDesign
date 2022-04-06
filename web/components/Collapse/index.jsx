@@ -94,10 +94,10 @@ export default Collapse
 
 export const CollapseSample = () => {
   return (
-    <div className='collapse w-60 outline'>
+    <div className='collapse w-full'>
       <Disclosure>
         <Disclosure.Button className="title">
-          Outlined
+          Collapse
         </Disclosure.Button>
         <Disclosure.Panel className="content">
           Content

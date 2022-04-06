@@ -17,7 +17,7 @@
         flex-none
         bg-white 
         border-r 
-        border-gray-300
+        border-slate-300
         relative
         left-0
         overflow-y-auto; }
@@ -30,7 +30,7 @@
     @apply opacity-0
         w-full
         flex-1
-        bg-gray-900
+        bg-slate-900
         relative
         -left-full; }
   .sidebar .toggle:checked ~ .content {

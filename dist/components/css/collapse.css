@@ -62,7 +62,7 @@
   .collapse .content {
     @apply p-2 bg-slate-50 rounded-md border border-slate-300; }
   .collapse.outline {
-    @apply gap-0 outline-none border border-gray-300; }
+    @apply gap-0 outline-none border border-slate-300; }
     .collapse.outline .title {
       @apply border-none rounded-none; }
     .collapse.outline .content {

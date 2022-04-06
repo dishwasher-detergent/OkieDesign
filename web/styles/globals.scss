@@ -15,7 +15,7 @@
 }
 
 // p,h1,h2,h3,h4,h5,h6 {
-//     @apply text-gray-800;
+//     @apply text-slate-800;
 // }
 
 .Carena {
@@ -49,7 +49,7 @@
     h4 {
         @apply
         text-sm
-        text-gray-700
+        text-slate-700
         font-medium;
     }
 
@@ -64,7 +64,7 @@
         gap-4  
         rounded-md
         font-medium
-        text-gray-500
+        text-slate-500
         hover:text-primary-600
         focus:text-primary-600
         hover:bg-primary-50

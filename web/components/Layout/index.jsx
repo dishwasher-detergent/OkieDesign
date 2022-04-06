@@ -21,10 +21,10 @@ const DefaultLayout = ({children}) => {
                 </header>
                 <main className="relative">
                     <section className="z-20 relative max-w-6xl mx-auto py-12 md:py-24 px-6">
-                        <h1 className="Carena font-bold text-4xl lg:text-6xl lg:leading-tight text-gray-900 lg:text-center 2xl:px-30 mb-4 lg:mb-8">Create the beautiful website you&apos;ve always wanted.</h1>
-                        <p className="text-gray-600 md:text-xl md:text-center">Responsive CSS components made with TailwindCSS and Love.</p>
+                        <h1 className="Carena font-bold text-4xl lg:text-6xl lg:leading-tight text-slate-900 lg:text-center 2xl:px-30 mb-4 lg:mb-8">Create the beautiful website you&apos;ve always wanted.</h1>
+                        <p className="text-slate-600 md:text-xl md:text-center">Responsive CSS components made with TailwindCSS and Love.</p>
                         <div className="flex items-center justify-center flex-wrap gap-2 py-8">
-                                <input value="npm i okiedesign" readOnly className="h-12 w-48 text-center border border-gray-300 px-4 rounded-md shadow-lg"/>
+                                <input className="input lg w-52 text-center" value="npm i okiedesign" readOnly />
                                 <Link href="/Documentation">
                                     <a className="button lg shadow-lg shadow-purple-300">Get Started</a>
                                 </Link>
