@@ -184,7 +184,7 @@
     px-6; }
 
 .button.xl {
-  @apply text-xl
+  @apply text-2xl
     h-16
     px-6; }
 
@@ -240,6 +240,10 @@
   .card.full {
     @apply h-full
         w-full; }
+  .card:not(.horizontal) {
+    @apply flex-col; }
+  .card.horizontal {
+    @apply flex-col-reverse md:flex-row; }
 .checkbox {
   @apply appearance-none
   h-5

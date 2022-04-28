@@ -12,4 +12,12 @@
         h-full
         w-full;
     }
+
+    &:not(.horizontal){
+        @apply flex-col;
+    }
+
+    &.horizontal {
+        @apply flex-col-reverse md:flex-row; 
+    }
 }

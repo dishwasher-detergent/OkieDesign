@@ -8,3 +8,7 @@
   .card.full {
     @apply h-full
         w-full; }
+  .card:not(.horizontal) {
+    @apply flex-col; }
+  .card.horizontal {
+    @apply flex-col-reverse md:flex-row; }
