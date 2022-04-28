@@ -3,7 +3,7 @@
     flex
     flex-col
     gap-1
-    rounded-md
+    rounded-lg
     overflow-hidden;
 
     * {
@@ -64,7 +64,7 @@
         @apply
         h-10
         px-2
-        rounded-md
+        rounded-lg
         w-full
         inline-flex
         justify-center
@@ -103,7 +103,7 @@
     }
 
     .content {
-        @apply p-2 bg-slate-50 rounded-md border border-slate-300;
+        @apply p-2 bg-slate-50 rounded-lg border border-slate-300;
     }
 
     &.outline {

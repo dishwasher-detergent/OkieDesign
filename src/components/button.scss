@@ -8,10 +8,10 @@
     justify-center
     bg-primary-600
     text-white
-    font-medium
+    font-semibold
     border 
     border-primary-600
-    rounded-md
+    rounded-lg
     transition-all
     ease-in-out
     truncate;
@@ -196,7 +196,7 @@
     @apply inline-flex
     flex-row
     overflow-hidden
-    rounded-md;
+    rounded-lg;
   }
   
   .button_group:not(.pill) * {

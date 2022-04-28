@@ -3,7 +3,7 @@
 
     * {
         transition: all .25s;
-        @apply mr-3 px-2 p-0.5 cursor-pointer relative rounded-md;
+        @apply mr-3 px-2 p-0.5 cursor-pointer relative rounded-lg;
     }
 
     >:not(:last-child):after {

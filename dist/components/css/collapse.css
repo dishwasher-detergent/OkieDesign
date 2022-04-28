@@ -2,7 +2,7 @@
   @apply flex
     flex-col
     gap-1
-    rounded-md
+    rounded-lg
     overflow-hidden; }
   .collapse * {
     @apply ease-in
@@ -32,7 +32,7 @@
   .collapse .title {
     @apply h-10
         px-2
-        rounded-md
+        rounded-lg
         w-full
         inline-flex
         justify-center
@@ -60,7 +60,7 @@
     background-position: center;
     @apply w-5 h-full flex justify-center items-center rotate-0 ease-in duration-100; }
   .collapse .content {
-    @apply p-2 bg-slate-50 rounded-md border border-slate-300; }
+    @apply p-2 bg-slate-50 rounded-lg border border-slate-300; }
   .collapse.outline {
     @apply gap-0 outline-none border border-slate-300; }
     .collapse.outline .title {

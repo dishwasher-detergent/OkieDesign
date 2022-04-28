@@ -2,7 +2,7 @@
   @apply flex flex-row font-medium p-2; }
   .breadcrumb * {
     transition: all .25s;
-    @apply mr-3 px-2 p-0.5 cursor-pointer relative rounded-md; }
+    @apply mr-3 px-2 p-0.5 cursor-pointer relative rounded-lg; }
   .breadcrumb > :not(:last-child):after {
     content: "/";
     @apply absolute -right-3; }

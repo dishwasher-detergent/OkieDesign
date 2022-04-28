@@ -9,7 +9,7 @@
     bg-purple-100
     text-primary-900
     font-medium
-    rounded-md; }
+    rounded-lg; }
 
 .notification * {
   @apply break-words whitespace-normal; }

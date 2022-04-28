@@ -1,20 +1,10 @@
 .card {
   @apply flex
     overflow-hidden
-    rounded-md
+    rounded-lg
     bg-white
     border
     border-slate-300; }
   .card.full {
     @apply h-full
         w-full; }
-  .card:not(.horizontal) {
-    @apply flex-col; }
-    .card:not(.horizontal) > :first-child {
-      @apply border-b; }
-  .card.horizontal {
-    @apply flex-col-reverse md:flex-row; }
-    .card.horizontal > :first-child {
-      @apply border-t
-            md:border-t-0
-            md:border-r; }

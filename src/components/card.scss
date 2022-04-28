@@ -2,7 +2,7 @@
     @apply
     flex
     overflow-hidden
-    rounded-md
+    rounded-lg
     bg-white
     border
     border-slate-300;
@@ -11,27 +11,5 @@
         @apply 
         h-full
         w-full;
-    }
-
-    &:not(.horizontal){
-        @apply flex-col;
-
-        >:first-child {
-            @apply
-            border-b
-            border-gray-300;
-        }
-    }
-
-    &.horizontal {
-        @apply flex-col-reverse md:flex-row;
-
-        >:first-child {
-            @apply
-            border-t
-            md:border-t-0
-            md:border-r
-            border-gray-300;
-        }  
     }
 }
