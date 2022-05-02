@@ -6,7 +6,7 @@
     border
     border-primary-600
     text-slate-700
-    font-medium
+    text-sm
     truncate
     outline-none;
     min-height: 4rem;
@@ -71,29 +71,23 @@
 .textarea.emergency:focus {
     @apply ring-4;
 }
-  
+
 .textarea.xs {
-    @apply text-xs
-    px-2
-    h-12;
+    @apply text-xs h-12 px-2;
     min-height: 3rem
 }
-  
+
 .textarea.sm {
-    @apply text-sm
-    px-2
-    h-14;
+    @apply text-xs h-14 px-2;
     min-height: 3.5rem
 }
-  
+
 .textarea.lg {
-    @apply text-lg
-    h-20;
+    @apply text-base h-20;
     min-height: 5rem;
 }
-  
+
 .textarea.xl {
-    @apply text-xl
-    h-24;
+    @apply text-xl h-24;
     min-height: 6rem;
 }

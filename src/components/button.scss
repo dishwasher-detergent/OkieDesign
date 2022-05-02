@@ -1,5 +1,5 @@
 .button {
-    @apply px-4
+    @apply px-6
     h-9
     inline-flex
     flex-row
@@ -8,6 +8,7 @@
     justify-center
     bg-primary-600
     text-white
+    text-sm
     font-semibold
     border 
     border-primary-600
@@ -137,23 +138,23 @@
   .button.xs {
     @apply text-xs
     h-4
-    px-2;
+    px-4;
   }
   
   .button.sm {
-    @apply text-sm
+    @apply text-xs
     h-6;
   }
   
   .button.lg {
-    @apply text-lg
+    @apply text-base
     h-12
     px-6;
   }
   
   .button.xl {
-    @apply text-2xl
-    h-16
+    @apply text-xl
+    h-14
     px-6;
   }
   
