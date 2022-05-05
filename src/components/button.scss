@@ -49,12 +49,24 @@
   }
   
   .button.ghost {
-    @apply bg-transparent border-none text-primary-600 ring-0;
+    @apply bg-transparent border-none ring-0 text-primary-600;
+  }
+
+  .button.ghost.success {
+    @apply bg-transparent border-none ring-0 text-success-600;
+  }
+
+  .button.ghost.warning {
+    @apply bg-transparent border-none ring-0 text-warning-600;
+  }
+
+  .button.ghost.button.emergency {
+    @apply bg-transparent border-none ring-0 text-emergency-600;
   }
   
   .button.ghost:hover,
   .button.ghost.active {
-    @apply bg-primary-100;
+    @apply bg-opacity-20;
   }
   
   .button.success {
