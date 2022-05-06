@@ -42,20 +42,26 @@
   @apply bg-transparent text-primary-600; }
 
 .button.ghost {
-  @apply bg-transparent border-none ring-0 text-primary-600; }
+  @apply bg-primary-600 bg-opacity-0 border-none ring-0 text-primary-600; }
 
 .button.ghost.success {
-  @apply bg-transparent border-none ring-0 text-success-600; }
+  @apply bg-success-600 bg-opacity-0 border-none ring-0 text-success-600; }
 
 .button.ghost.warning {
-  @apply bg-transparent border-none ring-0 text-warning-600; }
+  @apply bg-warning-600 bg-opacity-0 border-none ring-0 text-warning-600; }
 
-.button.ghost.button.emergency {
-  @apply bg-transparent border-none ring-0 text-emergency-600; }
+.button.ghost.emergency {
+  @apply bg-emergency-600 bg-opacity-0 border-none ring-0 text-emergency-600; }
 
 .button.ghost:hover,
-.button.ghost.active {
-  @apply bg-opacity-20; }
+.button.ghost.active,
+.button.ghost.success:hover,
+.button.ghost.success.active,
+.button.ghost.warning:hover,
+.button.ghost.warning.active,
+.button.ghost.emergency:hover,
+.button.ghost.emergency.active {
+  @apply bg-opacity-20 ring-0 border-none; }
 
 .button.success {
   @apply bg-success-500 border-success-500; }
