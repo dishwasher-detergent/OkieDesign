@@ -443,7 +443,7 @@
     border
     border-primary-600
     text-slate-700
-    text-sm
+    text-base
     truncate
     outline-none; }
 
@@ -890,7 +890,7 @@
     border
     border-primary-600
     text-slate-700
-    text-sm
+    text-base
     truncate
     outline-none;
   min-height: 4rem; }
